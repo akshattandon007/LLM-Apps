@@ -214,7 +214,7 @@ See [WORKFLOW.md](WORKFLOW.md) for the full annotated walkthrough with function 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/parkmate-ai.git
+git clone https://github.com/akshattandon007/parkmate-ai.git
 cd parkmate-ai
 ```
 
@@ -426,5 +426,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 Built by **Akshat Tandon** — Senior Product Manager exploring AI engineering.
 
-- [GitHub](https://github.com/yourusername)
-- [LinkedIn](https://linkedin.com/in/yourprofile)
+- [GitHub](https://github.com/akshattandon007)
