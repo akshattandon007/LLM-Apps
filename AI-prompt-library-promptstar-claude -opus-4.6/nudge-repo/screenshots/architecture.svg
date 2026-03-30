@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" fill="none">
+  <style>
+    text { font-family: 'SF Mono', 'Consolas', monospace; }
+    .title { font-size: 18px; font-weight: bold; fill: #E8E8ED; }
+    .label { font-size: 12px; fill: #B0B0B8; }
+    .sublabel { font-size: 10px; fill: #707078; }
+    .box { rx: 12; fill: #1C1C20; stroke: #3A3A42; stroke-width: 1.2; }
+    .box-blue { rx: 12; fill: #162040; stroke: #4A8AE5; stroke-width: 1.2; }
+    .box-green { rx: 12; fill: #1A2E20; stroke: #4CAF50; stroke-width: 1.2; }
+    .box-amber { rx: 12; fill: #2E2818; stroke: #E5A84A; stroke-width: 1.2; }
+    .arrow { stroke: #5B9CF5; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    .arrow-dim { stroke: #4A4A52; stroke-width: 1; stroke-dasharray: 5,4; marker-end: url(#arrowdim); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#5B9CF5"/>
+    </marker>
+    <marker id="arrowdim" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#4A4A52"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="620" rx="16" fill="#121215"/>
+  <text x="40" y="40" class="title">Nudge — Architecture</text>
+
+  <!-- Background.js -->
+  <rect x="40" y="75" width="180" height="100" class="box"/>
+  <text x="80" y="105" class="label">background.js</text>
+  <text x="60" y="125" class="sublabel">Service Worker</text>
+  <text x="60" y="142" class="sublabel">• ⌥P shortcut listener</text>
+  <text x="60" y="157" class="sublabel">• Toolbar icon click</text>
+
+  <!-- Arrow: bg → content -->
+  <line x1="220" y1="125" x2="310" y2="125" class="arrow"/>
+  <text x="230" y="118" class="sublabel">sendMessage()</text>
+
+  <!-- Content.js -->
+  <rect x="310" y="70" width="340" height="200" class="box-blue"/>
+  <text x="420" y="98" class="label">content.js (Shadow DOM)</text>
+  <text x="330" y="120" class="sublabel">┌─────────────────────────────┐</text>
+  <text x="330" y="136" class="sublabel">│  Modal UI  │  Starfish     │</text>
+  <text x="330" y="152" class="sublabel">│  Templates │  8 moods      │</text>
+  <text x="330" y="168" class="sublabel">│  Discover  │  Animations   │</text>
+  <text x="330" y="184" class="sublabel">│  Settings  │  Drag/Resize  │</text>
+  <text x="330" y="200" class="sublabel">│  Add/Edit  │  Dark/Light   │</text>
+  <text x="330" y="216" class="sublabel">│  FAB icon  │  Search       │</text>
+  <text x="330" y="232" class="sublabel">└─────────────────────────────┘</text>
+
+  <!-- Templates.js -->
+  <rect x="40" y="230" width="180" height="120" class="box"/>
+  <text x="72" y="260" class="label">templates.js</text>
+  <text x="60" y="282" class="sublabel">• DEFAULT_TEMPLATES</text>
+  <text x="60" y="298" class="sublabel">• loadTemplates()</text>
+  <text x="60" y="314" class="sublabel">• saveTemplate()</text>
+  <text x="60" y="330" class="sublabel">• deleteTemplate()</text>
+
+  <!-- Arrow: templates → content -->
+  <line x1="220" y1="280" x2="310" y2="220" class="arrow"/>
+
+  <!-- chrome.storage.local -->
+  <rect x="40" y="400" width="220" height="170" class="box-green"/>
+  <text x="65" y="430" class="label">chrome.storage.local</text>
+  <text x="60" y="455" class="sublabel">Shared across ALL websites</text>
+  <text x="60" y="478" class="sublabel">┌──────────────────────┐</text>
+  <text x="60" y="494" class="sublabel">│ ps-templates  [...]  │</text>
+  <text x="60" y="510" class="sublabel">│ ps-deleted    [...]  │</text>
+  <text x="60" y="526" class="sublabel">│ ps-api-key    "sk.." │</text>
+  <text x="60" y="542" class="sublabel">│ ps-theme      "dark" │</text>
+  <text x="60" y="558" class="sublabel">│ ps-pos / ps-size     │</text>
+
+  <!-- Arrow: templates ↔ storage -->
+  <line x1="130" y1="350" x2="130" y2="400" class="arrow"/>
+  <text x="140" y="378" class="sublabel">read/write</text>
+
+  <!-- onChanged listener -->
+  <line x1="260" y1="480" x2="310" y2="350" class="arrow-dim"/>
+  <text x="270" y="410" class="sublabel">onChanged</text>
+  <text x="270" y="424" class="sublabel">sync cache</text>
+
+  <!-- Anthropic API -->
+  <rect x="720" y="75" width="240" height="130" class="box-amber"/>
+  <text x="755" y="105" class="label">Anthropic Claude API</text>
+  <text x="740" y="128" class="sublabel">POST /v1/messages</text>
+  <text x="740" y="146" class="sublabel">Model: claude-sonnet-4</text>
+  <text x="740" y="164" class="sublabel">→ 5 prompt templates (JSON)</text>
+  <text x="740" y="182" class="sublabel">Keyword-based discovery</text>
+
+  <!-- Arrow: content → API -->
+  <line x1="650" y1="140" x2="720" y2="140" class="arrow"/>
+  <text x="658" y="132" class="sublabel">fetch()</text>
+
+  <!-- Google Fonts -->
+  <rect x="720" y="250" width="240" height="80" class="box"/>
+  <text x="770" y="278" class="label">Google Fonts CDN</text>
+  <text x="740" y="300" class="sublabel">Lilita One · Outfit · Geist Mono</text>
+
+  <!-- Arrow: content → fonts -->
+  <line x1="650" y1="240" x2="720" y2="270" class="arrow-dim"/>
+
+  <!-- User's Browser -->
+  <rect x="380" y="380" width="300" height="170" class="box"/>
+  <text x="460" y="410" class="label">User's Browser</text>
+  <text x="400" y="436" class="sublabel">Any website — google.com, github.com, etc.</text>
+  <text x="400" y="460" class="sublabel">┌──────────────────────────────┐</text>
+  <text x="400" y="476" class="sublabel">│  Page DOM                    │</text>
+  <text x="400" y="492" class="sublabel">│  ┌─ Shadow DOM (#pp-root) ─┐ │</text>
+  <text x="400" y="508" class="sublabel">│  │  Modal + FAB (isolated) │ │</text>
+  <text x="400" y="524" class="sublabel">│  └─────────────────────────┘ │</text>
+  <text x="400" y="540" class="sublabel">└──────────────────────────────┘</text>
+
+  <!-- Arrow: content → browser -->
+  <line x1="480" y1="270" x2="480" y2="380" class="arrow-dim"/>
+
+  <!-- Legend -->
+  <rect x="720" y="380" width="240" height="170" class="box"/>
+  <text x="790" y="408" class="label">Key Decisions</text>
+  <text x="740" y="432" class="sublabel">• Shadow DOM → CSS isolation</text>
+  <text x="740" y="450" class="sublabel">• chrome.storage → cross-site</text>
+  <text x="740" y="468" class="sublabel">• No framework → 0 deps, ~42KB</text>
+  <text x="740" y="486" class="sublabel">• Manifest V3 → modern Chrome</text>
+  <text x="740" y="504" class="sublabel">• CSS-in-JS → seamless theming</text>
+  <text x="740" y="522" class="sublabel">• Sync cache → fast reads</text>
+  <text x="740" y="540" class="sublabel">• FAB icon → always accessible</text>
+</svg>

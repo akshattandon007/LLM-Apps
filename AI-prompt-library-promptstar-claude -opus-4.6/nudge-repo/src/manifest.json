@@ -1,16 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Prompt Star",
+  "name": "Nudge",
   "version": "1.0.0",
-  "description": "Your starfish-powered prompt template library. Invoke with Alt+P.",
-  "permissions": ["activeTab", "scripting"],
+  "description": "Nudge — your friendly prompt template library. Invoke with Alt+P.",
+  "permissions": ["activeTab", "scripting", "storage"],
   "commands": {
     "toggle-palette": {
       "suggested_key": {
         "default": "Alt+P",
         "mac": "Alt+P"
       },
-      "description": "Toggle Prompt Star"
+      "description": "Toggle Nudge"
     }
   },
   "background": {
@@ -33,7 +33,7 @@
       "16": "icons/icon16.png",
       "48": "icons/icon48.png"
     },
-    "default_title": "Prompt Star (Alt+P)"
+    "default_title": "Nudge (Alt+P)"
   },
   "host_permissions": ["https://api.anthropic.com/*"]
 }
