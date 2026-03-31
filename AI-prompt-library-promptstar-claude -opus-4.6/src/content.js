@@ -28,7 +28,7 @@
 
   const fl = document.createElement("link");
   fl.rel = "stylesheet";
-  fl.href = "https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap";
+  fl.href = "https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Outfit:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap";
   shadow.appendChild(fl);
 
   const style = document.createElement("style");
@@ -85,7 +85,7 @@
     let extras = '';
     if (mood==='sleep') extras = `<text x="62" y="22" font-size="10" fill="${darkMode?'rgba(255,255,255,.4)':'rgba(0,0,0,.25)'}" font-family="sans-serif" font-weight="700">z</text><text x="68" y="16" font-size="8" fill="${darkMode?'rgba(255,255,255,.3)':'rgba(0,0,0,.18)'}" font-family="sans-serif" font-weight="700">z</text>`;
     if (mood==='love') extras = `<circle cx="24" cy="20" r="3" fill="#ff6b8a" opacity=".5"/><circle cx="66" cy="18" r="2" fill="#ff6b8a" opacity=".4"/>`;
-    return `<svg class="sf ${ac}" width="56" height="56" viewBox="0 0 86 86" fill="none"><defs><linearGradient id="sfg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6DB3F8"/><stop offset="100%" stop-color="#4A8AE5"/></linearGradient></defs><g class="sf-arms"><path d="M43 10L40 28 46 28Z" fill="url(#sfg)" class="arm-top"/><path d="M68 24L56 36 60 40Z" fill="url(#sfg)" class="arm-tr"/><path d="M74 56L56 48 54 54Z" fill="url(#sfg)" class="arm-br"/><path d="M12 56L30 48 32 54Z" fill="url(#sfg)" class="arm-bl"/><path d="M18 24L30 36 26 40Z" fill="url(#sfg)" class="arm-tl"/></g><circle cx="43" cy="42" r="18" fill="url(#sfg)"/><circle cx="33" cy="40" r="4" fill="rgba(90,160,255,.3)"/><circle cx="54" cy="40" r="4" fill="rgba(90,160,255,.3)"/>${eyes}<circle cx="38.5" cy="33" r="1" fill="#fff" opacity=".9"/><circle cx="51.5" cy="33" r="1" fill="#fff" opacity=".9"/>${mouth}${extras}</svg>`;
+    return `<svg class="sf ${ac}" width="50" height="50" viewBox="0 0 86 86" fill="none"><defs><linearGradient id="sfg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6DB3F8"/><stop offset="100%" stop-color="#4A8AE5"/></linearGradient></defs><g class="sf-arms"><path d="M43 10L40 28 46 28Z" fill="url(#sfg)" class="arm-top"/><path d="M68 24L56 36 60 40Z" fill="url(#sfg)" class="arm-tr"/><path d="M74 56L56 48 54 54Z" fill="url(#sfg)" class="arm-br"/><path d="M12 56L30 48 32 54Z" fill="url(#sfg)" class="arm-bl"/><path d="M18 24L30 36 26 40Z" fill="url(#sfg)" class="arm-tl"/></g><circle cx="43" cy="42" r="18" fill="url(#sfg)"/><circle cx="33" cy="40" r="4" fill="rgba(90,160,255,.3)"/><circle cx="54" cy="40" r="4" fill="rgba(90,160,255,.3)"/>${eyes}<circle cx="38.5" cy="33" r="1" fill="#fff" opacity=".9"/><circle cx="51.5" cy="33" r="1" fill="#fff" opacity=".9"/>${mouth}${extras}</svg>`;
   }
 
   const MSGS = {
@@ -308,8 +308,8 @@
   function getCSS(dk){
     const v=dk?{glass:'rgba(22,22,24,.78)',card:'rgba(255,255,255,.06)',cardH:'rgba(255,255,255,.09)',cardEx:'rgba(255,255,255,.10)',inp:'rgba(255,255,255,.06)',inpF:'rgba(255,255,255,.10)',bdr:'rgba(255,255,255,.08)',segBg:'rgba(255,255,255,.08)',segOn:'rgba(255,255,255,.15)',txt:'#FFF',txt2:'rgba(255,255,255,.55)',txt3:'rgba(255,255,255,.30)',ico:'rgba(255,255,255,.35)',icoEx:'rgba(255,255,255,.70)',pill:'rgba(255,255,255,.08)',pillT:'rgba(255,255,255,.35)',code:'rgba(0,0,0,.25)',cta:'#FFF',ctaT:'#000',ctaH:'rgba(255,255,255,.85)',xb:'rgba(255,255,255,.10)',xbH:'rgba(255,255,255,.18)',foc:'rgba(255,255,255,.20)',shd:'0 32px 100px rgba(0,0,0,.45),0 0 0 .5px rgba(255,255,255,.08)',bub:'rgba(255,255,255,.10)',bubB:'rgba(255,255,255,.08)',danger:'rgba(255,80,80,.15)',dangerT:'#ff6b6b',dangerH:'rgba(255,80,80,.25)'}:{glass:'rgba(248,248,250,.82)',card:'rgba(0,0,0,.03)',cardH:'rgba(0,0,0,.05)',cardEx:'rgba(0,0,0,.06)',inp:'rgba(0,0,0,.04)',inpF:'rgba(0,0,0,.06)',bdr:'rgba(0,0,0,.06)',segBg:'rgba(0,0,0,.05)',segOn:'rgba(255,255,255,.85)',txt:'#1D1D1F',txt2:'rgba(0,0,0,.50)',txt3:'rgba(0,0,0,.25)',ico:'rgba(0,0,0,.30)',icoEx:'rgba(0,0,0,.65)',pill:'rgba(0,0,0,.05)',pillT:'rgba(0,0,0,.35)',code:'rgba(0,0,0,.03)',cta:'#1D1D1F',ctaT:'#FFF',ctaH:'rgba(0,0,0,.75)',xb:'rgba(0,0,0,.06)',xbH:'rgba(0,0,0,.10)',foc:'rgba(0,0,0,.12)',shd:'0 32px 100px rgba(0,0,0,.12),0 0 0 .5px rgba(0,0,0,.06)',bub:'rgba(0,0,0,.04)',bubB:'rgba(0,0,0,.06)',danger:'rgba(255,59,48,.08)',dangerT:'#FF3B30',dangerH:'rgba(255,59,48,.15)'};
     return `
-    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap');
-    :host{--f:"Outfit",-apple-system,BlinkMacSystemFont,sans-serif;--fc:"Lilita One",cursive;--fm:"Geist Mono","SF Mono",ui-monospace,monospace}
+    @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Outfit:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap');
+    :host{--f:"Outfit",-apple-system,BlinkMacSystemFont,sans-serif;--fc:"Gaegu",cursive;--fm:"Geist Mono","SF Mono",ui-monospace,monospace}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     .bk{position:fixed;inset:0;background:rgba(0,0,0,${dk?'.45':'.18'});backdrop-filter:blur(${dk?'4':'12'}px);-webkit-backdrop-filter:blur(${dk?'4':'12'}px);opacity:0;pointer-events:none;transition:opacity .2s;z-index:1}.bk.vis{opacity:1;pointer-events:auto}
     .m{position:fixed;background:${v.glass};backdrop-filter:saturate(180%) blur(40px);-webkit-backdrop-filter:saturate(180%) blur(40px);border:1px solid ${v.bdr};border-radius:24px;box-shadow:${v.shd};opacity:0;pointer-events:none;transition:opacity .2s,transform .3s cubic-bezier(.2,1,.3,1);z-index:2;display:flex;flex-direction:column;overflow:hidden;font-family:var(--f);color:${v.txt};-webkit-font-smoothing:antialiased;min-width:340px;min-height:400px}
@@ -320,10 +320,10 @@
     .top-r{display:flex;align-items:center;gap:4px}
     .thm,.xb,.gear{all:unset;cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;color:${v.txt3};transition:all .12s}.xb{background:${v.xb}}.thm:hover,.xb:hover,.gear:hover{background:${v.xbH};color:${v.txt2}}
 
-    .star-hdr{display:flex;align-items:center;gap:12px;padding:2px 20px 12px;flex-shrink:0}
-    .star-char{cursor:pointer;flex-shrink:0;transition:transform .2s}.star-char:hover{transform:scale(1.1) rotate(-5deg)}.star-char:active{transform:scale(.88) rotate(10deg)}
-    .star-info{flex:1;min-width:0}
-    .star-name{font-family:var(--fc);font-weight:700;font-size:28px;letter-spacing:1px;display:block;line-height:1;background:linear-gradient(135deg,#6DB3F8,#5B9CF5,#4A8AE5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block}
+    .star-hdr{display:flex;align-items:center;gap:10px;padding:4px 20px 14px;flex-shrink:0}
+    .star-char{cursor:pointer;flex-shrink:0;width:52px;height:52px;display:flex;align-items:center;justify-content:center;transition:transform .2s}.star-char:hover{transform:scale(1.1) rotate(-5deg)}.star-char:active{transform:scale(.88) rotate(10deg)}
+    .star-info{flex:1;min-width:0;padding-top:2px}
+    .star-name{font-family:var(--fc);font-weight:700;font-size:24px;letter-spacing:.3px;display:block;line-height:1;background:linear-gradient(135deg,#6DB3F8,#5B9CF5,#4A8AE5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .star-bubble{font-size:11.5px;font-weight:500;color:${v.txt2};background:${v.bub};border:1px solid ${v.bubB};border-radius:10px;padding:4px 10px;margin-top:4px;display:inline-block;animation:bubIn .3s ease}
     @keyframes bubIn{from{opacity:0;transform:translateY(3px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
 
