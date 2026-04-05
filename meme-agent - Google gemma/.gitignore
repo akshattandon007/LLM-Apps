@@ -1,0 +1,35 @@
+# Environment — never commit secrets
+.env
+
+# Generated memes
+memes_output/*.jpg
+memes_output/*.jpeg
+memes_output/*.png
+memes_output/*.webp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
