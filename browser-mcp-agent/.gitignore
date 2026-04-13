@@ -1,0 +1,40 @@
+# ─── Python ───────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# ─── IDE ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── Winnie runtime data ─────────────────────────
+# (never commit user keys or chat history)
+config.json
+chat_history.json
+screenshots/
+
+# ─── OS ───────────────────────────────────────────
+.DS_Store
+Desktop.ini
+ehthumbs.db
+
+# ─── Node (if safari converter is used) ──────────
+node_modules/
+package-lock.json
+
+# ─── Distribution ────────────────────────────────
+*.zip
+*.crx
+*.xpi
