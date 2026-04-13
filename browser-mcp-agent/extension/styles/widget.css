@@ -1,0 +1,9 @@
+/* Winnie widget host — all real styles are inside the shadow DOM */
+#winnie-agent-root {
+  all: initial !important;
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  pointer-events: auto !important;
+}
