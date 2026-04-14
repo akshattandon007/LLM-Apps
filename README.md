@@ -1,6 +1,6 @@
 <p align="center">
   <h1 align="center">🚀 LLM-Apps</h1>
-  <p align="center">A curated collection of <strong>AI Agent apps built with Claude, Gemini, and open-source models</strong> — featuring RAG pipelines, prompt engineering tools, and multi-model AI agents.</p>
+  <p align="center">A curated collection of <strong>AI Agent apps built with Claude, Gemini, and OpenAI models</strong> — featuring RAG pipelines, prompt engineering tools, and multi-model AI agents.</p>
 </p>
 
 <p align="center">
