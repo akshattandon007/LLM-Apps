@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "SketchIt — AI Prototyping Agent",
+  "version": "1.0.0",
+  "description": "A senior UI/UX designer in your browser. Describe changes, see them applied live, then save the result as HTML.",
+  "permissions": ["activeTab", "scripting", "storage", "downloads"],
+  "host_permissions": ["http://127.0.0.1:5174/*", "http://localhost:5174/*"],
+  "action": {
+    "default_title": "SketchIt",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["widget.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*.png", "icons/*.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
