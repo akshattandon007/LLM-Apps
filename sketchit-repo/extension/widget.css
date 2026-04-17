@@ -1,0 +1,489 @@
+/* ============================================================
+ * SketchIt widget styles. Everything is scoped under
+ * #sketchit-root and uses high specificity + !important on
+ * critical layout props so host-page CSS can't break us.
+ * ============================================================ */
+
+#sketchit-root {
+  all: initial;
+  position: fixed !important;
+  inset: 0 !important;
+  pointer-events: none !important;
+  z-index: 2147483647 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+#sketchit-root * {
+  box-sizing: border-box !important;
+}
+
+/* ---------- Floating action button ---------- */
+#sketchit-root #sketchit-fab {
+  position: absolute !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(15, 17, 21, 0.08) !important;
+  background: #ffffff !important;
+  color: #1F2128 !important;
+  box-shadow:
+    0 1px 2px rgba(15, 17, 21, 0.04),
+    0 8px 24px rgba(15, 17, 21, 0.12) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  pointer-events: auto !important;
+  transition: transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 180ms ease,
+              opacity 150ms ease !important;
+}
+
+#sketchit-root #sketchit-fab:hover {
+  transform: translateY(-2px) !important;
+  box-shadow:
+    0 2px 4px rgba(15, 17, 21, 0.05),
+    0 14px 32px rgba(15, 17, 21, 0.16) !important;
+}
+
+#sketchit-root #sketchit-fab:active {
+  transform: translateY(0) !important;
+}
+
+#sketchit-root #sketchit-fab.hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: scale(0.9) !important;
+}
+
+/* ---------- Panel ---------- */
+#sketchit-root #sketchit-panel {
+  position: absolute !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  width: 380px !important;
+  max-width: calc(100vw - 48px) !important;
+  height: 560px !important;
+  max-height: calc(100vh - 48px) !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(15, 17, 21, 0.08) !important;
+  border-radius: 16px !important;
+  box-shadow:
+    0 1px 2px rgba(15, 17, 21, 0.04),
+    0 20px 48px rgba(15, 17, 21, 0.18) !important;
+  display: none !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  pointer-events: auto !important;
+  transform-origin: bottom right !important;
+  opacity: 0 !important;
+  transform: translateY(8px) scale(0.98) !important;
+  transition: opacity 180ms ease, transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+#sketchit-root #sketchit-panel.open {
+  display: flex !important;
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* ---------- Header ---------- */
+#sketchit-root #sketchit-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 14px 16px !important;
+  border-bottom: 1px solid rgba(15, 17, 21, 0.06) !important;
+  background: #FBFBFA !important;
+}
+
+#sketchit-root .sketchit-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+#sketchit-root .sketchit-logo {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 8px !important;
+  background: #1F2128 !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#sketchit-root .sketchit-title-main {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1F2128 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+}
+
+#sketchit-root .sketchit-title-sub {
+  font-size: 11px !important;
+  color: #6B6F76 !important;
+  line-height: 1.2 !important;
+  margin-top: 2px !important;
+}
+
+#sketchit-root .sketchit-actions {
+  display: flex !important;
+  gap: 4px !important;
+}
+
+#sketchit-root .sketchit-icon-btn {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  background: transparent !important;
+  color: #6B6F76 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background 120ms ease, color 120ms ease !important;
+}
+
+#sketchit-root .sketchit-icon-btn:hover {
+  background: rgba(15, 17, 21, 0.06) !important;
+  color: #1F2128 !important;
+}
+
+/* ---------- Messages ---------- */
+#sketchit-root #sketchit-messages {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  padding: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  background: #ffffff !important;
+  scrollbar-width: thin !important;
+}
+
+#sketchit-root #sketchit-messages::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+#sketchit-root #sketchit-messages::-webkit-scrollbar-thumb {
+  background: rgba(15, 17, 21, 0.15) !important;
+  border-radius: 3px !important;
+}
+
+#sketchit-root .sketchit-welcome {
+  padding: 14px !important;
+  background: #FBFBFA !important;
+  border: 1px solid rgba(15, 17, 21, 0.06) !important;
+  border-radius: 10px !important;
+}
+
+#sketchit-root .sketchit-welcome-title {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #1F2128 !important;
+  margin-bottom: 6px !important;
+}
+
+#sketchit-root .sketchit-welcome-body {
+  font-size: 12.5px !important;
+  color: #4A4E57 !important;
+  line-height: 1.55 !important;
+}
+
+#sketchit-root .sketchit-welcome-body ul {
+  margin: 8px 0 0 0 !important;
+  padding-left: 16px !important;
+}
+
+#sketchit-root .sketchit-welcome-body li {
+  margin: 3px 0 !important;
+  color: #4A4E57 !important;
+}
+
+#sketchit-root .sketchit-msg {
+  padding: 10px 12px !important;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  max-width: 88% !important;
+}
+
+#sketchit-root .sketchit-msg-user {
+  align-self: flex-end !important;
+  background: #1F2128 !important;
+  color: #ffffff !important;
+}
+
+#sketchit-root .sketchit-msg-assistant {
+  align-self: flex-start !important;
+  background: #F4F4F2 !important;
+  color: #1F2128 !important;
+}
+
+#sketchit-root .sketchit-msg.pending {
+  opacity: 0.7 !important;
+  font-style: italic !important;
+}
+
+#sketchit-root .sketchit-sysnote {
+  align-self: center !important;
+  font-size: 11px !important;
+  color: #6B6F76 !important;
+  padding: 4px 10px !important;
+  background: transparent !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* ---------- Footer / input ---------- */
+#sketchit-root #sketchit-footer {
+  display: flex !important;
+  align-items: flex-end !important;
+  gap: 8px !important;
+  padding: 12px !important;
+  border-top: 1px solid rgba(15, 17, 21, 0.06) !important;
+  background: #FBFBFA !important;
+}
+
+#sketchit-root #sketchit-input {
+  flex: 1 !important;
+  border: 1px solid rgba(15, 17, 21, 0.12) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  font-size: 13px !important;
+  font-family: inherit !important;
+  color: #1F2128 !important;
+  background: #ffffff !important;
+  resize: none !important;
+  outline: none !important;
+  min-height: 38px !important;
+  max-height: 120px !important;
+  transition: border-color 120ms ease, box-shadow 120ms ease !important;
+  line-height: 1.4 !important;
+}
+
+#sketchit-root #sketchit-input::placeholder {
+  color: #9CA0A8 !important;
+}
+
+#sketchit-root #sketchit-input:focus {
+  border-color: #1F2128 !important;
+  box-shadow: 0 0 0 3px rgba(31, 33, 40, 0.08) !important;
+}
+
+#sketchit-root #sketchit-send {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  background: #1F2128 !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: background 120ms ease, transform 120ms ease !important;
+}
+
+#sketchit-root #sketchit-send:hover:not(:disabled) {
+  background: #000000 !important;
+}
+
+#sketchit-root #sketchit-send:active:not(:disabled) {
+  transform: scale(0.95) !important;
+}
+
+#sketchit-root #sketchit-send:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* ---------- Icon button active state (for gear toggle) ---------- */
+#sketchit-root .sketchit-icon-btn.active {
+  background: rgba(15, 17, 21, 0.08) !important;
+  color: #1F2128 !important;
+}
+
+/* ---------- Settings panel ---------- */
+#sketchit-root #sketchit-settings-panel {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  background: #FBFBFA !important;
+  border-bottom: 1px solid rgba(15, 17, 21, 0.06) !important;
+  transition: max-height 220ms cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+#sketchit-root #sketchit-settings-panel.open {
+  max-height: 320px !important;
+}
+
+#sketchit-root .sketchit-settings-inner {
+  padding: 14px 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+#sketchit-root .sketchit-settings-title {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #1F2128 !important;
+  letter-spacing: -0.005em !important;
+}
+
+#sketchit-root .sketchit-settings-desc {
+  font-size: 11.5px !important;
+  color: #6B6F76 !important;
+  line-height: 1.5 !important;
+}
+
+#sketchit-root .sketchit-settings-desc code {
+  background: rgba(15, 17, 21, 0.06) !important;
+  padding: 1px 5px !important;
+  border-radius: 3px !important;
+  font-size: 11px !important;
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace !important;
+  color: #1F2128 !important;
+}
+
+#sketchit-root .sketchit-settings-desc a {
+  color: #1F2128 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
+#sketchit-root .sketchit-settings-desc a:hover {
+  color: #000000 !important;
+}
+
+/* Input row: text input + show/hide toggle */
+#sketchit-root .sketchit-key-row {
+  display: flex !important;
+  align-items: stretch !important;
+  gap: 6px !important;
+}
+
+#sketchit-root #sketchit-key-input {
+  flex: 1 !important;
+  border: 1px solid rgba(15, 17, 21, 0.12) !important;
+  border-radius: 7px !important;
+  padding: 8px 10px !important;
+  font-size: 12.5px !important;
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace !important;
+  color: #1F2128 !important;
+  background: #ffffff !important;
+  outline: none !important;
+  transition: border-color 120ms ease, box-shadow 120ms ease !important;
+  letter-spacing: 0 !important;
+  min-width: 0 !important;
+}
+
+#sketchit-root #sketchit-key-input::placeholder {
+  color: #9CA0A8 !important;
+}
+
+#sketchit-root #sketchit-key-input:focus {
+  border-color: #1F2128 !important;
+  box-shadow: 0 0 0 3px rgba(31, 33, 40, 0.08) !important;
+}
+
+#sketchit-root #sketchit-key-toggle {
+  width: 32px !important;
+  height: auto !important;
+  border: 1px solid rgba(15, 17, 21, 0.12) !important;
+  border-radius: 7px !important;
+  background: #ffffff !important;
+  color: #6B6F76 !important;
+  flex-shrink: 0 !important;
+}
+
+#sketchit-root #sketchit-key-toggle:hover {
+  background: rgba(15, 17, 21, 0.04) !important;
+  color: #1F2128 !important;
+}
+
+/* Status message below the input */
+#sketchit-root .sketchit-key-status {
+  font-size: 11.5px !important;
+  color: #6B6F76 !important;
+  min-height: 16px !important;
+  line-height: 1.4 !important;
+}
+
+#sketchit-root .sketchit-key-status-ok {
+  color: #1B5E20 !important;
+}
+
+#sketchit-root .sketchit-key-status-err {
+  color: #B71C1C !important;
+}
+
+/* Action buttons */
+#sketchit-root .sketchit-settings-actions {
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 6px !important;
+  margin-top: 2px !important;
+}
+
+#sketchit-root .sketchit-btn {
+  padding: 6px 12px !important;
+  border-radius: 7px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  border: 1px solid transparent !important;
+  transition: background 120ms ease, border-color 120ms ease !important;
+}
+
+#sketchit-root .sketchit-btn-ghost {
+  background: transparent !important;
+  color: #6B6F76 !important;
+  border-color: rgba(15, 17, 21, 0.12) !important;
+}
+
+#sketchit-root .sketchit-btn-ghost:hover {
+  background: rgba(15, 17, 21, 0.04) !important;
+  color: #1F2128 !important;
+  border-color: rgba(15, 17, 21, 0.18) !important;
+}
+
+#sketchit-root .sketchit-btn-primary {
+  background: #1F2128 !important;
+  color: #ffffff !important;
+  border-color: #1F2128 !important;
+}
+
+#sketchit-root .sketchit-btn-primary:hover:not(:disabled) {
+  background: #000000 !important;
+  border-color: #000000 !important;
+}
+
+#sketchit-root .sketchit-btn-primary:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  #sketchit-root #sketchit-panel {
+    right: 12px !important;
+    bottom: 12px !important;
+    left: 12px !important;
+    width: auto !important;
+    height: 75vh !important;
+  }
+  #sketchit-root #sketchit-fab {
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+}

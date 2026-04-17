@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SketchIt</title>
+<style>
+  body {
+    margin: 0;
+    padding: 16px;
+    width: 260px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 13px;
+    color: #1F2128;
+    background: #FBFBFA;
+  }
+  .brand { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .logo {
+    width: 28px; height: 28px; border-radius: 7px;
+    background: #1F2128; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+  }
+  h1 { font-size: 14px; margin: 0; font-weight: 600; letter-spacing: -0.01em; }
+  p { margin: 8px 0; line-height: 1.5; color: #4A4E57; }
+  .status {
+    padding: 8px 10px; border-radius: 6px; margin-top: 10px;
+    font-size: 12px; display: flex; align-items: center; gap: 6px;
+  }
+  .status.ok { background: #E8F5E9; color: #1B5E20; }
+  .status.err { background: #FFEBEE; color: #B71C1C; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+  code { background: rgba(0,0,0,0.06); padding: 1px 5px; border-radius: 3px; font-size: 11.5px; }
+</style>
+</head>
+<body>
+  <div class="brand">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 20 L4 16 L16 4 L20 8 L8 20 Z"/>
+        <path d="M14 6 L18 10"/>
+        <path d="M4 20 L8 20"/>
+      </svg>
+    </div>
+    <h1>SketchIt</h1>
+  </div>
+  <p>Click the toolbar icon on any page to toggle the chat widget, or look for the button in the lower-right corner.</p>
+  <div id="status" class="status">Checking backend…</div>
+  <p style="font-size:11.5px;margin-top:12px;color:#6B6F76;">
+    Backend must be running on <code>127.0.0.1:5174</code>.
+  </p>
+  <script src="popup.js"></script>
+</body>
+</html>
