@@ -15,6 +15,26 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [1.2.0] — 2026-04-18
+
+### Added
+- **Design module (`backend/design.py`)** — Dedicated module that composes the designer system prompt from structured pieces: philosophy, nine enforceable principles, theme library, output spec, and a worked example.
+- **Curated theme library** — 11 vetted themes derived from Claude's built-in design skills:
+  - **Anthropic brand** (from `brand-guidelines`) — warm ivory + orange accent, Poppins/Lora
+  - **Ocean Depths, Sunset Boulevard, Forest Canopy, Modern Minimalist, Golden Hour, Arctic Frost, Desert Rose, Tech Innovation, Botanical Garden, Midnight Galaxy** (from `theme-factory`), each adapted for the web with Google Fonts
+  - Every theme includes a description, hex palette, display/body font pairing, Google Fonts URL, and "best for" guidance
+- **Design philosophy section** — Inspired by the `canvas-design` skill's "commit to a philosophy" framing. Craftsmanship as baseline, intentionality over cleverness, point-of-view over averages.
+- **8 new tests** covering the design module: prompt composition, theme-library integrity, palette format validation, determinism.
+
+### Changed
+- **System prompt** grew from ~7k to ~13k chars — richer guidance without bloat. Agent now references the theme library by name ("Arctic Frost direction…") in explanations.
+- **Design guidance pulled out of `server.py`** — design improvements now happen in `design.py` without touching transport/validation code.
+
+### Test coverage
+- 26 tests total (up from 18)
+
+---
+
 ## [1.1.0] — 2026-04-17
 
 ### Added
@@ -58,6 +78,7 @@ Initial public release. 🎉
 - GitHub Issue & PR templates
 - Basic CI workflow (lint + test scaffolding)
 
-[Unreleased]: https://github.com/YOUR_USERNAME/sketchit/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/YOUR_USERNAME/sketchit/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/YOUR_USERNAME/sketchit/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/YOUR_USERNAME/sketchit/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/YOUR_USERNAME/sketchit/releases/tag/v1.0.0

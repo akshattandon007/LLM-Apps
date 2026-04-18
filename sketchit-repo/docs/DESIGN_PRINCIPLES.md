@@ -8,6 +8,15 @@ Understanding these helps you:
 - Write prompts that give it more creative runway
 - Contribute improvements to the prompt
 
+The agent's design intelligence is built in [`backend/design.py`](../backend/design.py), which composes four parts:
+
+1. **Design philosophy** — the aesthetic worldview (intentionality, craftsmanship, point of view)
+2. **Nine principles** — the enforceable quality floor (below)
+3. **Theme library** — 11 curated palette + font pairings (see bottom of this doc)
+4. **Output format spec** — the structural contract with the DOM executor
+
+All four are derived from Claude's built-in design skills: `frontend-design`, `theme-factory`, `brand-guidelines`, and `canvas-design`.
+
 ---
 
 ## 1. Hierarchy
@@ -166,3 +175,27 @@ Less effective:
 ❌ *"Delete all whitespace"* (violates a core principle; you'll get resistance)
 
 The agent isn't an anything-goes renderer — it's a designer. Treat it like one.
+
+---
+
+## The Theme Library
+
+The agent has 11 vetted themes it can reference by name. Each has a defined palette, display/body font pairing, and a "best for" guideline. Invoking a theme by name in your prompt gives the agent a strong starting point, but it can also blend or adapt them.
+
+| Theme | Vibe | Best for |
+|---|---|---|
+| **Anthropic** | Warm, literary, restrained (ivory + orange) | Publications, thoughtful SaaS, writing tools |
+| **Ocean Depths** | Professional maritime (navy + teal) | Financial services, consulting |
+| **Sunset Boulevard** | Warm, vibrant (coral + amber) | Hospitality, food, creative agencies |
+| **Forest Canopy** | Earth tones (deep green + sage) | Wellness, sustainability, outdoor brands |
+| **Modern Minimalist** | Editorial grayscale | Portfolios, design tools, premium SaaS |
+| **Golden Hour** | Nostalgic autumnal (ochre + sienna) | Editorial magazines, luxury brands |
+| **Arctic Frost** | Cool and crisp (ice blues) | Fintech, analytics, cloud infrastructure |
+| **Desert Rose** | Dusty pinks + terracotta | Wellness, beauty, boutique commerce |
+| **Tech Innovation** | Electric blue on near-black | AI/ML products, developer tools |
+| **Botanical Garden** | Leaf greens + petal pinks | Organic food, weddings, hospitality |
+| **Midnight Galaxy** | Deep indigo + violet | Music, gaming, entertainment |
+
+Use them by naming them (*"make this Arctic Frost"*), by describing the feel (*"tech startup vibe"* → Tech Innovation), or by referencing the page's purpose (the agent will match to the closest "best for" guideline).
+
+Full theme definitions — hex codes, font pairings, Google Fonts URLs — live in [`backend/design.py`](../backend/design.py).
