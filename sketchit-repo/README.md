@@ -293,7 +293,7 @@ The system prompt enforces these rules. They are the minimum bar the agent must 
 8. **Mobile-considerate** — tap targets ≥ 44 px, flexible layouts
 9. **Not generic** — no "AI purple gradient on white"; commit to a point of view
 
-Full rationale is in [`docs/DESIGN_PRINCIPLES.md`](docs/DESIGN_PRINCIPLES.md).
+Full rationale is in [`docs/DESIGN_PRINCIPLES.md`](docs/DESIGN_PRINCIPLES.md). The agent also has access to a curated **theme library** — 11 vetted palette + font-pairing combinations (Ocean Depths, Modern Minimalist, Golden Hour, Midnight Galaxy, Anthropic brand, and more) — derived from Claude's built-in design skills. See [`backend/design.py`](backend/design.py).
 
 ---
 
