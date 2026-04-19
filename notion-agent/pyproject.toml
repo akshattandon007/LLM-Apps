@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notion-agent"
+version = "0.1.0"
+description = "A Claude-powered agent for reading, writing, and searching Notion workspaces."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Notion Agent Contributors" }]
+keywords = ["notion", "claude", "anthropic", "rag", "agent", "vector-search"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "anthropic>=0.40.0",
+    "notion-client>=2.2.0",
+    "sentence-transformers>=2.6.0",
+    "numpy>=1.24,<3",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-mock>=3.12",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+notion-agent = "notion_agent.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/your-org/notion-agent"
+Issues   = "https://github.com/your-org/notion-agent/issues"
+
+[tool.setuptools.packages.find]
+include = ["notion_agent*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]  # Line length is handled by formatter.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
