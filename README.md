@@ -1,4 +1,24 @@
+<div align="center">
+
 # 🧠 LLM Apps
+
+### AI Agent, MCP Agent & RAG projects you can clone and run
+
+**AI Agents · MCP Agents · RAG ·**
+
+**Works with Claude · Gemini · OpenAI**
+
+[![License](https://img.shields.io/github/license/akshattandon007/LLM-Apps?style=flat-square&color=blue)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/akshattandon007/LLM-Apps?style=flat-square&color=orange)](https://github.com/akshattandon007/LLM-Apps/commits/main)
+[![Stars](https://img.shields.io/github/stars/akshattandon007/LLM-Apps?style=flat-square&color=yellow)](https://github.com/akshattandon007/LLM-Apps/stargazers)
+[![Issues](https://img.shields.io/github/issues/akshattandon007/LLM-Apps?style=flat-square&color=red)](https://github.com/akshattandon007/LLM-Apps/issues)
+
+[![🚀 Quick Start](https://img.shields.io/badge/%F0%9F%9A%80_Quick_Start-2a2a2a?style=for-the-badge)](#-getting-started)
+[![📂 Browse Projects](https://img.shields.io/badge/%F0%9F%93%82_Browse_Projects-2a2a2a?style=for-the-badge)](#-ai-agents)
+
+</div>
+
+---
 
 A personal collection of **LLM-powered apps, AI Agents, MCP Agents, and RAG
 projects** built with Claude, Gemini, and open-source models. Each folder is
