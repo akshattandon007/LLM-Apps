@@ -1,135 +1,106 @@
-<div align="center">
+# 🧠 LLM Apps
 
-# 🧠 LLM-Apps
+A personal collection of **LLM-powered apps, AI Agents, MCP Agents, and RAG
+projects** built with Claude, Gemini, and open-source models. Each folder is
+a self-contained project with its own README and setup instructions.
 
-### A collection of AI agents, tools, and skills built on top of modern LLMs
-
-*Multi-model. Multi-domain. Practical experiments in agentic AI, RAG, and prompt engineering.*
-
-![AI Agents](https://img.shields.io/badge/AI-Agents-1F2128?style=flat-square)
-![RAG](https://img.shields.io/badge/RAG-enabled-1F2128?style=flat-square)
-![Multi-model](https://img.shields.io/badge/Models-Claude%20%7C%20Gemini%20%7C%20Gemma-1F2128?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-1F2128?style=flat-square)
-
-</div>
+The repository is organised by what the agent *does* — prompt engineering,
+retrieval, browsing, multimodal generation — rather than by the model
+underneath, because most of these swap models freely.
 
 ---
 
-## 📖 Overview
+## 📚 Table of Contents
 
-**LLM-Apps** is a hands-on collection of AI agents and LLM-powered tools exploring what's possible when you pair large language models with thoughtful prompt engineering, retrieval, and real-world integrations.
-
-Each project is self-contained — its own folder, its own docs, its own dependencies — so you can dive into whichever one interests you. Projects span multiple model providers (Claude, Gemini, Gemma) to compare strengths across tasks like agentic reasoning, multimodal understanding, code generation, and content creation.
-
----
-
-## 📂 Projects
-
-### 🤖 AI Agents
-
-Autonomous or semi-autonomous agents that take user input and act on the world — calling tools, modifying files, navigating APIs, or transforming content end-to-end.
-
-| Project | Model | Description |
-|---|---|---|
-| 🎨 **[SketchIt](./SketchIt)** | Claude Opus 4.7 | Browser-based UI/UX prototyping agent. A Chrome extension + Python backend that lets you redesign any webpage with natural-language prompts ("restructure the form and use a blue color scheme"). Applies changes live to the DOM and exports modified HTML. Embedded senior-designer system prompt enforces hierarchy, typography, WCAG contrast, and intentional color. |
-| 🚗 **[Car-Park-agent](./Car-Park-agent%20Gemini%203.1%20Pro)** | Gemini 3.1 Pro | Vision-based parking assistant agent. Processes images/video of parking lots to detect open spaces, guide drivers to free spots, and reason about spatial constraints. Showcases Gemini's multimodal strengths. |
-| 😄 **[meme-agent](./meme-agent%20-%20Google%20gemma)** | Google Gemma | Lightweight meme-generation agent running on Gemma — finds or crafts a meme template, writes the caption, and delivers a ready-to-share image. A demo of what's achievable with smaller open-weight models. |
-| 📚 **[tutorial-builder-agent](./tutorial-builder-agent-Claude-Opus-4.6)** | Claude Opus 4.6 | Agent that turns a topic or source document into a structured, step-by-step tutorial with examples, exercises, and summaries. Useful for auto-generating learning material from technical docs or transcripts. |
-| 🎧 **[Book-to-podcast](./Book-to-pocast)** | Multi-model | Converts long-form written content (books, articles, PDFs) into podcast-style audio scripts and narrations. Combines summarization, dialogue generation, and TTS into a single pipeline. |
-
-### 🔍 RAG & Knowledge Tools
-
-Retrieval-augmented generation systems that ground LLM outputs in your own data.
-
-| Project | Description |
-|---|---|
-| 📘 **[rag-api-doc-agent](./rag-api-doc-agent)** | RAG-powered agent for querying API documentation. Ingests OpenAPI specs or documentation sites, builds a searchable index, and answers developer questions grounded in the actual docs — with citations. Great for navigating large SDKs without leaving the terminal. |
-
-### 💡 Prompt Engineering
-
-| Project | Description |
-|---|---|
-| ⭐ **[AI-prompt-library-promptstar](./AI-prompt-library-promptstar-claude%20-opus-4.6)** | A curated prompt library and rating system ("promptstar") built with Claude Opus 4.6. Stores, tags, and ranks prompts by effectiveness, making it easy to reuse proven patterns across projects. |
+- [🤖 AI Agents](#-ai-agents)
+- [🔌 MCP Agents](#-mcp-agents)
+- [📀 RAG (Retrieval Augmented Generation)](#-rag-retrieval-augmented-generation)
+- [🚀 Getting Started](#-getting-started)
 
 ---
 
-## 🚀 Getting started
+## 🤖 AI Agents
 
-Each project lives in its own folder with its own `README.md` and setup instructions. Clone the repo and pick one:
+Single-purpose agents that use an LLM plus tools to complete a focused task.
 
-```bash
-git clone https://github.com/akshattandon007/LLM-Apps.git
-cd LLM-Apps
-
-# Example: run SketchIt
-cd SketchIt/backend
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-export ANTHROPIC_API_KEY="sk-ant-..."
-python server.py
-```
-
-Most projects need an API key for the model they use. You can get keys from:
-
-- **Claude (Anthropic)** — [console.anthropic.com](https://console.anthropic.com/)
-- **Gemini (Google)** — [ai.google.dev](https://ai.google.dev/)
-- **Gemma** — Runs locally via Ollama, HuggingFace, or Google AI Studio
+- [✍️ Prompt Engineering Agent / Prompt Library](./AI-prompt-library-promptstar-claude%20-opus-4.6) — a curated prompt library and prompt-authoring helper built on Claude Opus 4.6.
+- [🅿️ Car-Park Agent](./Car-Park-agent%20Gemini%203.1%20Pro) — multimodal browser/vision agent on Gemini 3.1 Pro.
+- [😂 Meme Agent](./meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
+- [🎙️ Book to Podcast](./Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
+- [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material, built on Claude Opus 4.6.
 
 ---
 
-## 🗺 Repo structure
+## 🔌 MCP Agents
 
-```
-LLM-Apps/
-├── SketchIt/                                    ← Browser prototyping agent (Claude)
-├── Car-Park-agent Gemini 3.1 Pro/               ← Vision-based parking agent
-├── meme-agent - Google gemma/                   ← Meme generator on Gemma
-├── tutorial-builder-agent-Claude-Opus-4.6/      ← Structured tutorial generator
-├── Book-to-pocast/                              ← Book-to-podcast pipeline
-├── rag-api-doc-agent/                           ← RAG for API documentation
-└── AI-prompt-library-promptstar-claude-opus-4.6/ ← Rated prompt library
-```
+Agents that talk to external services (Notion, browsers, etc.) over the
+**Model Context Protocol** pattern — i.e. LLM + a well-defined tool surface
+that maps to a real-world system. Each agent here exposes a small, opinionated
+toolset to Claude and runs an agent loop with citations and auditable writes.
+
+- [📑 Notion Agent](./notion-agent) — Claude Opus 4.7 agent that crawls a Notion workspace, maintains a local vector index, and answers cross-page questions with page citations. Also reads specific pages and appends sections. CLI-first. Fixes the "Notion Q&A doesn't know your workspace" complaint with proper retrieval.
+- [♾️ Browser MCP Agent](./browser-mcp-agent) — agent that drives a real browser over MCP. Navigates pages, extracts content, and completes goal-directed browsing tasks via a well-defined tool surface.
 
 ---
 
-## 🛠 Tech stack
+## 📀 RAG (Retrieval Augmented Generation)
 
-- **Models:** Claude Opus 4.6 / 4.7, Gemini 3.1 Pro, Google Gemma
-- **Languages:** Python (backend, agents, RAG pipelines), JavaScript (browser extensions, UI)
-- **Retrieval:** Vector stores, embeddings, hybrid search where relevant
-- **Patterns:** Agentic loops, tool use, structured output, multi-turn conversation, multimodal I/O
+Projects that pair an LLM with a retrieval layer — vector search, keyword
+search, or hybrid — to answer questions grounded in a document corpus.
 
----
-
-## 🤝 Contributing
-
-Contributions welcome — whether it's a new agent, a bug fix, or improvements to an existing project.
-
-1. Fork the repo
-2. Create a feature branch (`git checkout -b feat/my-agent`)
-3. Add your project in its own folder with a `README.md` and clear setup instructions
-4. Open a PR
-
-Ideas: voice agents, browser automation, data-analysis copilots, domain-specific RAG (legal, medical, financial), multi-agent systems.
+- [📘 RAG API Doc Agent](./rag-api-doc-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
 
 ---
 
-## 📜 License
+## 🚀 Getting Started
 
-[MIT](LICENSE) — use, modify, and share freely.
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/akshattandon007/LLM-Apps.git
+   cd LLM-Apps
+   ```
+
+2. **Navigate to the project you want to run**
+
+   ```bash
+   cd notion-agent          # or any other folder
+   ```
+
+3. **Install dependencies** (each project has its own `requirements.txt` or `pyproject.toml`)
+
+   ```bash
+   python -m venv .venv && source .venv/bin/activate
+   pip install -e .         # or: pip install -r requirements.txt
+   ```
+
+4. **Follow the project's own README** for the model keys and run commands it needs.
 
 ---
 
-## 👤 Author
+## 🔑 Typical API keys you'll need
 
-**Akshat Tandon** — [@akshattandon007](https://github.com/akshattandon007)
+Different projects need different credentials. The common ones:
 
-If you find any of these useful, a ⭐ on the repo is appreciated.
+- `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Prompt Library, Tutorial Builder).
+- `GOOGLE_API_KEY` — for Gemini- and Gemma-based agents (Car-Park Agent, Meme Agent).
+- `NOTION_TOKEN` — for the Notion Agent (create an internal integration at https://www.notion.so/profile/integrations).
+
+Each project's README explains which keys it needs and how to configure them.
 
 ---
 
-<div align="center">
+## 🧭 About
 
-**Experimenting at the edge of what LLMs can do.**
+AI agents with support for multiple models — Claude, Gemini, Gemma, and more.
+Organised by capability so you can go straight to the pattern you want to
+learn from or reuse.
 
-</div>
+**Topics:** `ai-agents` · `mcp` · `rag` · `agentic-ai` · `claude` · `gemini` · `notion-agent` · `browser-agent`
+
+---
+
+## ⭐ Star history
+
+If any of these projects are useful, starring the repo helps me prioritise
+which ones to keep building on.
