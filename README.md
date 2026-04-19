@@ -103,7 +103,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 Different projects need different credentials. The common ones:
 
 - `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Prompt Library, Tutorial Builder).
-- `GOOGLE_API_KEY` — for Gemini- and Gemma-based agents (Car-Park Agent, Meme Agent).
+- `GOOGLE_API_KEY` — for Gemini-based agents (Car-Park Agent, Meme Agent).
 - `NOTION_TOKEN` — for the Notion Agent (create an internal integration at https://www.notion.so/profile/integrations).
 
 Each project's README explains which keys it needs and how to configure them.
@@ -112,7 +112,7 @@ Each project's README explains which keys it needs and how to configure them.
 
 ## 🧭 About
 
-AI agents with support for multiple models — Claude, Gemini, Gemma, and more.
+AI agents with support for multiple models — Claude, Gemini, OpenAI and more.
 Organised by capability so you can go straight to the pattern you want to
 learn from or reuse.
 
