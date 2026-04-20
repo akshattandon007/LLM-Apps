@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 760" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <!-- Slack window background -->
+  <rect width="820" height="760" fill="#1a1d21"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="820" height="52" fill="#19171d"/>
+  <circle cx="28" cy="26" r="14" fill="#611f69"/>
+  <text x="28" y="31" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="54" y="24" fill="#fff" font-size="15" font-weight="700">PM Agent</text>
+  <text x="54" y="41" fill="#ababad" font-size="12">Direct message</text>
+  <circle cx="790" cy="26" r="4" fill="#2bac76"/>
+  <text x="776" y="30" fill="#ababad" font-size="11" text-anchor="end">active</text>
+
+  <!-- Message 1: Agent digest -->
+  <circle cx="36" cy="88" r="18" fill="#611f69"/>
+  <text x="36" y="93" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="68" y="85" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <text x="135" y="85" fill="#9a9b9e" font-size="11">APP</text>
+  <rect x="130" y="76" width="22" height="14" rx="3" fill="#262a2f" stroke="#35373b"/>
+  <text x="141" y="86" fill="#9a9b9e" font-size="9" text-anchor="middle">APP</text>
+  <text x="170" y="85" fill="#9a9b9e" font-size="12">8:30 AM</text>
+
+  <text x="68" y="108" fill="#e8e8e8" font-size="14">🌅 Morning digest — 3 items need your attention today</text>
+
+  <!-- Divider line -->
+  <line x1="68" y1="122" x2="780" y2="122" stroke="#35373b" stroke-width="1"/>
+
+  <!-- P1 section -->
+  <rect x="68" y="134" width="4" height="140" fill="#e01e5a"/>
+  <text x="82" y="148" fill="#e01e5a" font-size="12" font-weight="700" letter-spacing="0.5">P1 · DIRECT MESSAGES (2)</text>
+
+  <text x="82" y="172" fill="#e8e8e8" font-size="13" font-weight="600">Sarah Chen (VP Product)</text>
+  <text x="82" y="190" fill="#bcbdbe" font-size="12">Needs sign-off on the Q2 roadmap slide before the board meeting</text>
+  <text x="82" y="207" fill="#bcbdbe" font-size="12">Friday. Open question: should we include the EMEA expansion?</text>
+  <text x="82" y="226" fill="#9a9b9e" font-size="11" font-style="italic">Suggested: reply today — she's blocked.</text>
+
+  <text x="82" y="252" fill="#e8e8e8" font-size="13" font-weight="600">Marcus Webb (Eng Lead)</text>
+  <text x="82" y="270" fill="#bcbdbe" font-size="12">API redesign RFC ready for review — 15 min read</text>
+
+  <!-- P2 section -->
+  <rect x="68" y="290" width="4" height="90" fill="#ecb22e"/>
+  <text x="82" y="304" fill="#ecb22e" font-size="12" font-weight="700" letter-spacing="0.5">P2 · MENTIONS (1)</text>
+
+  <text x="82" y="328" fill="#e8e8e8" font-size="13" font-weight="600">#product-launch</text>
+  <text x="82" y="346" fill="#bcbdbe" font-size="12">@you tagged by Priya re: beta user count target.</text>
+  <text x="82" y="363" fill="#bcbdbe" font-size="12">She's asking if 500 still holds for the 15th.</text>
+
+  <!-- P3 section -->
+  <rect x="68" y="395" width="4" height="110" fill="#36c5f0"/>
+  <text x="82" y="409" fill="#36c5f0" font-size="12" font-weight="700" letter-spacing="0.5">P3 · CHANNEL ACTIVITY (12)</text>
+
+  <text x="82" y="433" fill="#e8e8e8" font-size="13">#eng-all — 4 msgs on the checkout bug (resolved)</text>
+  <text x="82" y="454" fill="#e8e8e8" font-size="13">#design-review — Lena shared v3 mocks, 3 reactions</text>
+  <text x="82" y="475" fill="#e8e8e8" font-size="13">#gtm-weekly — RevOps posted the Q1 attribution deck</text>
+  <text x="82" y="496" fill="#9a9b9e" font-size="11" font-style="italic">None flagged as urgent.</text>
+
+  <!-- Footer action -->
+  <line x1="68" y1="525" x2="780" y2="525" stroke="#35373b" stroke-width="1"/>
+  <text x="68" y="548" fill="#9a9b9e" font-size="12">Want me to draft replies for the P1 items?</text>
+
+  <!-- User reply -->
+  <circle cx="36" cy="612" r="18" fill="#2eb67d"/>
+  <text x="36" y="617" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">AS</text>
+  <text x="68" y="609" fill="#e8e8e8" font-size="14" font-weight="700">Ashish (you)</text>
+  <text x="138" y="609" fill="#9a9b9e" font-size="12">8:34 AM</text>
+  <text x="68" y="632" fill="#e8e8e8" font-size="14">yes — draft a reply to Sarah confirming EMEA is in</text>
+
+  <!-- Agent ack -->
+  <circle cx="36" cy="686" r="18" fill="#611f69"/>
+  <text x="36" y="691" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="68" y="683" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <text x="142" y="683" fill="#9a9b9e" font-size="12">8:34 AM</text>
+  <text x="68" y="706" fill="#e8e8e8" font-size="14">Drafted. Queued as approval #47 — I'll DM you the preview</text>
+  <text x="68" y="724" fill="#e8e8e8" font-size="14">at 8:49 AM for your OK before it goes out at 9:04 AM.</text>
+</svg>

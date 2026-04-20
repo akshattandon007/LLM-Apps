@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 700" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="820" height="700" fill="#1a1d21"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="820" height="52" fill="#19171d"/>
+  <circle cx="28" cy="26" r="14" fill="#611f69"/>
+  <text x="28" y="31" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="54" y="24" fill="#fff" font-size="15" font-weight="700">PM Agent</text>
+  <text x="54" y="41" fill="#ababad" font-size="12">Direct message</text>
+
+  <!-- User request -->
+  <circle cx="36" cy="88" r="18" fill="#2eb67d"/>
+  <text x="36" y="93" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">AS</text>
+  <text x="68" y="85" fill="#e8e8e8" font-size="14" font-weight="700">Ashish (you)</text>
+  <text x="138" y="85" fill="#9a9b9e" font-size="12">2:14 PM</text>
+  <text x="68" y="108" fill="#e8e8e8" font-size="14">summarise the thread in #pricing-v2 about the enterprise tier</text>
+
+  <!-- Agent response -->
+  <circle cx="36" cy="162" r="18" fill="#611f69"/>
+  <text x="36" y="167" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="68" y="159" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <rect x="130" y="150" width="30" height="14" rx="3" fill="#262a2f" stroke="#35373b"/>
+  <text x="145" y="160" fill="#9a9b9e" font-size="9" text-anchor="middle">APP</text>
+  <text x="170" y="159" fill="#9a9b9e" font-size="12">2:14 PM</text>
+
+  <text x="68" y="184" fill="#e8e8e8" font-size="14" font-weight="600">🧵 #pricing-v2 thread summary (23 messages, 6 participants)</text>
+
+  <!-- TL;DR card -->
+  <rect x="68" y="200" width="700" height="76" rx="6" fill="#222529" stroke="#35373b"/>
+  <rect x="68" y="200" width="4" height="76" fill="#ecb22e"/>
+  <text x="88" y="221" fill="#ecb22e" font-size="11" font-weight="700" letter-spacing="0.5">TL;DR</text>
+  <text x="88" y="243" fill="#e8e8e8" font-size="13">Team agrees enterprise tier should start at $2k/mo with SSO +</text>
+  <text x="88" y="261" fill="#e8e8e8" font-size="13">audit logs. Open: SLA tier (99.9 vs 99.95). Decision needs you.</text>
+
+  <!-- Decisions -->
+  <text x="68" y="306" fill="#2eb67d" font-size="12" font-weight="700" letter-spacing="0.5">DECISIONS MADE</text>
+  <text x="80" y="328" fill="#e8e8e8" font-size="13">• Entry price: $2,000/mo (Nadia, Marcus, Sarah aligned)</text>
+  <text x="80" y="348" fill="#e8e8e8" font-size="13">• SSO + SCIM + audit logs bundled at entry tier</text>
+  <text x="80" y="368" fill="#e8e8e8" font-size="13">• No custom-contract clause below $5k/mo ARR</text>
+
+  <!-- Open -->
+  <text x="68" y="402" fill="#e01e5a" font-size="12" font-weight="700" letter-spacing="0.5">OPEN QUESTIONS (need you)</text>
+  <text x="80" y="424" fill="#e8e8e8" font-size="13">• SLA: Marcus wants 99.9%, Legal pushing 99.95%. Budget impact ~$30k/yr.</text>
+  <text x="80" y="444" fill="#e8e8e8" font-size="13">• Naming: "Business" vs "Enterprise" — marketing has not weighed in.</text>
+
+  <!-- Positions -->
+  <text x="68" y="478" fill="#36c5f0" font-size="12" font-weight="700" letter-spacing="0.5">STAKEHOLDER POSITIONS</text>
+  <text x="80" y="500" fill="#e8e8e8" font-size="13" font-weight="600">Nadia (CFO):</text>
+  <text x="195" y="500" fill="#bcbdbe" font-size="13">wants higher SLA, willing to absorb cost</text>
+  <text x="80" y="520" fill="#e8e8e8" font-size="13" font-weight="600">Marcus (Eng):</text>
+  <text x="195" y="520" fill="#bcbdbe" font-size="13">99.95 forces on-call rotation changes</text>
+  <text x="80" y="540" fill="#e8e8e8" font-size="13" font-weight="600">Sarah (VP Prod):</text>
+  <text x="195" y="540" fill="#bcbdbe" font-size="13">defers to you on SLA, wants decision by EOW</text>
+
+  <!-- Suggestion -->
+  <rect x="68" y="564" width="700" height="70" rx="6" fill="#1a2b3d" stroke="#1d9bd1"/>
+  <text x="88" y="585" fill="#1d9bd1" font-size="11" font-weight="700" letter-spacing="0.5">💡 SUGGESTED NEXT STEP</text>
+  <text x="88" y="607" fill="#e8e8e8" font-size="13">Reply in thread with your SLA call. Want me to draft a message</text>
+  <text x="88" y="625" fill="#e8e8e8" font-size="13">proposing 99.9% with a path to 99.95% in Q3?</text>
+
+  <!-- Footer meta -->
+  <text x="68" y="664" fill="#9a9b9e" font-size="11" font-style="italic">Thread started 2 days ago · last activity 4 hours ago · link:</text>
+  <text x="390" y="664" fill="#1d9bd1" font-size="11" text-decoration="underline">slack.com/archives/C04...</text>
+</svg>

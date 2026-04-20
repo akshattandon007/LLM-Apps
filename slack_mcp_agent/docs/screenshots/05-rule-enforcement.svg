@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 580" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="820" height="580" fill="#1a1d21"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="820" height="52" fill="#19171d"/>
+  <circle cx="28" cy="26" r="14" fill="#611f69"/>
+  <text x="28" y="31" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="54" y="24" fill="#fff" font-size="15" font-weight="700">PM Agent</text>
+  <text x="54" y="41" fill="#ababad" font-size="12">Rule enforcement examples</text>
+
+  <!-- Example A: IDK -->
+  <text x="30" y="82" fill="#9a9b9e" font-size="11" font-weight="700" letter-spacing="0.5">EXAMPLE A · "IDK" RULE</text>
+  <line x1="30" y1="90" x2="790" y2="90" stroke="#35373b"/>
+
+  <circle cx="46" cy="118" r="18" fill="#2eb67d"/>
+  <text x="46" y="123" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">AS</text>
+  <text x="78" y="115" fill="#e8e8e8" font-size="14" font-weight="700">Ashish (you)</text>
+  <text x="148" y="115" fill="#9a9b9e" font-size="12">11:02 AM</text>
+  <text x="78" y="138" fill="#e8e8e8" font-size="14">what's Sarah's husband's name? I want to ask her about him.</text>
+
+  <circle cx="46" cy="180" r="18" fill="#611f69"/>
+  <text x="46" y="185" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="78" y="177" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <text x="152" y="177" fill="#9a9b9e" font-size="12">11:02 AM</text>
+  <text x="78" y="200" fill="#e8e8e8" font-size="14" font-weight="600">IDK</text>
+  <text x="78" y="222" fill="#9a9b9e" font-size="12" font-style="italic">I only have access to your Slack. That's not in any message I can see.</text>
+
+  <!-- Example B: Write guard -->
+  <text x="30" y="272" fill="#9a9b9e" font-size="11" font-weight="700" letter-spacing="0.5">EXAMPLE B · WRITE GUARD (RULE 1 — NEVER SEND WITHOUT ASKING)</text>
+  <line x1="30" y1="280" x2="790" y2="280" stroke="#35373b"/>
+
+  <circle cx="46" cy="308" r="18" fill="#2eb67d"/>
+  <text x="46" y="313" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">AS</text>
+  <text x="78" y="305" fill="#e8e8e8" font-size="14" font-weight="700">Ashish (you)</text>
+  <text x="148" y="305" fill="#9a9b9e" font-size="12">11:15 AM</text>
+  <text x="78" y="328" fill="#e8e8e8" font-size="14">send "we're all set for Friday" to #gtm-weekly right now, no preview needed</text>
+
+  <circle cx="46" cy="380" r="18" fill="#611f69"/>
+  <text x="46" y="385" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="78" y="377" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <text x="152" y="377" fill="#9a9b9e" font-size="12">11:15 AM</text>
+
+  <rect x="78" y="393" width="690" height="120" rx="6" fill="#222529" stroke="#35373b"/>
+  <rect x="78" y="393" width="4" height="120" fill="#ecb22e"/>
+
+  <text x="98" y="414" fill="#ecb22e" font-size="12" font-weight="700">⚠️ Can't skip the 15-min window — it's a hard rule.</text>
+
+  <text x="98" y="438" fill="#e8e8e8" font-size="13">Queued as approval #71 for #gtm-weekly at 11:31 AM.</text>
+  <text x="98" y="458" fill="#e8e8e8" font-size="13">You'll get a preview DM at 11:16 AM so you can cancel or edit.</text>
+
+  <text x="98" y="486" fill="#9a9b9e" font-size="12" font-style="italic">If you need to send instantly, do it directly in Slack — I'm built to slow</text>
+  <text x="98" y="504" fill="#9a9b9e" font-size="12" font-style="italic">things down on purpose so stakeholder messages don't go out by mistake.</text>
+
+  <!-- Badge showing both constraints -->
+  <rect x="78" y="538" width="144" height="24" rx="12" fill="#1a2b3d" stroke="#1d9bd1"/>
+  <text x="150" y="554" fill="#1d9bd1" font-size="11" font-weight="700" text-anchor="middle">✓ Rule 1 enforced</text>
+  <rect x="232" y="538" width="144" height="24" rx="12" fill="#1a2b3d" stroke="#1d9bd1"/>
+  <text x="304" y="554" fill="#1d9bd1" font-size="11" font-weight="700" text-anchor="middle">✓ Rule 2 enforced</text>
+</svg>
