@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 680" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="820" height="680" fill="#1a1d21"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="820" height="52" fill="#19171d"/>
+  <circle cx="28" cy="26" r="14" fill="#611f69"/>
+  <text x="28" y="31" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="54" y="24" fill="#fff" font-size="15" font-weight="700">PM Agent</text>
+  <text x="54" y="41" fill="#ababad" font-size="12">Direct message</text>
+
+  <!-- Agent pre-send notice -->
+  <circle cx="36" cy="88" r="18" fill="#611f69"/>
+  <text x="36" y="93" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="68" y="85" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <rect x="130" y="76" width="30" height="14" rx="3" fill="#262a2f" stroke="#35373b"/>
+  <text x="145" y="86" fill="#9a9b9e" font-size="9" text-anchor="middle">APP</text>
+  <text x="170" y="85" fill="#9a9b9e" font-size="12">10:15 AM</text>
+
+  <text x="68" y="108" fill="#e8e8e8" font-size="14" font-weight="600">⏰ Scheduled send in 15 minutes (approval #52)</text>
+
+  <!-- Preview card -->
+  <rect x="68" y="125" width="700" height="280" rx="6" fill="#222529" stroke="#35373b" stroke-width="1"/>
+  <rect x="68" y="125" width="4" height="280" fill="#1d9bd1"/>
+
+  <text x="88" y="150" fill="#9a9b9e" font-size="11" font-weight="700" letter-spacing="0.5">TO CHANNEL</text>
+  <text x="88" y="168" fill="#e8e8e8" font-size="13" font-weight="600">#pre-pulse-updates</text>
+
+  <text x="88" y="196" fill="#9a9b9e" font-size="11" font-weight="700" letter-spacing="0.5">REASON</text>
+  <text x="88" y="214" fill="#e8e8e8" font-size="13">Weekly ROTA `pre_pulse` reminder</text>
+
+  <text x="88" y="242" fill="#9a9b9e" font-size="11" font-weight="700" letter-spacing="0.5">DRAFT</text>
+  <rect x="88" y="250" width="660" height="90" rx="4" fill="#1a1d21" stroke="#35373b"/>
+  <text x="100" y="272" fill="#e8e8e8" font-size="13">Hey @Priya — you're up on the pre-pulse this</text>
+  <text x="100" y="292" fill="#e8e8e8" font-size="13">week. 🙏 Please share an update in-thread by</text>
+  <text x="100" y="312" fill="#e8e8e8" font-size="13">EOD Friday so we can roll it into the Monday</text>
+  <text x="100" y="332" fill="#e8e8e8" font-size="13">review.</text>
+
+  <text x="88" y="370" fill="#9a9b9e" font-size="12">Reply:</text>
+  <rect x="130" y="358" width="40" height="20" rx="4" fill="#1d9bd1"/>
+  <text x="150" y="372" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">ok 52</text>
+  <text x="178" y="372" fill="#9a9b9e" font-size="12">to approve  ·</text>
+  <rect x="262" y="358" width="60" height="20" rx="4" fill="#2a2d31" stroke="#4a4d51"/>
+  <text x="292" y="372" fill="#e8e8e8" font-size="11" font-weight="700" text-anchor="middle">cancel 52</text>
+  <text x="330" y="372" fill="#9a9b9e" font-size="12">to abort  ·</text>
+  <rect x="400" y="358" width="100" height="20" rx="4" fill="#2a2d31" stroke="#4a4d51"/>
+  <text x="450" y="372" fill="#e8e8e8" font-size="11" font-weight="700" text-anchor="middle">edit 52 &lt;text&gt;</text>
+  <text x="510" y="372" fill="#9a9b9e" font-size="12">to revise</text>
+
+  <!-- User reply -->
+  <circle cx="36" cy="448" r="18" fill="#2eb67d"/>
+  <text x="36" y="453" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">AS</text>
+  <text x="68" y="445" fill="#e8e8e8" font-size="14" font-weight="700">Ashish (you)</text>
+  <text x="138" y="445" fill="#9a9b9e" font-size="12">10:18 AM</text>
+
+  <rect x="68" y="458" width="200" height="36" rx="4" fill="#222529" stroke="#35373b"/>
+  <text x="82" y="481" fill="#e8e8e8" font-size="13" font-family="Monaco, 'Courier New', monospace">edit 52 Hey @Priya — you're up on pre-pulse this week 🙏 Share an update by EOD Thursday please (earlier this week because of the offsite).</text>
+
+  <!-- Agent confirms edit -->
+  <circle cx="36" cy="536" r="18" fill="#611f69"/>
+  <text x="36" y="541" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="68" y="533" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <text x="142" y="533" fill="#9a9b9e" font-size="12">10:18 AM</text>
+  <text x="68" y="556" fill="#e8e8e8" font-size="14">Edited and approved #52. Sending at 10:30 AM.</text>
+
+  <!-- Final confirmation -->
+  <circle cx="36" cy="612" r="18" fill="#611f69"/>
+  <text x="36" y="617" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">PM</text>
+  <text x="68" y="609" fill="#e8e8e8" font-size="14" font-weight="700">PM Agent</text>
+  <text x="142" y="609" fill="#9a9b9e" font-size="12">10:30 AM</text>
+  <text x="68" y="632" fill="#e8e8e8" font-size="14">✅ Sent #52 to #pre-pulse-updates.</text>
+  <text x="68" y="652" fill="#9a9b9e" font-size="12" font-style="italic">Priya has been notified.</text>
+</svg>

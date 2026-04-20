@@ -1,0 +1,5 @@
+anthropic>=0.39.0
+mcp>=1.0.0
+apscheduler>=3.10.4
+python-dateutil>=2.9.0
+python-dotenv>=1.0.0
