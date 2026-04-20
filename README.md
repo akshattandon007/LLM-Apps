@@ -60,6 +60,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 
 - [📑 Notion Agent](./notion-agent) — Claude Opus 4.7 agent that crawls a Notion workspace, maintains a local vector index, and answers cross-page questions with page citations. Also reads specific pages and appends sections. CLI-first. Fixes the "Notion Q&A doesn't know your workspace" complaint with proper retrieval.
 - [♾️ Browser MCP Agent](./browser-mcp-agent) — agent that drives a real browser over MCP. Navigates pages, extracts content, and completes goal-directed browsing tasks via a well-defined tool surface.
+- [💬 Slack MCP Agent](./slack-mcp-agent) — agent that connects to Slack over MCP to read channels, summarise threads, search messages, and post replies. Useful for standup digests, catch-up summaries after time off, and triaging busy channels without opening Slack.
 
 ---
 
@@ -102,9 +103,10 @@ search, or hybrid — to answer questions grounded in a document corpus.
 
 Different projects need different credentials. The common ones:
 
-- `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Prompt Library, Tutorial Builder).
+- `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Slack MCP Agent, Prompt Library, Tutorial Builder).
 - `GOOGLE_API_KEY` — for Gemini-based agents (Car-Park Agent, Meme Agent).
 - `NOTION_TOKEN` — for the Notion Agent (create an internal integration at https://www.notion.so/profile/integrations).
+- `SLACK_BOT_TOKEN` / `SLACK_TEAM_ID` — for the Slack MCP Agent (create a Slack app at https://api.slack.com/apps with the scopes listed in that project's README).
 
 Each project's README explains which keys it needs and how to configure them.
 
@@ -116,7 +118,7 @@ AI agents with support for multiple models — Claude, Gemini, OpenAI and more.
 Organised by capability so you can go straight to the pattern you want to
 learn from or reuse.
 
-**Topics:** `ai-agents` · `mcp` · `rag` · `agentic-ai` · `claude` · `gemini` · `notion-agent` · `browser-agent`
+**Topics:** `ai-agents` · `mcp` · `rag` · `agentic-ai` · `claude` · `gemini` · `notion-agent` · `browser-agent` · `slack-agent`
 
 ---
 
