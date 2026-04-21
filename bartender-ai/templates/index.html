@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BartenderAI</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --amber:#C9831A;--amber-light:#F5C968;--amber-pale:#FDF4E3;
+  --dark:#1A1208;--mid:#3D2B0E;--cream:#FAF6EF;
+  --border:rgba(201,131,26,0.3);--text:#2C1A05;--text-sec:#7A5C2E;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);min-height:100vh}
+.header{background:var(--dark);padding:24px 28px 18px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(201,131,26,0.12) 0%,transparent 70%);pointer-events:none}
+.header-top{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.bar-icon{width:42px;height:42px;background:var(--amber);border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.header h1{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:#fff}
+.header h1 em{color:var(--amber-light);font-style:italic;font-weight:400}
+.tagline{font-size:12px;color:rgba(255,255,255,0.4);padding-left:56px;margin-bottom:8px;letter-spacing:.04em}
+.social-badges{display:flex;gap:6px;padding-left:56px;flex-wrap:wrap}
+.soc-badge{font-size:11px;padding:3px 9px;border-radius:20px;font-weight:500;border:1px solid}
+.soc-tt{background:rgba(0,0,0,.4);border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.6)}
+.soc-yt{background:rgba(255,0,0,.15);border-color:rgba(255,0,0,.3);color:#ff8080}
+.soc-rd{background:rgba(255,86,0,.12);border-color:rgba(255,86,0,.3);color:#ff9060}
+.soc-x{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.6)}
+.soc-ig{background:rgba(225,48,108,.12);border-color:rgba(225,48,108,.25);color:#e1639c}
+.soc-bar{background:rgba(201,131,26,.15);border-color:rgba(201,131,26,.3);color:var(--amber-light)}
+.nav{background:var(--mid);display:flex;gap:2px;padding:10px 14px}
+.nav-btn{flex:1;padding:9px 10px;border:none;background:transparent;color:rgba(255,255,255,.45);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;border-radius:8px;cursor:pointer;transition:all .18s}
+.nav-btn:hover{background:rgba(255,255,255,.06);color:rgba(255,255,255,.7)}
+.nav-btn.active{background:var(--amber);color:var(--dark)}
+.main{padding:20px 18px;max-width:700px;margin:0 auto}
+.context-bar{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.ctx-item{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--text-sec)}
+.ctx-val{font-weight:500;color:var(--text)}
+.ctx-sep{width:1px;height:14px;background:var(--border)}
+.ctx-refresh{margin-left:auto;padding:5px 12px;border:1px solid var(--border);border-radius:8px;background:transparent;font-size:12px;color:var(--amber);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;transition:all .15s}
+.ctx-refresh:hover{background:var(--amber-pale)}
+.ctx-refresh:disabled{opacity:.4;cursor:not-allowed}
+.section-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:600;color:var(--dark);margin-bottom:5px}
+.section-sub{font-size:13px;color:var(--text-sec);margin-bottom:18px;line-height:1.5}
+.source-strip{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
+.src-chip{font-size:11px;padding:3px 9px;background:#fff;border:1px solid var(--amber);border-radius:20px;color:var(--amber)}
+.cards-grid{display:flex;flex-direction:column;gap:13px}
+.cocktail-card{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:14px;overflow:hidden;transition:box-shadow .2s}
+.cocktail-card:hover{box-shadow:0 4px 18px rgba(201,131,26,.11)}
+.card-header{display:flex;align-items:center;gap:12px;padding:14px 16px 10px}
+.card-rank{width:30px;height:30px;background:var(--amber-pale);border:1.5px solid var(--amber-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;color:var(--amber);flex-shrink:0}
+.card-name{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--dark);flex:1}
+.card-badge{font-size:11px;padding:3px 9px;border-radius:20px;font-weight:500}
+.badge-trending{background:#FFF0E0;color:#C9831A}
+.badge-viral{background:#FFEEF7;color:#C4306A}
+.badge-seasonal{background:#E8F5F0;color:#2D6A4F}
+.badge-classic{background:#EEF0FF;color:#4A52B8}
+.badge-rising{background:#FFF9E0;color:#A07800}
+.card-body{padding:0 16px 14px}
+.card-desc{font-size:13px;color:var(--text-sec);line-height:1.6;margin-bottom:8px}
+.card-why{font-size:12px;color:var(--text-sec);font-style:italic;margin-bottom:10px}
+.sources-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+.src-tag{font-size:10px;padding:2px 8px;border-radius:20px;font-weight:500}
+.src-tiktok{background:#f0f0f0;color:#555}
+.src-youtube{background:#fff0f0;color:#c00}
+.src-reddit{background:#fff4ee;color:#d44000}
+.src-x{background:#f5f5f5;color:#333}
+.src-instagram{background:#fff0f6;color:#c4306a}
+.src-bar{background:#fdf4e3;color:#c9831a}
+.src-blog{background:#f0f0ff;color:#4a52b8}
+.card-expand-btn{background:transparent;border:1px solid var(--border);border-radius:8px;padding:6px 13px;font-size:12px;font-weight:500;color:var(--amber);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s}
+.card-expand-btn:hover{background:var(--amber-pale)}
+.recipe-panel{display:none;border-top:1px solid rgba(0,0,0,.05);margin-top:10px;padding-top:12px}
+.recipe-panel.open{display:block}
+.recipe-label{font-size:10px;font-weight:500;color:var(--text-sec);text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}
+.ing-list{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.ing-tag{background:var(--amber-pale);border:1px solid rgba(201,131,26,.2);border-radius:6px;padding:3px 9px;font-size:12px;color:var(--text)}
+.steps-ol{list-style:none;counter-reset:steps}
+.steps-ol li{counter-increment:steps;display:flex;gap:9px;font-size:13px;color:var(--text);line-height:1.6;margin-bottom:7px}
+.steps-ol li::before{content:counter(steps);display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;min-width:19px;background:var(--amber);color:#fff;border-radius:50%;font-size:10px;font-weight:500;margin-top:3px}
+.tip-box{background:var(--dark);border-radius:9px;padding:11px 13px;display:flex;gap:9px;align-items:flex-start}
+.tip-label{font-size:10px;font-weight:500;color:var(--amber-light);text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px}
+.tip-text{font-size:12px;color:rgba(255,255,255,.72);line-height:1.5}
+.make-section{background:var(--dark);border-radius:16px;padding:22px;margin-bottom:18px}
+.make-section h2{font-family:'Playfair Display',serif;color:#fff;font-size:19px;margin-bottom:5px}
+.make-section .sub{color:rgba(255,255,255,.4);font-size:13px;margin-bottom:16px}
+.ing-input-row{display:flex;gap:8px;margin-bottom:9px}
+.ing-input{flex:1;padding:9px 13px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;color:#fff;font-size:14px;font-family:'DM Sans',sans-serif;outline:none;transition:border .15s}
+.ing-input::placeholder{color:rgba(255,255,255,.28)}
+.ing-input:focus{border-color:var(--amber)}
+.add-btn{width:38px;height:38px;background:var(--amber);border:none;border-radius:10px;color:var(--dark);font-size:20px;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.tags-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;min-height:28px}
+.user-tag{background:rgba(201,131,26,.18);border:1px solid rgba(201,131,26,.35);border-radius:20px;padding:3px 10px 3px 11px;font-size:12px;color:var(--amber-light);display:flex;align-items:center;gap:5px}
+.rm-btn{background:none;border:none;color:rgba(201,131,26,.55);cursor:pointer;font-size:13px;line-height:1;padding:0}
+.make-btn{width:100%;padding:12px;background:var(--amber);border:none;border-radius:11px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--dark);cursor:pointer;transition:opacity .15s}
+.make-btn:hover:not(:disabled){opacity:.87}
+.make-btn:disabled{opacity:.4;cursor:not-allowed}
+.make-hint{font-size:12px;color:rgba(255,255,255,.28);margin-top:7px;text-align:center}
+.skeleton{border-radius:8px;background:linear-gradient(90deg,#f0e8d8 25%,#e8dcc8 50%,#f0e8d8 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;height:13px;margin-bottom:7px}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.loading-wrap{padding:16px 0;display:flex;flex-direction:column;gap:4px}
+.loading-msg{font-size:13px;color:var(--text-sec);text-align:center;margin-bottom:10px}
+.loading-steps{display:flex;flex-direction:column;gap:5px}
+.loading-step{font-size:12px;color:var(--text-sec);display:flex;align-items:center;gap:7px}
+.step-dot{width:7px;height:7px;border-radius:50%;background:#ddd;flex-shrink:0}
+.step-dot.done{background:var(--amber)}
+.step-dot.active{background:var(--amber-light);animation:pulse .9s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.result-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.result-title{font-family:'Playfair Display',serif;font-size:19px;color:var(--dark);margin-bottom:3px}
+.error-box{background:#FFF5F5;border:1px solid #FFCCCC;border-radius:10px;padding:13px 15px;font-size:13px;color:#B00020;margin-top:13px}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.about-card{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:14px;padding:18px;margin-bottom:13px}
+.feature-row{display:flex;align-items:flex-start;gap:11px;margin-bottom:11px}
+.feat-icon{width:34px;height:34px;background:var(--amber-pale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.feat-text h4{font-size:14px;font-weight:500;margin-bottom:2px}
+.feat-text p{font-size:12px;color:var(--text-sec);line-height:1.5}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="bar-icon">🍸</div>
+    <h1>Bar<em>tender</em> AI</h1>
+  </div>
+  <p class="tagline">Real-time social & web intelligence · Powered by Claude claude-opus-4-5</p>
+  <div class="social-badges">
+    <span class="soc-badge soc-tt">TikTok</span>
+    <span class="soc-badge soc-yt">YouTube</span>
+    <span class="soc-badge soc-ig">Instagram</span>
+    <span class="soc-badge soc-x">X / Twitter</span>
+    <span class="soc-badge soc-rd">Reddit</span>
+    <span class="soc-badge soc-bar">Bar Menus</span>
+  </div>
+</div>
+
+<div class="nav">
+  <button class="nav-btn active" onclick="switchTab('trending',this)">🔥 Trending</button>
+  <button class="nav-btn" onclick="switchTab('make',this)">✨ Make My Cocktail</button>
+  <button class="nav-btn" onclick="switchTab('about',this)">ℹ About</button>
+</div>
+
+<div class="main">
+
+  <div id="tab-trending" class="tab-content active">
+    <div class="context-bar">
+      <div class="ctx-item">📍 <span id="ctx-loc" class="ctx-val">Detecting...</span></div>
+      <div class="ctx-sep"></div>
+      <div class="ctx-item">🌤 <span id="ctx-weather" class="ctx-val">Loading...</span></div>
+      <div class="ctx-sep"></div>
+      <div class="ctx-item">🗓 <span id="ctx-season" class="ctx-val">—</span></div>
+      <button class="ctx-refresh" id="refresh-btn" onclick="loadTrending()">↻ Refresh</button>
+    </div>
+    <p class="section-title">Top 5 Trending Cocktails</p>
+    <p class="section-sub" id="trending-sub">Sourced from TikTok, YouTube, Instagram, X, Reddit, and bar industry reports.</p>
+    <div id="cards-container"><div class="loading-wrap"><p class="loading-msg">Loading...</p><div class="skeleton" style="width:80%"></div><div class="skeleton" style="width:65%"></div></div></div>
+  </div>
+
+  <div id="tab-make" class="tab-content">
+    <div class="make-section">
+      <h2>Make My Cocktail</h2>
+      <p class="sub">Tell me what's in your cabinet. I'll search across cocktail databases, bartender communities, and social recipes.</p>
+      <div class="ing-input-row">
+        <input class="ing-input" id="ing-input" placeholder="e.g. gin, lime juice, elderflower..." onkeydown="if(event.key==='Enter')addIngredient()"/>
+        <button class="add-btn" onclick="addIngredient()">+</button>
+      </div>
+      <div class="tags-row" id="tags-row"></div>
+      <button class="make-btn" id="make-btn" onclick="makeCocktail()" disabled>Find My Cocktail ↗</button>
+      <p class="make-hint" id="make-hint">Add at least 2 ingredients</p>
+    </div>
+    <div id="make-result"></div>
+  </div>
+
+  <div id="tab-about" class="tab-content">
+    <p class="section-title" style="margin-bottom:14px;">How it works</p>
+    <div class="about-card">
+      <div class="feature-row"><div class="feat-icon">📱</div><div class="feat-text"><h4>Social platforms</h4><p>Searches TikTok, YouTube, Instagram, X/Twitter public-facing content via aggregators and search engine results.</p></div></div>
+      <div class="feature-row"><div class="feat-icon">👥</div><div class="feat-text"><h4>Bartender communities</h4><p>Pulls from r/cocktails, r/bartenders, r/mixology and professional cocktail competition results.</p></div></div>
+      <div class="feature-row"><div class="feat-icon">🍹</div><div class="feat-text"><h4>Industry sources</h4><p>Checks Difford's Guide, Punch Drink, Imbibe Magazine, and seasonal menus from top bars worldwide.</p></div></div>
+      <div class="feature-row"><div class="feat-icon">📍</div><div class="feat-text"><h4>Location + weather aware</h4><p>Combines your detected city, live weather (Open-Meteo), and season to personalise every recommendation.</p></div></div>
+    </div>
+    <div class="about-card">
+      <h4 style="font-size:14px;font-weight:500;margin-bottom:6px;">Model</h4>
+      <p style="font-size:13px;color:var(--text-sec);line-height:1.5;">Powered by <strong style="color:var(--text);">claude-opus-4-5</strong> with live web search — results are researched fresh at the moment you ask.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+let userIngredients = [];
+let ctxData = {};
+
+const SRC_MAP = {
+  tiktok:['TikTok','src-tiktok'], youtube:['YouTube','src-youtube'],
+  reddit:['Reddit','src-reddit'], x:['X/Twitter','src-x'],
+  instagram:['Instagram','src-instagram'], bar:['Bar Menus','src-bar'], blog:['Blogs','src-blog']
+};
+
+function switchTab(name,btn){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+
+function animDots(){
+  let s=0;
+  return setInterval(()=>{
+    const prev=document.getElementById('dot-'+(s-1));
+    if(prev){prev.classList.remove('active');prev.classList.add('done');}
+    const cur=document.getElementById('dot-'+s);
+    if(cur)cur.classList.add('active');
+    s++;
+  },900);
+}
+
+async function loadContext(){
+  try{
+    const r=await fetch('/api/context');
+    ctxData=await r.json();
+    document.getElementById('ctx-loc').textContent=`${ctxData.location.city}, ${ctxData.location.country}`;
+    document.getElementById('ctx-weather').textContent=`${ctxData.weather.temp}${ctxData.weather.unit} · ${ctxData.weather.desc}`;
+    document.getElementById('ctx-season').textContent=ctxData.season;
+  }catch(e){}
+}
+
+async function loadTrending(){
+  const c=document.getElementById('cards-container');
+  const btn=document.getElementById('refresh-btn');
+  btn.disabled=true;
+  const city=ctxData.location?.city||'your city';
+  c.innerHTML=`<div class="loading-wrap">
+    <p class="loading-msg">🔍 Researching across social platforms...</p>
+    <div class="loading-steps">
+      <div class="loading-step"><div class="step-dot" id="dot-0"></div>Searching TikTok viral cocktails...</div>
+      <div class="loading-step"><div class="step-dot" id="dot-1"></div>Scanning YouTube bartender trends...</div>
+      <div class="loading-step"><div class="step-dot" id="dot-2"></div>Checking Reddit r/cocktails...</div>
+      <div class="loading-step"><div class="step-dot" id="dot-3"></div>Reading X / Twitter trending drinks...</div>
+      <div class="loading-step"><div class="step-dot" id="dot-4"></div>Analysing Instagram & bar menus...</div>
+      <div class="loading-step"><div class="step-dot" id="dot-5"></div>Personalising for ${city}...</div>
+    </div>
+    <div style="margin-top:14px;"><div class="skeleton" style="width:80%"></div><div class="skeleton" style="width:65%"></div></div>
+  </div>`;
+  const anim=animDots();
+  try{
+    const r=await fetch('/api/trending',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(ctxData)});
+    const d=await r.json();
+    clearInterval(anim);
+    if(d.error)throw new Error(d.error);
+    renderCards(d.cocktails);
+    document.getElementById('trending-sub').textContent=
+      `Live results · ${ctxData.location?.city||''} · ${ctxData.weather?.temp||''}°C ${ctxData.weather?.desc||''} · ${ctxData.season||''}`;
+  }catch(e){
+    clearInterval(anim);
+    c.innerHTML=`<div class="error-box">⚠️ ${e.message||'Could not load trending cocktails. Try refreshing.'}</div>`;
+  }
+  btn.disabled=false;
+}
+
+function renderCards(cocktails){
+  const c=document.getElementById('cards-container');
+  const allSrcs=[...new Set(cocktails.flatMap(x=>x.sources||[]))];
+  const chips=allSrcs.map(s=>{const[l]=SRC_MAP[s]||[s];return`<span class="src-chip">${l}</span>`;}).join('');
+  c.innerHTML=`<div class="source-strip">${chips}</div>`+
+    cocktails.map((x,i)=>{
+      const tags=(x.sources||[]).map(s=>{const[l,cl]=SRC_MAP[s]||[s,'src-blog'];return`<span class="src-tag ${cl}">${l}</span>`;}).join('');
+      return`<div class="cocktail-card">
+        <div class="card-header">
+          <div class="card-rank">#${x.rank}</div>
+          <div class="card-name">${x.name}</div>
+          <span class="card-badge badge-${x.badge}">${x.badge}</span>
+        </div>
+        <div class="card-body">
+          <p class="card-desc">${x.description}</p>
+          <div class="sources-row">${tags}</div>
+          <p class="card-why">📣 ${x.socialBuzz||''}</p>
+          <button class="card-expand-btn" onclick="toggleRecipe(${i},this)">View Recipe ↓</button>
+          <div class="recipe-panel" id="recipe-${i}">
+            <p class="recipe-label">Ingredients</p>
+            <div class="ing-list">${(x.ingredients||[]).map(g=>`<span class="ing-tag">${g}</span>`).join('')}</div>
+            <p class="recipe-label">Method</p>
+            <ol class="steps-ol" style="margin-bottom:12px;">${(x.steps||[]).map(s=>`<li>${s}</li>`).join('')}</ol>
+            ${x.bartenderTip?`<div class="tip-box"><span style="font-size:15px;">🎩</span><div><p class="tip-label">Bartender tip</p><p class="tip-text">${x.bartenderTip}</p></div></div>`:''}
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+}
+
+function toggleRecipe(i,btn){
+  const p=document.getElementById('recipe-'+i);
+  btn.textContent=p.classList.toggle('open')?'Hide Recipe ↑':'View Recipe ↓';
+}
+
+function addIngredient(){
+  const inp=document.getElementById('ing-input');
+  inp.value.split(',').map(v=>v.trim().toLowerCase()).filter(Boolean).forEach(v=>{
+    if(!userIngredients.includes(v))userIngredients.push(v);
+  });
+  inp.value='';
+  renderTags();
+}
+
+function removeIngredient(ing){
+  userIngredients=userIngredients.filter(i=>i!==ing);
+  renderTags();
+}
+
+function renderTags(){
+  document.getElementById('tags-row').innerHTML=userIngredients.map(ing=>
+    `<span class="user-tag">${ing}<button class="rm-btn" onclick="removeIngredient('${ing.replace(/'/g,"\\'")}')">✕</button></span>`
+  ).join('');
+  const n=userIngredients.length;
+  document.getElementById('make-btn').disabled=n<2;
+  document.getElementById('make-hint').textContent=n>=2?`${n} ingredient${n>1?'s':''} added — ready!`:`Add ${2-n} more ingredient${2-n===1?'':'s'}`;
+}
+
+async function makeCocktail(){
+  const result=document.getElementById('make-result');
+  const btn=document.getElementById('make-btn');
+  btn.disabled=true;btn.textContent='🔍 Researching...';
+  result.innerHTML=`<div class="loading-wrap"><p class="loading-msg">Searching cocktail databases for your ingredients...</p><div class="skeleton" style="width:75%"></div><div class="skeleton" style="width:90%"></div></div>`;
+  try{
+    const r=await fetch('/api/make',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ingredients:userIngredients})});
+    const d=await r.json();
+    if(d.error)throw new Error(d.error);
+    const x=d.recipe;
+    result.innerHTML=`<div class="result-card">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:3px;">
+        <p class="result-title">${x.name}</p>
+        <span class="card-badge badge-trending" style="margin-top:4px;flex-shrink:0;margin-left:10px;">custom</span>
+      </div>
+      <p style="font-size:13px;color:var(--text-sec);margin-bottom:12px;">${x.tagline}</p>
+      ${x.trendingNote?`<div style="background:var(--amber-pale);border:1px solid rgba(201,131,26,.2);border-radius:8px;padding:8px 12px;font-size:12px;color:var(--amber);margin-bottom:12px;">📣 ${x.trendingNote}</div>`:''}
+      <p style="font-size:13px;color:var(--text);line-height:1.6;margin-bottom:12px;">${x.description}</p>
+      ${x.additionalIngredients?.length?`<div style="background:#FFF8F0;border:1px solid rgba(201,131,26,.2);border-radius:8px;padding:9px 12px;font-size:12px;color:var(--text-sec);margin-bottom:12px;"><strong style="color:var(--amber);">Also need:</strong> ${x.additionalIngredients.join(', ')}</div>`:''}
+      <p class="recipe-label">Ingredients</p>
+      <div class="ing-list" style="margin-bottom:12px;">${(x.ingredients||[]).map(g=>`<span class="ing-tag">${g}</span>`).join('')}</div>
+      <p class="recipe-label">Method</p>
+      <ol class="steps-ol" style="margin-bottom:12px;">${(x.steps||[]).map(s=>`<li>${s}</li>`).join('')}</ol>
+      <div class="tip-box"><span style="font-size:15px;">🎩</span><div><p class="tip-label">Bartender tip</p><p class="tip-text">${x.bartenderTip||''}</p></div></div>
+      ${x.source?`<p style="font-size:11px;color:var(--text-sec);margin-top:10px;text-align:right;">📚 ${x.source}</p>`:''}
+    </div>`;
+  }catch(e){
+    result.innerHTML=`<div class="error-box">⚠️ ${e.message||'Could not find a recipe. Try adding more ingredients.'}</div>`;
+  }
+  btn.disabled=false;btn.textContent='Find My Cocktail ↗';
+}
+
+(async()=>{await loadContext();await loadTrending();})();
+</script>
+</body>
+</html>
