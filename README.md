@@ -1,11 +1,8 @@
 <div align="center">
 
 # 🧠 LLM Apps
-
 ### AI Agent, MCP Agent & RAG projects you can clone and run
-
 **AI Agents · MCP Agents · RAG ·**
-
 **Works with Claude · Gemini · OpenAI**
 
 [![License](https://img.shields.io/github/license/akshattandon007/LLM-Apps?style=flat-square&color=blue)](./LICENSE)
@@ -48,6 +45,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [😂 Meme Agent](./meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
 - [🎙️ Book to Podcast](./Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
 - [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material, built on Claude Opus 4.6.
+- [🍸 BartenderAI Agent](./bartender-ai) — AI bartender that searches TikTok, YouTube, Instagram, X/Twitter, Reddit, and bar-industry sources in real time to surface the top 5 trending cocktails personalised to your location, live weather, and season. Includes a "Make My Cocktail" mode — enter the ingredients you have and it searches cocktail databases, Difford's Guide, and bartender communities to craft the best matching recipe. Built on Claude claude-opus-4-5 with the web search tool. Ships with both a CLI and a Flask web UI.
 
 ---
 
@@ -76,20 +74,17 @@ search, or hybrid — to answer questions grounded in a document corpus.
 ## 🚀 Getting Started
 
 1. **Clone the repository**
-
    ```bash
    git clone https://github.com/akshattandon007/LLM-Apps.git
    cd LLM-Apps
    ```
 
 2. **Navigate to the project you want to run**
-
    ```bash
    cd notion-agent          # or any other folder
    ```
 
 3. **Install dependencies** (each project has its own `requirements.txt` or `pyproject.toml`)
-
    ```bash
    python -m venv .venv && source .venv/bin/activate
    pip install -e .         # or: pip install -r requirements.txt
@@ -103,7 +98,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 
 Different projects need different credentials. The common ones:
 
-- `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Slack MCP Agent, Prompt Library, Tutorial Builder).
+- `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Slack MCP Agent, Prompt Library, Tutorial Builder, BartenderAI).
 - `GOOGLE_API_KEY` — for Gemini-based agents (Car-Park Agent, Meme Agent).
 - `NOTION_TOKEN` — for the Notion Agent (create an internal integration at https://www.notion.so/profile/integrations).
 - `SLACK_BOT_TOKEN` / `SLACK_TEAM_ID` — for the Slack MCP Agent (create a Slack app at https://api.slack.com/apps with the scopes listed in that project's README).
@@ -118,7 +113,7 @@ AI agents with support for multiple models — Claude, Gemini, OpenAI and more.
 Organised by capability so you can go straight to the pattern you want to
 learn from or reuse.
 
-**Topics:** `ai-agents` · `mcp` · `rag` · `agentic-ai` · `claude` · `gemini` · `notion-agent` · `browser-agent` · `slack-agent`
+**Topics:** `ai-agents` · `mcp` · `rag` · `agentic-ai` · `claude` · `gemini` · `notion-agent` · `browser-agent` · `slack-agent` · `bartender-ai`
 
 ---
 
