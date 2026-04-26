@@ -17,9 +17,10 @@
 
 ---
 
-A personal collection of **LLM-powered apps, AI Agents, MCP Agents, and RAG
-projects** built with Claude, Gemini, and open-source models. Each folder is
-a self-contained project with its own README and setup instructions.
+A personal collection of **LLM-powered apps, AI Agents, MCP Agents, RAG
+projects, and Browser Extensions** built with Claude, Gemini, and open-source
+models. Each folder is a self-contained project with its own README and setup
+instructions.
 
 The repository is organised by what the agent *does* — prompt engineering,
 retrieval, browsing, multimodal generation — rather than by the model
@@ -46,6 +47,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎙️ Book to Podcast](./Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
 - [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material, built on Claude Opus 4.6.
 - [🍸 BartenderAI Agent](./bartender-ai) — AI bartender that searches TikTok, YouTube, Instagram, X/Twitter, Reddit, and bar-industry sources in real time to surface the top 5 trending cocktails personalised to your location, live weather, and season. Includes a "Make My Cocktail" mode — enter the ingredients you have and it searches cocktail databases, Difford's Guide, and bartender communities to craft the best matching recipe. Built on Claude claude-opus-4-5 with the web search tool. Ships with both a CLI and a Flask web UI.
+- [🏡 Proppy — AI Real Estate Agent](./proppy-extension) — a Chrome extension that floats an animated koala on every webpage and searches Rightmove, Zoopla, OnTheMarket and the entire internet for property listings matching your saved preferences, with no backend required.
 
 ---
 
@@ -68,6 +70,7 @@ Projects that pair an LLM with a retrieval layer — vector search, keyword
 search, or hybrid — to answer questions grounded in a document corpus.
 
 - [📘 RAG API Doc Agent](./rag-api-doc-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
+
 
 ---
 
@@ -98,12 +101,12 @@ search, or hybrid — to answer questions grounded in a document corpus.
 
 Different projects need different credentials. The common ones:
 
-- `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Slack MCP Agent, Prompt Library, Tutorial Builder, BartenderAI).
+- `ANTHROPIC_API_KEY` — for any Claude-based agent (Notion Agent, Slack MCP Agent, Prompt Library, Tutorial Builder, BartenderAI, Proppy).
 - `GOOGLE_API_KEY` — for Gemini-based agents (Car-Park Agent, Meme Agent).
 - `NOTION_TOKEN` — for the Notion Agent (create an internal integration at https://www.notion.so/profile/integrations).
 - `SLACK_BOT_TOKEN` / `SLACK_TEAM_ID` — for the Slack MCP Agent (create a Slack app at https://api.slack.com/apps with the scopes listed in that project's README).
 
-Each project's README explains which keys it needs and how to configure them.
+Each project's README explains which keys it needs and how to configure them. Proppy stores its key in `chrome.storage.local` — it never leaves the browser.
 
 ---
 
@@ -113,7 +116,7 @@ AI agents with support for multiple models — Claude, Gemini, OpenAI and more.
 Organised by capability so you can go straight to the pattern you want to
 learn from or reuse.
 
-**Topics:** `ai-agents` · `mcp` · `rag` · `agentic-ai` · `claude` · `gemini` · `notion-agent` · `browser-agent` · `slack-agent` · `bartender-ai`
+**Topics:** `ai-agents` · `mcp` · `rag` · `agentic-ai` · `claude` · `gemini` · `notion-agent` · `browser-agent` · `slack-agent` · `bartender-ai` · `proppy`
 
 ---
 
