@@ -46,7 +46,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [😂 Meme Agent](./meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
 - [🎙️ Book to Podcast](./Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
 - [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material, built on Claude Opus 4.6.
-- [🍸 BartenderAI Agent](./bartender-ai) — AI bartender that searches TikTok, YouTube, Instagram, X/Twitter, Reddit, and bar-industry sources in real time to surface the top 5 trending cocktails personalised to your location, live weather, and season. Includes a "Make My Cocktail" mode — enter the ingredients you have and it searches cocktail databases, Difford's Guide, and bartender communities to craft the best matching recipe. Built on Claude claude-opus-4-5 with the web search tool. Ships with both a CLI and a Flask web UI.
+- [🍸 BartenderAI Agent](./bartender-ai) — an AI bartender that finds trending cocktails for your location and season, and crafts recipes from whatever ingredients you have at home.
 - [🏡 Proppy — AI Real Estate Agent](./proppy-extension) — a Chrome extension that floats an animated koala on every webpage and searches Rightmove, Zoopla, OnTheMarket and the entire internet for property listings matching your saved preferences, with no backend required.
 
 ---
