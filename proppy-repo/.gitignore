@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+*.zip
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Chrome extension local keys
+*.pem
+key.pem

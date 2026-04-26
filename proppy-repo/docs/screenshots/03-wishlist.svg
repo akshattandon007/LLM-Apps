@@ -1,0 +1,75 @@
+<svg width="800" height="560" viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <rect width="800" height="560" fill="#F0EEE8"/>
+  <rect x="228" y="26" width="364" height="524" rx="22" fill="rgba(0,0,0,.18)"/>
+  <rect x="224" y="22" width="364" height="524" rx="22" fill="#F5F5F5"/>
+  <!-- Header -->
+  <rect x="224" y="22" width="364" height="86" rx="22" fill="#1CB0F6"/>
+  <rect x="224" y="75" width="364" height="33" fill="#1CB0F6"/>
+  <text x="406" y="55" text-anchor="middle" font-size="20" font-weight="900" fill="white">Proppy</text>
+  <text x="406" y="72" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,.82)">Your chaotic house hunter 🏡</text>
+  <!-- Tabs -->
+  <rect x="224" y="86" width="364" height="42" fill="white"/>
+  <line x1="224" y1="128" x2="588" y2="128" stroke="#EBEBEB" stroke-width="2"/>
+  <text x="305" y="112" text-anchor="middle" font-size="12" font-weight="800" fill="#AAA">💬 Chat</text>
+  <text x="406" y="112" text-anchor="middle" font-size="12" font-weight="800" fill="#1CB0F6">⭐ Wishlist</text>
+  <line x1="406" y1="126" x2="406" y2="130" stroke="#1CB0F6" stroke-width="3"/>
+  <text x="533" y="112" text-anchor="middle" font-size="12" font-weight="800" fill="#AAA">⚙️ Config</text>
+  <!-- Scrollable content area -->
+  <!-- Section: Location -->
+  <rect x="238" y="140" width="336" height="92" rx="14" fill="white" stroke="#EBEBEB" stroke-width="1.5"/>
+  <text x="254" y="162" font-size="13" font-weight="900" fill="#2C2C2C">📍 Location</text>
+  <text x="254" y="182" font-size="11" font-weight="800" fill="#AAAAAA">CITY OR AREA</text>
+  <rect x="254" y="188" width="306" height="36" rx="10" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="266" y="210" font-size="14" fill="#2C2C2C" font-weight="500">London</text>
+  <!-- Section: Budget -->
+  <rect x="238" y="242" width="336" height="82" rx="14" fill="white" stroke="#EBEBEB" stroke-width="1.5"/>
+  <text x="254" y="264" font-size="13" font-weight="900" fill="#2C2C2C">💰 Budget</text>
+  <rect x="254" y="272" width="148" height="36" rx="10" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="266" y="294" font-size="13" fill="#AAA">Min £</text>
+  <rect x="412" y="272" width="148" height="36" rx="10" fill="#F5F5F5" stroke="#1CB0F6" stroke-width="1.5"/>
+  <text x="424" y="294" font-size="13" fill="#2C2C2C" font-weight="600">500,000</text>
+  <!-- Section: Type chips -->
+  <rect x="238" y="334" width="336" height="86" rx="14" fill="white" stroke="#EBEBEB" stroke-width="1.5"/>
+  <text x="254" y="356" font-size="13" font-weight="900" fill="#2C2C2C">🏠 Property type</text>
+  <!-- chips row 1 -->
+  <rect x="254" y="364" width="44" height="28" rx="14" fill="#E6F4FF" stroke="#0A91D0" stroke-width="1.5"/>
+  <text x="276" y="382" text-anchor="middle" font-size="12" font-weight="800" fill="#0A91D0">Flat</text>
+  <rect x="306" y="364" width="56" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="334" y="382" text-anchor="middle" font-size="12" font-weight="800" fill="#888">House</text>
+  <rect x="370" y="364" width="72" height="28" rx="14" fill="#E6F4FF" stroke="#0A91D0" stroke-width="1.5"/>
+  <text x="406" y="382" text-anchor="middle" font-size="12" font-weight="800" fill="#0A91D0">Terraced</text>
+  <rect x="450" y="364" width="66" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="483" y="382" text-anchor="middle" font-size="12" font-weight="800" fill="#888">Semi-det.</text>
+  <!-- chips row 2 -->
+  <rect x="254" y="400" width="70" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="289" y="418" text-anchor="middle" font-size="12" font-weight="800" fill="#888">Detached</text>
+  <rect x="332" y="400" width="66" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="365" y="418" text-anchor="middle" font-size="12" font-weight="800" fill="#888">Bungalow</text>
+  <rect x="406" y="400" width="52" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="432" y="418" text-anchor="middle" font-size="12" font-weight="800" fill="#888">Studio</text>
+  <!-- Must haves section -->
+  <rect x="238" y="430" width="336" height="68" rx="14" fill="white" stroke="#EBEBEB" stroke-width="1.5"/>
+  <text x="254" y="452" font-size="13" font-weight="900" fill="#2C2C2C">✨ Must haves</text>
+  <rect x="254" y="460" width="56" height="28" rx="14" fill="#E6F4FF" stroke="#0A91D0" stroke-width="1.5"/>
+  <text x="282" y="478" text-anchor="middle" font-size="12" font-weight="800" fill="#0A91D0">Garden</text>
+  <rect x="318" y="460" width="58" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="347" y="478" text-anchor="middle" font-size="12" font-weight="800" fill="#888">Parking</text>
+  <rect x="384" y="460" width="68" height="28" rx="14" fill="#E6F4FF" stroke="#0A91D0" stroke-width="1.5"/>
+  <text x="418" y="478" text-anchor="middle" font-size="12" font-weight="800" fill="#0A91D0">No Chain</text>
+  <rect x="460" y="460" width="56" height="28" rx="14" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1.5"/>
+  <text x="488" y="478" text-anchor="middle" font-size="12" font-weight="800" fill="#888">EPC C+</text>
+  <!-- Save button -->
+  <rect x="238" y="508" width="336" height="46" rx="14" fill="#1CB0F6" stroke="#0A91D0" stroke-width="1.5"/>
+  <text x="406" y="535" text-anchor="middle" font-size="16" font-weight="900" fill="white">Save wishlist ✨</text>
+  <!-- Annotations -->
+  <text x="636" y="180" font-size="12" font-weight="600" fill="#555">Section cards</text>
+  <text x="636" y="196" font-size="12" font-weight="600" fill="#555">keep groups</text>
+  <text x="636" y="212" font-size="12" font-weight="600" fill="#555">visually clear</text>
+  <line x1="578" y1="190" x2="630" y2="190" stroke="#1CB0F6" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="636" y="385" font-size="12" font-weight="600" fill="#555">Tap chips to</text>
+  <text x="636" y="401" font-size="12" font-weight="600" fill="#555">toggle filters</text>
+  <line x1="578" y1="393" x2="630" y2="393" stroke="#0A91D0" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="130" y="532" font-size="12" font-weight="600" fill="#555">Duolingo-style</text>
+  <text x="130" y="548" font-size="12" font-weight="600" fill="#555">press button</text>
+  <line x1="230" y1="531" x2="192" y2="531" stroke="#1CB0F6" stroke-width="1.5" stroke-dasharray="3,2"/>
+</svg>
