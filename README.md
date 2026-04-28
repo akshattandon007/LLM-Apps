@@ -45,9 +45,9 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🅿️ Car-Park Agent](./Car-Park-agent%20Gemini%203.1%20Pro) — multimodal browser/vision agent on Gemini 3.1 Pro.
 - [😂 Meme Agent](./meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
 - [🎙️ Book to Podcast](./Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
-- [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material, built on Claude Opus 4.6.
-- [🍸 BartenderAI Agent](./bartender-ai) — an AI bartender that finds trending cocktails for your location and season, and crafts recipes from whatever ingredients you have at home.
-- [🏡 Proppy — AI Real Estate Agent](./proppy-extension) — a Chrome extension that floats an animated koala on every webpage and searches Rightmove, Zoopla, OnTheMarket and the entire internet for property listings matching your saved preferences, with no backend required.
+- [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
+- [🍸 BartenderAI Agent](./bartender-ai) — an AI bartender that finds trending cocktails for your location and season
+- [🏡 Proppy — AI Real Estate Agent](./proppy-extension) — a Chrome extension that floats an animated koala on every webpage 
 
 ---
 
