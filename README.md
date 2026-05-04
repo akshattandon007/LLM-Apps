@@ -50,6 +50,13 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🏡 Proppy — AI Real Estate Agent](./proppy-extension) — a Chrome extension that floats an animated koala on every webpage 
 
 ---
+## 🤖 🤖 Advanced AI Agents
+
+Agent orchestration.
+
+- [🛍️ Shopping agent](./cheap-shopping-agent) - shopping agent that gets you the best deals
+
+---
 
 ## 🔌 MCP Agents
 
