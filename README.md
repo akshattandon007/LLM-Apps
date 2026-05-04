@@ -31,6 +31,7 @@ underneath, because most of these swap models freely.
 ## 📚 Table of Contents
 
 - [🤖 AI Agents](#-ai-agents)
+- [🤖 🤖 Advanced AI Agents](#-advanced-ai-agent)
 - [🔌 MCP Agents](#-mcp-agents)
 - [📀 RAG (Retrieval Augmented Generation)](#-rag-retrieval-augmented-generation)
 - [🚀 Getting Started](#-getting-started)
