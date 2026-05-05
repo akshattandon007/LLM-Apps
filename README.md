@@ -42,7 +42,7 @@ underneath, because most of these swap models freely.
 
 Single-purpose agents that use an LLM plus tools to complete a focused task.
 
-- [✍️ Prompt Engineering Agent / Prompt Library](./AI-prompt-library-promptstar-claude%20-opus-4.6) — a curated prompt library and prompt-authoring helper built on Claude Opus 4.6.
+- [✍️ Prompt Engineering Agent / Prompt Library](./AI-prompt-library-promptstar-claude%20-opus-4.6) — a curated prompt library and prompt-authoring helper
 - [🅿️ Car-Park Agent](./Car-Park-agent%20Gemini%203.1%20Pro) — multimodal browser/vision agent on Gemini 3.1 Pro.
 - [😂 Meme Agent](./meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
 - [🎙️ Book to Podcast](./Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
