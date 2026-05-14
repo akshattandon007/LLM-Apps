@@ -56,7 +56,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 Agent orchestration.
 
 - [🛍️ Shopping agent](./cheap-shopping-agent) - shopping agent that gets you the best deals
-- [🎵 Mood agent](./cheap-spotify-mood-agent) - mood predicting agent using spotify music listening habits 
+- [🎵 Mood agent](./spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
 
 ---
 
