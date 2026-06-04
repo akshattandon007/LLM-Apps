@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "live-commentary"
+version = "1.0.0"
+description = "Pluggable, multilingual live sports commentary powered by Claude."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "live-commentary contributors" }]
+keywords = ["sports", "commentary", "llm", "claude", "live", "i18n"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+# No hard runtime deps: the offline demo + tests run on the stdlib alone.
+dependencies = []
+
+[project.optional-dependencies]
+live = ["requests>=2.31"]
+claude = ["anthropic>=0.39,<1.0"]
+voice = ["gTTS>=2.5", "pyttsx3>=2.90"]
+dotenv = ["python-dotenv>=1.0"]
+all = ["requests>=2.31", "anthropic>=0.39,<1.0", "gTTS>=2.5", "pyttsx3>=2.90", "python-dotenv>=1.0"]
+
+[project.scripts]
+commentary = "livecommentary.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["livecommentary*"]
