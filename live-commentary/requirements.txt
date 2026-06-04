@@ -1,0 +1,8 @@
+# Core live providers + Claude engine. None are needed for the offline demo.
+anthropic>=0.39,<1.0     # Claude-powered, multilingual commentary engine
+requests>=2.31           # ESPN / football-data live feeds
+
+# Optional extras (install what you need):
+# python-dotenv>=1.0     # load ANTHROPIC_API_KEY from a .env file
+# gTTS>=2.5              # online text-to-speech, broad language coverage
+# pyttsx3>=2.90          # offline text-to-speech (OS voices)
