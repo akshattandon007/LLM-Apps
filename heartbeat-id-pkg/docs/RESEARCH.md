@@ -1,0 +1,174 @@
+# Research Basis — ECG Biometric Identification ("Heartbeat ID")
+
+This document summarises the scientific literature that this implementation is
+built on, written in our own words, with full citations and links to the
+original sources. Where a paper is open-access or hosted by its authors, a
+direct link is given so you can download it yourself. (We deliberately do **not**
+redistribute copyrighted publisher PDFs in this repository — see
+[*A note on the papers*](#a-note-on-the-papers) at the end.)
+
+---
+
+## 1. Why the heartbeat is a biometric
+
+A biometric is any physiological or behavioural trait that is distinctive and
+stable enough to tell people apart. Fingerprints, irises and faces are the
+familiar examples. The electrocardiogram (ECG) — the electrical signal produced
+by the heart — turns out to be another: the **position, size, shape and
+orientation of a person's heart** shape the waveform in ways that are
+consistent within an individual but differ between individuals.
+
+The idea that the ECG can be used for human recognition was established by the
+commonly cited seminal study of **Biel et al. (2001)**, who showed that
+features extracted from a standard 12-lead ECG could identify individuals. A
+recent systematic survey (**Ramos et al., 2025**, *Sensors*) traces the field
+from that starting point through two decades of work and confirms the now-standard
+processing pipeline.
+
+Compared with external biometrics, the ECG has two often-cited advantages: it is
+**intrinsically liveness-coupled** (you generally cannot collect an ECG from a
+non-living or spoofed source the way a photograph can copy a face), and it is
+**hard to observe covertly**. Its disadvantages are equally real: the signal
+changes with heart rate, exercise, stress and disease, and acquisition requires
+contact electrodes. Robustness to these variations remains the central research
+challenge (Ramos et al., 2025; Hazratifard et al., 2022).
+
+## 2. The standard pipeline
+
+Almost every ECG-biometric system — including this one — follows the same five
+stages:
+
+1. **Preprocessing.** Band-pass filtering to remove baseline wander (< 0.5 Hz,
+   from breathing and motion), powerline interference (50/60 Hz) and
+   high-frequency muscle noise, while preserving the PQRST morphology.
+
+2. **R-peak / QRS detection.** Locating each heartbeat's fiducial point. The
+   field-standard method is the **Pan–Tompkins (1985)** algorithm, which
+   band-passes the signal to 5–15 Hz, differentiates, squares, integrates over
+   a moving window, and applies adaptive thresholds. On the MIT-BIH arrhythmia
+   database the original paper reported 99.3 % correct detection.
+
+3. **Segmentation.** Extracting a fixed-length window around every R peak so all
+   beats are aligned and comparable, then amplitude-normalising them.
+
+4. **Feature extraction.** Two families are recognised in the literature
+   (Odinaka et al., 2012):
+   * *Fiducial* features — amplitudes, intervals and areas measured at the P,
+     Q, R, S, T landmarks.
+   * *Non-fiducial* features — representations that avoid precise landmark
+     detection, such as the **autocorrelation + discrete cosine transform
+     (AC/DCT)** approach of **Plataniotis et al. (2006)**, wavelet coefficients,
+     or learned features from neural networks.
+   Modern deep-learning systems often replace hand-crafted features with a CNN
+   that learns directly from the beat or its time–frequency image.
+
+5. **Classification.** Template matching (distance/similarity to a per-subject
+   average), classical classifiers (k-NN, SVM), or neural networks, for either
+   **identification** (1:N — "who is this?") or **verification** (1:1 — "are you
+   who you claim?").
+
+A recurring, practically important finding is that **fusing several
+consecutive heartbeats** (by majority vote or score averaging) raises accuracy
+sharply versus a single beat — multiple studies report jumps to ~99–100 % when
+2–3 beats are combined.
+
+## 3. How this implementation maps to the literature
+
+| Pipeline stage      | This repo                                   | Source |
+|---------------------|---------------------------------------------|--------|
+| Preprocessing       | `preprocessing.py` — Butterworth band-pass + notch | standard DSP |
+| R-peak detection    | `qrs_detection.py` — Pan–Tompkins           | Pan & Tompkins (1985) |
+| Segmentation        | `segmentation.py` — R-aligned windows, z-score, outlier rejection | Odinaka et al. (2012) |
+| Features            | `features.py` — fiducial + AC/DCT + raw beat | Plataniotis et al. (2006); Odinaka et al. (2012) |
+| Matching            | `biometric.py` — cosine template + RBF-SVM, multi-beat fusion | Ramos et al. (2025) |
+| Metrics             | identification accuracy, EER                | standard biometrics |
+
+## 4. The synthetic dummy data
+
+Because clinical ECG databases require credentialed access and data-use
+agreements, this project tests its pipeline on **synthetic** ECG generated by the
+dynamical model of **McSharry, Clifford, Tarassenko & Smith (2003)** — the model
+behind PhysioNet's **ECGSYN** generator. Three coupled ordinary differential
+equations move a point around a unit limit cycle (one lap = one beat); five
+angular Gaussian "events" push the third coordinate up and down to form the P,
+Q, R, S and T deflections. The event angles, heights and widths are exactly the
+knobs that encode an individual's morphology, so we give every synthetic subject
+a distinct, stable parameter set plus small beat-to-beat jitter and measurement
+noise. The result is a dataset in which beats from one subject cluster and
+different subjects separate — the property a real ECG biometric exploits — while
+being fully reproducible and free of privacy concerns.
+
+> **Important caveat.** Synthetic subjects are, by construction, cleanly
+> separable, so the near-perfect accuracy and ~0 % EER reported by the demo
+> validate that the *pipeline mechanics are correct* — **not** that this system
+> would achieve such numbers on real people. Real ECG biometrics must contend
+> with intra-subject variability across sessions, exercise and years; published
+> real-world equal error rates are typically a few percent, and degrade further
+> under exertion or arrhythmia (Ramos et al., 2025; Pereira et al., 2023).
+
+## 5. Real datasets to try next
+
+If you want to move beyond synthetic data, the standard public benchmarks
+(via **PhysioNet**, Goldberger et al., 2000) are the **ECG-ID Database**, the
+**MIT-BIH Arrhythmia Database**, and **PTB / PTB-XL**. The same pipeline in this
+repo can ingest those once you load them as `(label, signal)` pairs.
+
+---
+
+## References
+
+1. **Biel, L., Pettersson, O., Philipson, L., & Wide, P. (2001).** ECG analysis:
+   a new approach in human identification. *IEEE Transactions on Instrumentation
+   and Measurement, 50*(3), 808–812. https://doi.org/10.1109/19.930458
+
+2. **Pan, J., & Tompkins, W. J. (1985).** A real-time QRS detection algorithm.
+   *IEEE Transactions on Biomedical Engineering, BME-32*(3), 230–236.
+   https://doi.org/10.1109/TBME.1985.325532 — author-hosted PDF:
+   https://www.robots.ox.ac.uk/~gari/teaching/cdt/A3/readings/ECG/Pan+Tompkins.pdf
+
+3. **McSharry, P. E., Clifford, G. D., Tarassenko, L., & Smith, L. A. (2003).**
+   A dynamical model for generating synthetic electrocardiogram signals.
+   *IEEE Transactions on Biomedical Engineering, 50*(3), 289–294.
+   https://doi.org/10.1109/TBME.2003.808805 — author-hosted PDF:
+   http://web.mit.edu/~gari/www/papers/ieeetbe50p289.pdf — code (GPL, ECGSYN):
+   https://physionet.org/content/ecgsyn/1.0.0/
+
+4. **Plataniotis, K. N., Hatzinakos, D., & Lee, J. K. M. (2006).** ECG biometric
+   recognition without fiducial detection. *Biometrics Symposium*, IEEE.
+   https://doi.org/10.1109/BCC.2006.4341628
+
+5. **Odinaka, I., Lai, P.-H., Kaplan, A. D., O'Sullivan, J. A., Sirevaag, E. J.,
+   & Rohrbaugh, J. W. (2012).** ECG biometric recognition: A comparative
+   analysis. *IEEE Transactions on Information Forensics and Security, 7*(6),
+   1812–1824. https://doi.org/10.1109/TIFS.2012.2215324
+
+6. **Goldberger, A. L., et al. (2000).** PhysioBank, PhysioToolkit, and
+   PhysioNet: components of a new research resource for complex physiologic
+   signals. *Circulation, 101*(23), e215–e220. (open access)
+   https://doi.org/10.1161/01.CIR.101.23.e215 — https://physionet.org
+
+7. **Hazratifard, M., Gebali, F., & Mamun, M. (2022).** Using machine learning
+   for dynamic authentication in telehealth: A tutorial / survey of ECG-based
+   biometrics. *Sensors, 22*(19), 7691. (open access)
+   https://doi.org/10.3390/s22197691
+
+8. **Pereira, T. M., Conceição, R. C., Sencadas, V., & Sebastião, R. (2023).**
+   Biometric recognition using ECG signals: review of methods and security
+   considerations. *Sensors / ScienceDirect review*.
+   (See https://www.sciencedirect.com/science/article/abs/pii/S0022073623001346)
+
+9. **Ramos, et al. (2025).** ECG-based biometric recognition: a survey of
+   methods and databases. *Sensors, 25*(6), 1864. (open access)
+   https://doi.org/10.3390/s25061864 —
+   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11946575/
+
+### A note on the papers
+
+The most directly used references — **Pan & Tompkins (1985)** and
+**McSharry et al. (2003)** — are published by the IEEE and are under copyright,
+so we do not bundle the publisher PDFs in this repository. Both are available as
+**author-hosted open copies** at the links above, and the open-access survey
+(Ramos et al., 2025) and the ECGSYN GPL source (PhysioNet) are freely
+downloadable. The full machine-readable citation list is in
+[`references.bib`](references.bib). If you fork this repo and have legitimate
+access to the IEEE versions, you may add the PDFs to a `papers/` folder locally.
