@@ -1,0 +1,9 @@
+services:
+  flights-over-me:
+    build: .
+    container_name: flights-over-me
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: unless-stopped

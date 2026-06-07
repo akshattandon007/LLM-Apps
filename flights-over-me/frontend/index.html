@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✈ Flights Over Me — live overhead radar</title>
+
+  <!-- Leaflet (free, open-source map) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <!-- Distinctive type: Chakra Petch (instrument panel) + IBM Plex Mono (data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- ░░ HEADER / CONTROL STRIP ░░ -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="radar-dot" aria-hidden="true"></span>
+        <h1>FLIGHTS<span class="brand-accent">OVER</span>ME</h1>
+        <span class="callsign-tag">// LIVE ADS-B RADAR</span>
+      </div>
+
+      <div class="controls">
+        <div class="field">
+          <input
+            id="locationInput"
+            type="text"
+            placeholder="city or  lat, lon  →  e.g. London  /  51.51, -0.13"
+            autocomplete="off"
+          />
+          <button id="searchBtn" title="Search">SCAN</button>
+        </div>
+        <button id="geoBtn" class="ghost" title="Pin my precise GPS location and track what's above it">◎ ABOVE ME</button>
+        <label class="radius">
+          RADIUS
+          <select id="radiusSelect">
+            <option value="1">1 km</option>
+            <option value="2">2 km</option>
+            <option value="5">5 km</option>
+            <option value="10">10 km</option>
+            <option value="25">25 km</option>
+            <option value="50" selected>50 km</option>
+            <option value="100">100 km</option>
+            <option value="150">150 km</option>
+            <option value="250">250 km</option>
+          </select>
+        </label>
+        <div id="status" class="status status--idle">
+          <span class="status-led"></span><span id="statusText">STANDBY</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ░░ MAIN: MAP + SIDE PANEL ░░ -->
+    <main class="layout">
+      <section class="map-wrap">
+        <div id="map"></div>
+        <div class="map-readout">
+          <span id="mapLocation">No location set</span>
+          <span id="mapCoords" class="coords"></span>
+          <span id="mapCount" class="count">0 contacts</span>
+        </div>
+        <div id="overheadBanner" class="overhead-banner hidden">
+          <span class="oh-led"></span>
+          <span id="overheadText">OVERHEAD NOW</span>
+        </div>
+        <div class="scanline" aria-hidden="true"></div>
+      </section>
+
+      <aside class="panel">
+        <!-- FLIGHT LIST -->
+        <div class="panel-section flights-panel">
+          <div class="panel-head">
+            <h2>CONTACTS</h2>
+            <span id="listHint" class="hint">nearest first</span>
+          </div>
+          <ul id="flightList" class="flight-list">
+            <li class="empty">Scan a location to populate the board…</li>
+          </ul>
+        </div>
+
+        <!-- SELECTED FLIGHT + LLM CHAT -->
+        <div id="detail" class="panel-section detail hidden">
+          <div class="panel-head">
+            <h2 id="detailTitle">FLIGHT</h2>
+            <button id="closeDetail" class="ghost small">✕</button>
+          </div>
+          <div id="detailBody" class="detail-body"></div>
+
+          <div id="chatWrap" class="chat">
+            <div class="panel-head">
+              <h3>✦ ASK THE EXPERT</h3>
+            </div>
+            <div id="chatLog" class="chat-log"></div>
+            <div class="chat-input">
+              <input
+                id="chatInput"
+                type="text"
+                placeholder="e.g. what kind of plane is this? how far is the route?"
+              />
+              <button id="chatSend">ASK</button>
+            </div>
+            <p id="chatDisabled" class="chat-disabled hidden">
+              🔌 LLM disabled — set an API key in <code>.env</code> to chat.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      data: <a href="https://opensky-network.org" target="_blank" rel="noopener">OpenSky Network</a>
+      · routes: <a href="https://www.adsbdb.com" target="_blank" rel="noopener">adsbdb</a>
+      · maps: <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>
+      · built for plane-spotters ✈
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
