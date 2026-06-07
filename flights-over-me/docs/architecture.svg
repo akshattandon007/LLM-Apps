@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" width="980" height="560" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0 0 L8 3 L0 6 Z" fill="#3ff5a5"/>
+    </marker>
+    <style>
+      .box { fill:#0f1620; stroke:#1f7d57; stroke-width:1.5; rx:8; }
+      .ext { fill:#0f1620; stroke:#ffb454; stroke-width:1.5; }
+      .lbl { fill:#e8f3f0; font-size:15px; font-weight:600; }
+      .sub { fill:#7b8b92; font-size:11.5px; font-family:'Courier New',monospace; }
+      .edge { stroke:#3ff5a5; stroke-width:1.6; fill:none; marker-end:url(#arrow); opacity:0.8; }
+      .edge2 { stroke:#ffb454; stroke-width:1.6; fill:none; marker-end:url(#arrow); opacity:0.7; }
+      .title { fill:#3ff5a5; font-size:13px; letter-spacing:3px; font-family:'Courier New',monospace; }
+    </style>
+  </defs>
+
+  <rect width="980" height="560" fill="#070a0e"/>
+  <text x="40" y="42" class="title">// SYSTEM ARCHITECTURE</text>
+
+  <!-- Browser -->
+  <rect x="40" y="70" width="240" height="110" rx="8" class="box"/>
+  <text x="60" y="100" class="lbl">🖥️  Browser (SPA)</text>
+  <text x="60" y="124" class="sub">Leaflet radar map</text>
+  <text x="60" y="142" class="sub">flight strips + chat</text>
+  <text x="60" y="160" class="sub">WebSocket client</text>
+
+  <!-- FastAPI -->
+  <rect x="380" y="55" width="240" height="270" rx="8" class="box" stroke="#3ff5a5"/>
+  <text x="400" y="85" class="lbl">⚙️  FastAPI backend</text>
+  <line x1="380" y1="98" x2="620" y2="98" stroke="#1f7d57" stroke-opacity="0.5"/>
+  <text x="400" y="120" class="sub">/api/geocode</text>
+  <text x="400" y="140" class="sub">/api/flights</text>
+  <text x="400" y="160" class="sub">/ws/flights  (live push)</text>
+  <text x="400" y="180" class="sub">/api/chat</text>
+  <line x1="380" y1="195" x2="620" y2="195" stroke="#1f7d57" stroke-opacity="0.3"/>
+  <text x="400" y="218" class="sub">Tracker (orchestrator)</text>
+  <text x="400" y="238" class="sub">geo: bbox + haversine</text>
+  <text x="400" y="258" class="sub">enrichment TTL cache</text>
+  <text x="400" y="278" class="sub">airline lookup table</text>
+  <text x="400" y="304" class="sub">shared async httpx pool</text>
+
+  <!-- External services -->
+  <rect x="730" y="60" width="210" height="64" rx="8" class="ext"/>
+  <text x="748" y="86" class="lbl">✈️  OpenSky</text>
+  <text x="748" y="108" class="sub">live state vectors</text>
+
+  <rect x="730" y="150" width="210" height="64" rx="8" class="ext"/>
+  <text x="748" y="176" class="lbl">🛬  adsbdb</text>
+  <text x="748" y="198" class="sub">routes + aircraft type</text>
+
+  <rect x="730" y="240" width="210" height="64" rx="8" class="ext"/>
+  <text x="748" y="266" class="lbl">🗺️  Nominatim</text>
+  <text x="748" y="288" class="sub">place → lat/lon</text>
+
+  <rect x="730" y="330" width="210" height="64" rx="8" class="ext"/>
+  <text x="748" y="356" class="lbl">🤖  LLM</text>
+  <text x="748" y="378" class="sub">Claude / OpenAI</text>
+
+  <!-- edges browser <-> api -->
+  <path class="edge" d="M280 110 H378"/>
+  <path class="edge" d="M380 150 H282" />
+  <text x="290" y="102" class="sub">HTTP + WS</text>
+
+  <!-- edges api -> external -->
+  <path class="edge2" d="M620 100 C 680 100, 690 92, 728 92"/>
+  <path class="edge2" d="M620 150 C 690 150, 690 182, 728 182"/>
+  <path class="edge2" d="M620 130 C 700 130, 690 272, 728 272"/>
+  <path class="edge2" d="M620 180 C 700 180, 690 362, 728 362"/>
+
+  <!-- footer note -->
+  <text x="40" y="430" class="sub">Pipeline:  type a place  →  geocode  →  OpenSky bbox query  →  trim to circle, sort by distance</text>
+  <text x="40" y="452" class="sub">          →  enrich nearest ~25 with adsbdb (cached)  →  push snapshot every 10s over WebSocket</text>
+  <text x="40" y="474" class="sub">          →  tap a plane  →  its live data is handed to the LLM for grounded Q&amp;A</text>
+
+  <rect x="40" y="500" width="900" height="40" rx="6" fill="#0c1118" stroke="#1f7d57" stroke-opacity="0.4"/>
+  <text x="58" y="525" class="sub" fill="#3ff5a5">✓ 100% free &amp; public data sources   ·   no API key required to start   ·   LLM optional</text>
+</svg>
