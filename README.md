@@ -28,7 +28,7 @@ underneath, because most of these swap models freely.
 
 ---
 
-## 📚 Table of Contents
+## 📚 Table of Content
 
 - [🤖 AI Agents](#-ai-agents)
 - [🤖 🤖 Advanced AI Agents](#-advanced-ai-agent)
