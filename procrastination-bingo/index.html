@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procrastination Bingo</title>
+    <style>
+        :root {
+            --bg-light: #fff8e1;
+            --bg-dark: #2b2d42;
+            --primary-light: #ff9f1c;
+            --primary-dark: #ee9b00;
+            --cell-light: #fff3cd;
+            --cell-dark: #4a4e69;
+            --marked-light: #d4edda;
+            --marked-dark: #8d0801;
+            --text-light: #212529;
+            --text-dark: #f8f9fa;
+            --shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        body.dark {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+        }
+        body.light {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        h1 {
+            margin: 1rem 0 0.5rem;
+            font-size: 2rem;
+        }
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #new-board {
+            background: var(--primary-light);
+            color: white;
+        }
+        #share-board {
+            background: #6c757d;
+            color: white;
+        }
+        #toggle-mode {
+            background: #28a745;
+            color: white;
+        }
+        #timer {
+            font-weight: bold;
+            margin-left: auto;
+            min-width: 80px;
+            text-align: center;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 600px;
+        }
+        .cell {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--cell-light);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+            box-shadow: var(--shadow);
+            user-select: none;
+        }
+        .cell:hover {
+            transform: scale(1.02);
+        }
+        .cell.marked {
+            background: var(--marked-light);
+            color: var(--text-dark);
+        }
+        body.dark .cell {
+            background: var(--cell-dark);
+        }
+        body.dark .cell.marked {
+            background: var(--marked-dark);
+            color: var(--text-light);
+        }
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: hsl(var(--hue), 80%, 50%);
+            opacity: 0.8;
+            animation: fall linear forwards;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        .celebration {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 2rem 3rem;
+            border-radius: 12px;
+            text-align: center;
+            z-index: 1001;
+            font-size: 1.5rem;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+        }
+        .celebration.show {
+            display: block;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.05); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+    </style>
+</head>
+<body class="light">
+    <h1>Procrastination Bingo</h1>
+    <div class="controls">
+        <button id="new-board">New Board</button>
+        <button id="share-board">Share My Board</button>
+        <button id="toggle-mode">Dark Mode</button>
+        <div id="timer">10:00</div>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="celebration" id="celebration">
+        BINGO! 🎉
+    </div>
+    <div class="confetti" id="confetti"></div>
+
+    <script>
+        const TASKS = [
+            "Drink water",
+            "Tidy desk",
+            "Reply one email",
+            "Stretch for 1 min",
+            "Delete 3 old tabs",
+            "Write one sentence",
+            "Put away 5 things",
+            "Take a deep breath",
+            "Text one friend",
+            "Stand up and sit down 5 times",
+            "Open window for fresh air",
+            "Do 5 jumping jacks",
+            "Write a quick thank-you note",
+            "Organize one drawer",
+            "Water your plants",
+            "Check posture and adjust",
+            "Look away from screen for 20 seconds",
+            "Hum your favorite tune",
+            "Do a silly dance for 10 seconds",
+            "Write down one idea",
+            "Clear your desktop icons",
+            "Send a meme to a friend",
+            "Do a quick mindfulness breath",
+            "Stand on one foot for 15 seconds",
+            "Fold a piece of paper into a shape",
+            "List three things you're grateful for",
+            "Do a neck roll",
+            "Blink slowly 10 times",
+            "Write a haiku",
+            "Clean your mouse",
+            "Charge your devices",
+            "Update one app",
+            "Backup something important",
+            "Delete old screenshots",
+            "Unsubscribe from one newsletter",
+            "Set a reminder for tomorrow",
+            "Write a to-do list for after work",
+            "Do a wrist stretch",
+            "Eye palming for 30 seconds",
+            "Say a positive affirmation",
+            "Do a seated spinal twist",
+            "Check your voicemail",
+            "Call someone just to say hi",
+            "Organize your bookmarks",
+            "Clear your downloads folder",
+            "Do a calf raise",
+            "Sharpen a pencil",
+            "Write a postcard (don't send)",
+            "Do a finger stretch",
+            "Take three slow breaths",
+            "Stand and reach for the ceiling",
+            "Do a shoulder roll",
+            "Write a quick journal entry",
+            "Check your fridge for expired items",
+            "Wipe down your keyboard",
+            "Do a wall sit for 20 seconds",
+            "Tell yourself a joke",
+            "Do a finger snap rhythm",
+            "Check the weather",
+            "Put on a song you love",
+            "Do a tongue twister",
+            "Write a compliment to yourself",
+            "Do a quick calf stretch",
+            "Organize your pens",
+            "Check your battery levels",
+            "Do a wrist circle",
+            "Take a screenshot of something beautiful",
+            "Write a quick goal",
+            "Do a seated march",
+            "Check your spam folder",
+            "Do a seated leg extension",
+            "Write a quick idea for a side project",
+            "Do a finger touch thumb exercise",
+            "Take a mindful sip of water",
+            "Do a seated side stretch",
+            "Check your posture again",
+            "Do a quick ankle circle",
+            "Write a quick note to future you",
+            "Do a seated torso twist",
+            "Organize your phone home screen",
+            "Do a quick eye exercise",
+            "Write a quick reminder",
+            "Do a finger lift",
+            "Take a quick look outside",
+            "Do a seated hip march",
+            "Write a quick apology (don't send)",
+            "Do a seated heel-to-toe",
+            "Write a quick idea for a gift",
+            "Do a seated knee lift",
+            "Write a quick compliment to someone",
+            "Do a seated toe lift",
+            "Write a quick idea for a story",
+            "Do a seated heel lift",
+            "Write a quick idea for a meal",
+            "Do a seated ankle alphabet",
+            "Write a quick idea for a hobby",
+            "Do a seated hip abduction",
+            "Write a quick idea for a vacation",
+            "Do a seated hip adduction",
+            "Write a quick idea for a book",
+            "Do a seated shoulder blade squeeze",
+            "Write a quick idea for a project",
+            "Do a seated chest opener",
+            "Write a quick idea for a business",
+            "Do a seated neck stretch",
+            "Write a quick idea for a game",
+            "Do a seated wrist flexor stretch",
+            "Write a quick idea for a app",
+            "Do a seated wrist extensor stretch",
+            "Write a quick idea for a website",
+            "Do a seated finger stretch",
+            "Write a quick idea for a poem",
+            "Do a seated thumb stretch",
+            "Write a quick idea for a song",
+            "Do a seated palm stretch",
+            "Write a quick idea for a painting",
+            "Do a seated wrist circle",
+            "Write a quick idea for a sculpture",
+            "Do a seated elbow bend",
+            "Write a quick idea for a fashion",
+            "Do a seated wrist pronation",
+            "Write a quick idea for a invention",
+            "Do a seated wrist supination",
+            "Write a quick idea for a startup",
+            "Do a seated finger abduction",
+            "Write a quick idea for a charity",
+            "Do a seated finger adduction",
+            "Write a quick idea for a recipe",
+            "Do a seated finger opposition",
+            "Write a quick idea for a business model",
+            "Do a seated finger circumduction",
+            "Write a quick idea for a marketing plan",
+            "Do a seated finger tap",
+            "Write a quick idea for a product",
+            "Do a seated finger lift",
+            "Write a quick idea for a service",
+            "Do a seated finger press",
+            "Write a quick idea for a platform",
+            "Do a seated finger spread",
+            "Write a quick idea for a community",
+            "Do a seated finger interlock",
+            "Write a quick idea for a network",
+            "Do a seated finger wiggle",
+            "Write a quick idea for a protocol",
+            "Do a seated finger shake",
+            "Write a quick idea for a standard",
+            "Do a seated finger snap",
+            "Write a quick idea for a pro"
+        ];
+
+        const boardSize = 5;
+        const board = document.getElementById('board');
+        const celebration = document.getElementById('celebration');
+        const confettiContainer = document.getElementById('confetti');
+        const newBoardBtn = document.getElementById('new-board');
+        const shareBoardBtn = document.getElementById('share-board');
+        const toggleModeBtn = document.getElementById('toggle-mode');
+        const timerDisplay = document.getElementById('timer');
+        const body = document.body;
+
+        let tasks = [];
+        let marked = new Set();
+        let timerInterval = null;
+        let timeLeft = 600; // 10 minutes in seconds
+        let isDark = false;
+
+        function init() {
+            resetBoard();
+            startTimer();
+        }
+
+        function resetBoard() {
+            // Pick 25 unique tasks
+            const shuffled = [...TASKS].sort(() => 0.5 - Math.random());
+            tasks = shuffled.slice(0, boardSize * boardSize);
+            marked.clear();
+            renderBoard();
+            updateTimerDisplay();
+            hideCelebration();
+            stopConfetti();
+        }
+
+        function renderBoard() {
+            board.innerHTML = '';
+            tasks.forEach((task, index) => {
+                const cell = document.createElement('div');
+                cell.className = 'cell';
+                cell.textContent = task;
+                cell.dataset.index = index;
+                if (marked.has(index)) {
+                    cell.classList.add('marked');
+                }
+                cell.addEventListener('click', () => {
+                    if (!marked.has(index)) {
+                        marked.add(index);
+                        cell.classList.add('marked');
+                        cell.style.transform = 'scale(1.05)';
+                        setTimeout(() => {
+                            cell.style.transform = '';
+                        }, 200);
+                        checkBingo();
+                    }
+                });
+                board.appendChild(cell);
+            });
+        }
+
+        function checkBingo() {
+            const size = boardSize;
+            // Check rows
+            for (let r = 0; r < size; r++) {
+                let rowComplete = true;
+                for (let c = 0; c < size; c++) {
+                    if (!marked.has(r * size + c)) {
+                        rowComplete = false;
+                        break;
+                    }
+                }
+                if (rowComplete) triggerBingo();
+            }
+            // Check columns
+            for (let c = 0; c < size; c++) {
+                let colComplete = true;
+                for (let r = 0; r < size; r++) {
+                    if (!marked.has(r * size + c)) {
+                        colComplete = false;
+                        break;
+                    }
+                }
+                if (colComplete) triggerBingo();
+            }
+            // Check diagonal TL-BR
+            let diag1Complete = true;
+            for (let i = 0; i < size; i++) {
+                if (!marked.has(i * size + i)) {
+                    diag1Complete = false;
+                    break;
+                }
+            }
+            if (diag1Complete) triggerBingo();
+            // Check diagonal TR-BL
+            let diag2Complete = true;
+            for (let i = 0; i < size; i++) {
+                if (!marked.has(i * size + (size - 1 - i))) {
+                    diag2Complete = false;
+                    break;
+                }
+            }
+            if (diag2Complete) triggerBingo();
+        }
+
+        function triggerBingo() {
+            showCelebration();
+            playCelebrationSound();
+            startConfetti();
+            stopTimer();
+        }
+
+        function showCelebration() {
+            celebration.classList.add('show');
+        }
+
+        function hideCelebration() {
+            celebration.classList.remove('show');
+        }
+
+        function playCelebrationSound() {
+            // Simple beep using Web Audio API
+            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            oscillator.frequency.value = 800;
+            gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+            gainNode.gain.linearRampToValueAtTime(0.3, audioCtx.currentTime + 0.01);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
+
+            oscillator.start();
+            oscillator.stop(audioCtx.currentTime + 0.5);
+        }
+
+        function startConfetti() {
+            stopConfetti(); // clear any existing
+            const count = 150;
+            for (let i = 0; i < count; i++) {
+                createConfettiPiece();
+            }
+        }
+
+        function createConfettiPiece() {
+            const piece = document.createElement('div');
+            piece.className = 'confetti-piece';
+            const hue = Math.floor(Math.random() * 360);
+            piece.style.setProperty('--hue', hue);
+            piece.style.left = Math.random() * 100 + 'vw';
+            piece.style.top = Math.random() * -20 + 'px';
+            piece.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            piece.style.animationDelay = Math.random() * 2 + 's';
+            confettiContainer.appendChild(piece);
+        }
+
+        function stopConfetti() {
+            confettiContainer.innerHTML = '';
+        }
+
+        function startTimer() {
+            stopTimer();
+            timeLeft = 600;
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                if (timeLeft <= 0) {
+                    timeLeft = 0;
+                    updateTimerDisplay();
+                    stopTimer();
+                    // Optional: could trigger something when time runs out
+                } else {
+                    updateTimerDisplay();
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+
+        function toggleMode() {
+            isDark = !isDark;
+            body.classList.toggle('dark', isDark);
+            body.classList.toggle('light', !isDark);
+            toggleModeBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+        }
+
+        function shareBoard() {
+            // Create a data URL of the current board as an image using canvas? Simpler: generate a shareable link with encoded board state.
+            // For simplicity, we'll create a downloadable PNG via html2canvas? Not available without external lib.
+            // Instead, we'll generate a shareable link that encodes the board state in the URL (using hash).
+            // Since we cannot rely on external libs, we'll just alert a message.
+            // However, we can create a simple text representation and let user copy.
+            const boardState = {
+                tasks: tasks,
+                marked: Array.from(marked)
+            };
+            const hash = btoa(JSON.stringify(boardState));
+            const shareUrl = window.location.href.split('#')[0] + '#' + hash;
+            navigator.clipboard.writeText(shareUrl).then(() => {
+                alert('Shareable link copied to clipboard!\n' + shareUrl);
+            }).catch(err => {
+                alert('Could not copy to clipboard. Please copy this link:\n' + shareUrl);
+            });
+        }
+
+        // Handle hash change to load shared board
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                try {
+                    const decoded = JSON.parse(atob(hash));
+                    tasks = decoded.tasks;
+                    marked = new Set(decoded.marked);
+                    renderBoard();
+                } catch (e) {
+                    console.error('Invalid board state in URL', e);
+                }
+            }
+        });
+
+        // Initial load from hash if present
+        if (window.location.hash) {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                try {
+                    const decoded = JSON.parse(atob(hash));
+                    tasks = decoded.tasks;
+                    marked = new Set(decoded.marked);
+                    renderBoard();
+                } catch (e) {
+                    console.error('Invalid board state in URL', e);
+                    resetBoard();
+                }
+            } else {
+                resetBoard();
+            }
+        } else {
+            resetBoard();
+        }
+
+        newBoardBtn.addEventListener('click', resetBoard);
+        shareBoardBtn.addEventListener('click', shareBoard);
+        toggleModeBtn.addEventListener('click', toggleMode);
+    </script>
+</body>
+</html>
