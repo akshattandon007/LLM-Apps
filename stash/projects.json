@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Cozy Crochet Beanie",
+    "category": "crochet",
+    "supplies_needed": ["yarn", "crochet hook", "stitch markers", "tapestry needle", "scissors"],
+    "difficulty": "beginner",
+    "time_estimate": "3-4 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-beanie",
+    "description": "A simple, warm beanie worked in the round using basic stitches. Perfect first project."
+  },
+  {
+    "name": "Macrame Plant Hanger",
+    "category": "macrame",
+    "supplies_needed": ["macrame cord", "wooden ring", "scissors", "measuring tape"],
+    "difficulty": "beginner",
+    "time_estimate": "2 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-macrame",
+    "description": "A boho-chic plant hanger using simple square knots. Hangs any standard pot."
+  },
+  {
+    "name": "Beaded Friendship Bracelet",
+    "category": "jewelry",
+    "supplies_needed": ["beads", "elastic cord", "scissors", "clasp"],
+    "difficulty": "beginner",
+    "time_estimate": "30 minutes",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-bracelet",
+    "description": "A colourful beaded bracelet on stretch cord. Make matching ones for your best friends."
+  },
+  {
+    "name": "Fabric Scrap Quilted Coasters",
+    "category": "sewing",
+    "supplies_needed": ["fabric scraps", "needle", "thread", "batting", "scissors", "pins", "iron"],
+    "difficulty": "beginner",
+    "time_estimate": "2 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-coasters",
+    "description": "Use up your smallest fabric scraps to make a set of 4 patchwork coasters."
+  },
+  {
+    "name": "Handmade Greeting Cards",
+    "category": "paper crafts",
+    "supplies_needed": ["cardstock", "paper", "glue", "scissors", "markers", "stickers"],
+    "difficulty": "beginner",
+    "time_estimate": "45 minutes",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-cards",
+    "description": "Create beautiful, one-of-a-kind greeting cards for any occasion. No two are alike."
+  },
+  {
+    "name": "Crochet Granny Square Blanket",
+    "category": "crochet",
+    "supplies_needed": ["yarn", "crochet hook", "stitch markers", "tapestry needle", "scissors"],
+    "difficulty": "intermediate",
+    "time_estimate": "15-20 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-granny",
+    "description": "A classic granny square blanket. Make squares one at a time and join them together."
+  },
+  {
+    "name": "Polymer Clay Earrings",
+    "category": "jewelry",
+    "supplies_needed": ["clay", "rolling pin", "earring hooks", "jump rings", "pliers", "baking sheet"],
+    "difficulty": "beginner",
+    "time_estimate": "1 hour",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-earrings",
+    "description": "Stylish lightweight earrings you can shape, bake, and wear the same day."
+  },
+  {
+    "name": "Embroidered Patch",
+    "category": "embroidery",
+    "supplies_needed": ["fabric", "embroidery floss", "embroidery hoop", "needle", "scissors", "iron-on backing"],
+    "difficulty": "intermediate",
+    "time_estimate": "3-5 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-patch",
+    "description": "Design and embroider your own custom patch. Iron it onto a jacket or bag."
+  },
+  {
+    "name": "Tin Can Lanterns",
+    "category": "home decor",
+    "supplies_needed": ["tin cans", "hammer", "nail", "spray paint", "tea light candles", "wire"],
+    "difficulty": "beginner",
+    "time_estimate": "1 hour",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-lanterns",
+    "description": "Upcycle tin cans into beautiful punched-tin lanterns for your garden or patio."
+  },
+  {
+    "name": "No-Sew Fleece Pillow",
+    "category": "sewing",
+    "supplies_needed": ["fleece fabric", "scissors", "measuring tape", "pillow stuffing", "ruler"],
+    "difficulty": "beginner",
+    "time_estimate": "1 hour",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-pillow",
+    "description": "A cozy fleece pillow with knotted fringe edges. Zero sewing required."
+  },
+  {
+    "name": "Watercolour Galaxy Painting",
+    "category": "painting",
+    "supplies_needed": ["watercolour paint", "watercolour paper", "paint brushes", "water", "masking tape", "salt"],
+    "difficulty": "beginner",
+    "time_estimate": "1 hour",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-galaxy",
+    "description": "Create a dreamy galaxy scene using wet-on-wet watercolour technique and salt for stars."
+  },
+  {
+    "name": "Wooden Bead Garland",
+    "category": "home decor",
+    "supplies_needed": ["wooden beads", "string", "scissors", "tassel", "needle"],
+    "difficulty": "beginner",
+    "time_estimate": "30 minutes",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-garland",
+    "description": "A farmhouse-style wooden bead garland to drape over a vase or hang on a wall."
+  },
+  {
+    "name": "Knitted Infinity Scarf",
+    "category": "knitting",
+    "supplies_needed": ["yarn", "knitting needles", "stitch markers", "tapestry needle", "scissors"],
+    "difficulty": "beginner",
+    "time_estimate": "4-6 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-scarf",
+    "description": "A cozy infinity scarf knit in the round. Uses only knit stitch — perfect for beginners."
+  },
+  {
+    "name": "Resin Coasters",
+    "category": "resin crafts",
+    "supplies_needed": ["epoxy resin", "silicone molds", "glitter", "mixing cups", "stirring sticks", "gloves", "dried flowers"],
+    "difficulty": "intermediate",
+    "time_estimate": "2 hours + 24h cure",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-resin",
+    "description": "Gorgeous clear resin coasters with embedded dried flowers and gold flakes."
+  },
+  {
+    "name": "Paper Rose Bouquet",
+    "category": "paper crafts",
+    "supplies_needed": ["paper", "glue", "scissors", "floral wire", "floral tape"],
+    "difficulty": "intermediate",
+    "time_estimate": "2-3 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-roses",
+    "description": "A bouquet of paper roses that never wilt. Made from book pages or coloured cardstock."
+  },
+  {
+    "name": "Painted Terracotta Pots",
+    "category": "painting",
+    "supplies_needed": ["acrylic paint", "paint brushes", "terracotta pots", "sealer", "masking tape"],
+    "difficulty": "beginner",
+    "time_estimate": "1-2 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-pots",
+    "description": "Transform plain terracotta pots into colourful planters with geometric patterns or floral designs."
+  },
+  {
+    "name": "Fabric Tote Bag",
+    "category": "sewing",
+    "supplies_needed": ["fabric", "thread", "sewing machine", "scissors", "pins", "iron", "measuring tape"],
+    "difficulty": "beginner",
+    "time_estimate": "2-3 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-tote",
+    "description": "A sturdy, reusable tote bag with French seams. Customise with your favourite fabric print."
+  },
+  {
+    "name": "Candle Making",
+    "category": "home decor",
+    "supplies_needed": ["soy wax", "candle wicks", "essential oils", "glass jars", "thermometer", "double boiler"],
+    "difficulty": "beginner",
+    "time_estimate": "2 hours + 4h set",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-candles",
+    "description": "Pour your own soy wax candles scented with lavender and vanilla. Great gifts."
+  },
+  {
+    "name": "Wire-Wrapped Crystal Pendant",
+    "category": "jewelry",
+    "supplies_needed": ["wire", "crystal or stone", "wire cutters", "round-nose pliers", "chain nose pliers", "jump rings", "chain"],
+    "difficulty": "intermediate",
+    "time_estimate": "1-2 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-pendant",
+    "description": "A beautiful wire-wrapped pendant showcasing your favourite crystal or gemstone."
+  },
+  {
+    "name": "Origami Crane Mobile",
+    "category": "paper crafts",
+    "supplies_needed": ["origami paper", "string", "wooden dowel", "scissors", "needle"],
+    "difficulty": "intermediate",
+    "time_estimate": "3 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-mobile",
+    "description": "A hanging mobile of a dozen origami cranes. Peaceful and meditative to fold."
+  },
+  {
+    "name": "Embroidery Hoop Wall Art",
+    "category": "embroidery",
+    "supplies_needed": ["fabric", "embroidery hoop", "embroidery floss", "needle", "scissors", "tracing paper"],
+    "difficulty": "beginner",
+    "time_estimate": "2-4 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-hoop",
+    "description": "A modern embroidery piece framed in the hoop. Choose a quote or a botanical design."
+  },
+  {
+    "name": "Pom-Pom Rug",
+    "category": "home decor",
+    "supplies_needed": ["yarn", "pom pom maker", "scissors", "rug canvas", "hot glue gun"],
+    "difficulty": "intermediate",
+    "time_estimate": "6-8 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-pompom",
+    "description": "A fluffy, colourful rug made entirely from yarn pom-poms. So satisfying to walk on."
+  },
+  {
+    "name": "Decoupage Tray",
+    "category": "paper crafts",
+    "supplies_needed": ["wooden tray", "decorative paper", "mod podge", "foam brush", "scissors", "sealer"],
+    "difficulty": "beginner",
+    "time_estimate": "1 hour + drying",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-decoupage",
+    "description": "A beautiful serving tray covered in decoupage paper designs. Looks expensive, costs little."
+  },
+  {
+    "name": "Tie-Dye T-Shirt",
+    "category": "fabric dyeing",
+    "supplies_needed": ["white cotton t-shirt", "fabric dye", "rubber bands", "squeeze bottles", "rubber gloves", "plastic bags"],
+    "difficulty": "beginner",
+    "time_estimate": "1 hour + overnight",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-tiedye",
+    "description": "A classic spiral tie-dye t-shirt. Each one is unique. Fun to do with kids."
+  },
+  {
+    "name": "Beaded Suncatcher",
+    "category": "jewelry",
+    "supplies_needed": ["beads", "wire", "suncatcher crystal", "jump rings", "chain nose pliers", "fishing line"],
+    "difficulty": "beginner",
+    "time_estimate": "45 minutes",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-suncatcher",
+    "description": "A rainbow of beads dangling from a crystal that casts prisms across your room."
+  },
+  {
+    "name": "Sock Bunny",
+    "category": "sewing",
+    "supplies_needed": ["ankle socks", "needle", "thread", "buttons", "rice", "ribbon", "scissors", "felt"],
+    "difficulty": "beginner",
+    "time_estimate": "45 minutes",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-bunny",
+    "description": "An adorable stuffed bunny made from a single pair of socks. No sewing machine needed."
+  },
+  {
+    "name": "Pressed Flower Frame",
+    "category": "home decor",
+    "supplies_needed": ["flowers", "heavy books", "picture frame", "tweezers", "glue", "parchment paper"],
+    "difficulty": "beginner",
+    "time_estimate": "2 weeks (pressing) + 30 min",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-flowers",
+    "description": "Preserve garden flowers in a floating glass frame. A beautiful way to keep seasonal blooms."
+  },
+  {
+    "name": "Macrame Keychain",
+    "category": "macrame",
+    "supplies_needed": ["macrame cord", "key ring", "beads", "scissors", "comb"],
+    "difficulty": "beginner",
+    "time_estimate": "30 minutes",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-keychain",
+    "description": "A cute mini macrame keychain with wooden beads. Quick to make, great for gifting."
+  },
+  {
+    "name": "Cross-Stitch Sampler",
+    "category": "embroidery",
+    "supplies_needed": ["aida cloth", "embroidery floss", "embroidery hoop", "tapestry needle", "scissors", "pattern"],
+    "difficulty": "beginner",
+    "time_estimate": "5-8 hours",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-crossstitch",
+    "description": "A classic cross-stitch sampler with a cheeky quote. Counted cross-stitch is meditative."
+  },
+  {
+    "name": "Bath Bombs",
+    "category": "bath & body",
+    "supplies_needed": ["baking soda", "citric acid", "epsom salt", "essential oils", "coconut oil", "silicone molds", "witch hazel spray"],
+    "difficulty": "beginner",
+    "time_estimate": "45 minutes + 24h dry",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-bathbombs",
+    "description": "Fizzing, fragrant bath bombs in your favourite colours and scents. Customisable with dried petals."
+  },
+  {
+    "name": "Yarn-Wrapped Letters",
+    "category": "home decor",
+    "supplies_needed": ["yarn", "cardboard letters", "hot glue gun", "scissors"],
+    "difficulty": "beginner",
+    "time_estimate": "1 hour",
+    "tutorial_url": "https://www.youtube.com/watch?v=example-letters",
+    "description": "Decorative 3D letters wrapped in colourful yarn. Spell out a name for a nursery or shelf."
+  }
+]
