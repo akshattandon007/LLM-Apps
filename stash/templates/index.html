@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stash — Turn Your Supplies Into Something Beautiful</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Stash</h1>
+      <p class="tagline">Check what you've got. Make something beautiful.</p>
+    </header>
+
+    <div class="checklist-section">
+      <h2>🧶 What's in your stash?</h2>
+      <p class="hint">Check the supplies you own. We'll find projects that use them.</p>
+      <div class="supply-grid" id="supply-grid">
+        {% for supply in supplies %}
+        <label class="supply-chip">
+          <input type="checkbox" value="{{ supply }}" data-supply="{{ supply }}">
+          <span>{{ supply }}</span>
+        </label>
+        {% endfor %}
+      </div>
+      <div class="actions">
+        <span class="select-count" id="select-count">0 selected</span>
+        <button id="match-btn" class="btn-primary">✨ What can I make?</button>
+      </div>
+    </div>
+
+    <div class="results-section" id="results-section" style="display:none">
+      <h2>Projects you can make</h2>
+      <p class="hint" id="results-hint"></p>
+      <div class="project-grid" id="project-grid"></div>
+    </div>
+
+    <div class="error-section" id="error-section" style="display:none">
+      <p class="error-msg" id="error-msg"></p>
+    </div>
+
+    <footer>
+      <p>Built for crafters with stash guilt. No signup. Just make.</p>
+    </footer>
+  </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('#supply-grid input[type=checkbox]');
+    const selectCount = document.getElementById('select-count');
+    const matchBtn = document.getElementById('match-btn');
+    const resultsSection = document.getElementById('results-section');
+    const projectGrid = document.getElementById('project-grid');
+    const resultsHint = document.getElementById('results-hint');
+    const errorSection = document.getElementById('error-section');
+    const errorMsg = document.getElementById('error-msg');
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const count = document.querySelectorAll('#supply-grid input:checked').length;
+        selectCount.textContent = count + ' selected';
+      });
+    });
+
+    matchBtn.addEventListener('click', async () => {
+      const owned = [];
+      document.querySelectorAll('#supply-grid input:checked').forEach(cb => owned.push(cb.value));
+      if (owned.length < 2) {
+        errorMsg.textContent = 'Select at least 2 supplies to get started!';
+        errorSection.style.display = 'block';
+        resultsSection.style.display = 'none';
+        return;
+      }
+
+      matchBtn.textContent = 'Finding projects...';
+      matchBtn.disabled = true;
+      errorSection.style.display = 'none';
+
+      try {
+        const res = await fetch('/match', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({owned})
+        });
+        if (!res.ok) {
+          const err = await res.json();
+          throw new Error(err.error || 'Something went wrong');
+        }
+        const projects = await res.json();
+        render(projects);
+      } catch(e) {
+        errorMsg.textContent = e.message;
+        errorSection.style.display = 'block';
+        resultsSection.style.display = 'none';
+      } finally {
+        matchBtn.textContent = '✨ What can I make?';
+        matchBtn.disabled = false;
+      }
+    });
+
+    function render(projects) {
+      if (projects.length === 0) {
+        projectGrid.innerHTML = '<p class="no-results">No matches found. Try selecting more supplies!</p>';
+        resultsHint.textContent = '';
+      } else {
+        resultsHint.textContent = `Showing ${projects.length} project${projects.length > 1 ? 's' : ''}, ranked by how much you already own`;
+        projectGrid.innerHTML = projects.map(p => {
+          const difficultyClass = 'difficulty-' + p.difficulty;
+          const matchPercent = p.match_pct;
+          let matchClass = 'match-high';
+          if (matchPercent <= 50) matchClass = 'match-low';
+          else if (matchPercent <= 80) matchClass = 'match-mid';
+
+          return `
+            <div class="project-card">
+              <div class="card-header">
+                <span class="category-badge">${p.category}</span>
+                <span class="match-badge ${matchClass}">${matchPercent}% match</span>
+              </div>
+              <h3>${p.name}</h3>
+              <p class="desc">${p.description}</p>
+              <div class="meta">
+                <span class="difficulty ${difficultyClass}">${p.difficulty}</span>
+                <span class="time">⏱ ${p.time_estimate}</span>
+              </div>
+              <div class="supplies">
+                <div class="owned-supplies">
+                  <span class="label">✅ You have:</span>
+                  ${p.owned_supplies.map(s => `<span class="supply-owned">${s}</span>`).join('')}
+                </div>
+                ${p.missing_supplies.length > 0 ? `
+                <div class="missing-supplies">
+                  <span class="label">🛒 You need:</span>
+                  ${p.missing_supplies.map(s => `<span class="supply-missing">${s}</span>`).join('')}
+                </div>` : ''}
+              </div>
+              <a href="${p.tutorial_url}" class="btn-secondary" target="_blank" rel="noopener">📺 Watch tutorial</a>
+            </div>
+          `;
+        }).join('');
+      }
+      resultsSection.style.display = 'block';
+      resultsSection.scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>
