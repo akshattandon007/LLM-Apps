@@ -49,6 +49,8 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
 - [🍸 BartenderAI Agent](./bartender-ai) — an AI bartender that finds trending cocktails for your location and season
 - [🏡 Proppy — AI Real Estate Agent](./proppy-extension) — a Chrome extension that floats an animated koala on every webpage 
+- [🧵 regex-please](./regex-please) — natural language → regex with live ANSI-highlighted matches in the terminal
+- [🧶 Stash](./stash) — tick the craft supplies you own, get project ideas that use them. Warm web UI, no signup.
 
 ---
 ## 🤖 🤖 Advanced AI Agents
