@@ -83,7 +83,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 Projects that pair an LLM with a retrieval layer — vector search, keyword
 search, or hybrid — to answer questions grounded in a document corpus.
 
-- [📘 RAG API Doc Agent](./rag/api-doc-rag-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
+- [📘 RAG Agent](./rag/rag-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
 
 
 ---
