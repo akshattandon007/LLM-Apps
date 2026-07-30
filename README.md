@@ -42,26 +42,26 @@ underneath, because most of these swap models freely.
 
 Single-purpose agents that use an LLM plus tools to complete a focused task.
 
-- [✍️ Prompt Engineering Agent / Prompt Library](./AI-prompt-library-promptstar-claude%20-opus-4.6) — a curated prompt library and prompt-authoring helper
-- [🅿️ Car-Park Agent](./Car-Park-agent%20Gemini%203.1%20Pro) — multimodal browser/vision agent on Gemini 3.1 Pro.
-- [😂 Meme Agent](./meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
-- [🎙️ Book to Podcast](./Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
-- [🎓 Tutorial Builder Agent](./tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
-- [🍸 BartenderAI Agent](./bartender-ai) — an AI bartender that finds trending cocktails for your location and season
-- [🏡 Proppy — AI Real Estate Agent](./proppy-extension) — a Chrome extension that floats an animated koala on every webpage 
-- [🧵 regex-please](./regex-please) — natural language → regex with live ANSI-highlighted matches in the terminal
-- [🧶 Stash](./stash) — tick the craft supplies you own, get project ideas that use them. Warm web UI, no signup.
-- [🎯 Procrastination Bingo](./procrastination-bingo) — 5x5 bingo board of tiny tasks. Get bingo in 10 minutes and celebrate with confetti.
-- [🚗 Road Trip Quest](./road-trip-quest) — turn every family drive into a live storytelling adventure with chapters, challenges, and trivia
-- [👵 Grandma's Voice](./grandmas-voice) — record a loved one's voice and generate bedtime stories narrated by them
+- [✍️ Prompt Engineering Agent / Prompt Library](./ai-agents/AI-prompt-library-promptstar-claude%20-opus-4.6) — a curated prompt library and prompt-authoring helper
+- [🅿️ Car-Park Agent](./ai-agents/Car-Park-agent%20Gemini%203.1%20Pro) — multimodal browser/vision agent on Gemini 3.1 Pro.
+- [😂 Meme Agent](./ai-agents/meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
+- [🎙️ Book to Podcast](./ai-agents/Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
+- [🎓 Tutorial Builder Agent](./ai-agents/tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
+- [🍸 BartenderAI Agent](./ai-agents/bartender-ai) — an AI bartender that finds trending cocktails for your location and season
+- [🏡 Proppy — AI Real Estate Agent](./ai-agents/proppy-repo) — a Chrome extension that floats an animated koala on every webpage 
+- [🧵 regex-please](./ai-agents/regex-please) — natural language → regex with live ANSI-highlighted matches in the terminal
+- [🧶 Stash](./ai-agents/stash) — tick the craft supplies you own, get project ideas that use them. Warm web UI, no signup.
+- [🎯 Procrastination Bingo](./ai-agents/procrastination-bingo) — 5x5 bingo board of tiny tasks. Get bingo in 10 minutes and celebrate with confetti.
+- [🚗 Road Trip Quest](./ai-agents/road-trip-quest) — turn every family drive into a live storytelling adventure with chapters, challenges, and trivia
+- [👵 Grandma's Voice](./ai-agents/grandmas-voice) — record a loved one's voice and generate bedtime stories narrated by them
 
 ---
 ## 🤖 🤖 Advanced AI Agents
 
 Agent orchestration.
 
-- [🛍️ Shopping agent](./cheap-shopping-agent) - shopping agent that gets you the best deals
-- [🎵 Mood agent](./spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
+- [🛍️ Shopping agent](./advanced-ai-agents/cheap-shopping-agent) - shopping agent that gets you the best deals
+- [🎵 Mood agent](./advanced-ai-agents/spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
 
 ---
 
@@ -72,9 +72,9 @@ Agents that talk to external services (Notion, browsers, etc.) over the
 that maps to a real-world system. Each agent here exposes a small, opinionated
 toolset to Claude and runs an agent loop with citations and auditable writes.
 
-- [📑 Notion Agent](./notion-agent) — Claude Opus 4.7 agent that crawls a Notion workspace, maintains a local vector index, and answers cross-page questions with page citations. Also reads specific pages and appends sections. CLI-first. Fixes the "Notion Q&A doesn't know your workspace" complaint with proper retrieval.
-- [♾️ Browser MCP Agent](./browser-mcp-agent) — agent that drives a real browser over MCP. Navigates pages, extracts content, and completes goal-directed browsing tasks via a well-defined tool surface.
-- [💬 Slack MCP Agent](./slack-mcp-agent) — agent that connects to Slack over MCP to read channels, summarise threads, search messages, and post replies. Useful for standup digests, catch-up summaries after time off, and triaging busy channels without opening Slack.
+- [📑 Notion Agent](./mcp-agents/notion-agent) — Claude Opus 4.7 agent that crawls a Notion workspace, maintains a local vector index, and answers cross-page questions with page citations. Also reads specific pages and appends sections. CLI-first. Fixes the "Notion Q&A doesn't know your workspace" complaint with proper retrieval.
+- [♾️ Browser MCP Agent](./mcp-agents/browser-mcp-agent) — agent that drives a real browser over MCP. Navigates pages, extracts content, and completes goal-directed browsing tasks via a well-defined tool surface.
+- [💬 Slack MCP Agent](./mcp-agents/slack_mcp_agent) — agent that connects to Slack over MCP to read channels, summarise threads, search messages, and post replies. Useful for standup digests, catch-up summaries after time off, and triaging busy channels without opening Slack.
 
 ---
 
@@ -83,7 +83,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 Projects that pair an LLM with a retrieval layer — vector search, keyword
 search, or hybrid — to answer questions grounded in a document corpus.
 
-- [📘 RAG API Doc Agent](./rag-api-doc-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
+- [📘 RAG API Doc Agent](./rag/api-doc-rag-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
 
 
 ---
@@ -98,7 +98,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 
 2. **Navigate to the project you want to run**
    ```bash
-   cd notion-agent          # or any other folder
+   cd mcp-agents/notion-agent          # or any other folder
    ```
 
 3. **Install dependencies** (each project has its own `requirements.txt` or `pyproject.toml`)
