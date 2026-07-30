@@ -52,6 +52,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🧵 regex-please](./regex-please) — natural language → regex with live ANSI-highlighted matches in the terminal
 - [🧶 Stash](./stash) — tick the craft supplies you own, get project ideas that use them. Warm web UI, no signup.
 - [🎯 Procrastination Bingo](./procrastination-bingo) — 5x5 bingo board of tiny tasks. Get bingo in 10 minutes and celebrate with confetti.
+- [🚗 Road Trip Quest](./road-trip-quest) — turn every family drive into a live storytelling adventure with chapters, challenges, and trivia
 
 ---
 ## 🤖 🤖 Advanced AI Agents
