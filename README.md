@@ -54,6 +54,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎯 Procrastination Bingo](./ai-agents/procrastination-bingo) — 5x5 bingo board of tiny tasks. Get bingo in 10 minutes and celebrate with confetti.
 - [🚗 Road Trip Quest](./ai-agents/road-trip-quest) — turn every family drive into a live storytelling adventure with chapters, challenges, and trivia
 - [👵 Grandma's Voice](./ai-agents/grandmas-voice) — record a loved one's voice and generate bedtime stories narrated by them
+- [🐾 What's My Pet Thinking?](./ai-agents/whats-my-pet-thinking) — describe your pet's weird behavior, get their hilarious inner monologue
 
 ---
 ## 🤖 🤖 Advanced AI Agents
