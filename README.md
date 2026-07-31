@@ -55,6 +55,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🚗 Road Trip Quest](./ai-agents/road-trip-quest) — turn every family drive into a live storytelling adventure with chapters, challenges, and trivia
 - [👵 Grandma's Voice](./ai-agents/grandmas-voice) — record a loved one's voice and generate bedtime stories narrated by them
 - [🐾 What's My Pet Thinking?](./ai-agents/whats-my-pet-thinking) — describe your pet's weird behavior, get their hilarious inner monologue
+- [🎁 The Gift](./ai-agents/the-gift) — describe someone you love, get a personalized gift idea + poem that shows you actually know them
 
 ---
 ## 🤖 🤖 Advanced AI Agents
