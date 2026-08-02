@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --color-bg: #0a0a0f;
+  --color-surface: #12121a;
+  --color-accent: #a855f7;
+  --color-glow: #c084fc;
+  --color-text: #e4e4e7;
+  --color-muted: #71717a;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, sans-serif;
+}
