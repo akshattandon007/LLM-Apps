@@ -65,6 +65,7 @@ Agent orchestration.
 
 - [🛍️ Shopping agent](./advanced-ai-agents/cheap-shopping-agent) - shopping agent that gets you the best deals
 - [🎵 Mood agent](./advanced-ai-agents/spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
+- [🎧 Gesture DJ](./advanced-ai-agents/gesture-dj) - camera-powered music agent that reads the room and adapts the vibe in real-time 
 
 ---
 
