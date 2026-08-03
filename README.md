@@ -57,6 +57,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🐾 What's My Pet Thinking?](./ai-agents/whats-my-pet-thinking) — describe your pet's weird behavior, get their hilarious inner monologue
 - [🎁 The Gift](./ai-agents/the-gift) — describe someone you love, get a personalized gift idea + poem that shows you actually know them
 - [📜 Myth](./ai-agents/myth) — fake Wikipedia articles about your friends. Pick an era, get an infobox, dubious citations, and a legacy they don't deserve.
+- [🎭 TextPersona](./ai-agents/text-persona) — type a message, pick a persona (Yoda, Pirate, Shakespeare…), and the AI rewrites it in character
 
 ---
 ## 🤖 🤖 Advanced AI Agents
