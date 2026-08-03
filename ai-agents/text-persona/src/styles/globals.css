@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --color-bg: oklch(0.985 0 0);
+  --color-surface: oklch(1 0 0);
+  --color-text: oklch(0.145 0 0);
+  --color-text-muted: oklch(0.556 0 0);
+  --color-border: oklch(0.922 0 0);
+}
+
+.dark {
+  --color-bg: oklch(0.145 0 0);
+  --color-surface: oklch(0.205 0 0);
+  --color-text: oklch(0.985 0 0);
+  --color-text-muted: oklch(0.65 0 0);
+  --color-border: oklch(0.269 0 0);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Fade-in animation for output */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeSlideIn 0.4s ease-out;
+}
