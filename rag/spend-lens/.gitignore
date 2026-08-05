@@ -1,0 +1,42 @@
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ─── Virtual environments ─────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ─── IDE ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ─── Project-specific ────────────────────────────────────
+data/faiss_index/       # FAISS index files (regenerated at runtime)
+*.faiss
+*.pkl
+cache/
+
+# ─── Frontend ─────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# ─── Logs ─────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Secrets ──────────────────────────────────────────────
+.env
