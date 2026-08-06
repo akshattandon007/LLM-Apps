@@ -91,6 +91,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 
 - [📘 RAG Agent](./rag/rag-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
 - [🎙️ Earworm](./rag/earworm) — semantic search across your podcast library. Ingests transcripts, chunks at topic boundaries, and answers questions with show/episode citations.
+- [💰 SpendLens](./rag/spend-lens) — ask your bank statements anything. Ingests CSVs, embeds transactions, and answers spending questions with grounded answers.
 
 
 ---
