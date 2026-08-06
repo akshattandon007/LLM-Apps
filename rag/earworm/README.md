@@ -1,6 +1,6 @@
 # Earworm
 
-🎙️ **Remember that episode? I will find it for you.**
+🎙️ **Remember that episode? I'll find it for you.**
 
 Earworm is a RAG-powered podcast transcript search engine. It ingests podcast
 transcripts, chunks them at semantic boundaries, embeds them with
