@@ -1,0 +1,15 @@
+# Earworm — RAG-powered podcast transcript search engine
+#
+# Core deps
+streamlit>=1.28.0
+sentence-transformers>=2.6.0
+faiss-cpu>=1.7.4
+feedparser>=6.0.10
+requests>=2.31.0
+numpy>=1.24.0
+
+# Optional: audio transcription
+# openai-whisper>=20231117
+
+# Dev
+pytest>=7.4.0

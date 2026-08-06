@@ -90,6 +90,7 @@ Projects that pair an LLM with a retrieval layer — vector search, keyword
 search, or hybrid — to answer questions grounded in a document corpus.
 
 - [📘 RAG Agent](./rag/rag-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
+- [🎙️ Earworm](./rag/earworm) — semantic search across your podcast library. Ingests transcripts, chunks at topic boundaries, and answers questions with show/episode citations.
 
 
 ---
