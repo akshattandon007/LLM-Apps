@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+.chat-container {
+  @apply max-w-3xl mx-auto px-4 py-8;
+}
+
+.file-upload-zone {
+  @apply border-2 border-dashed border-gray-300 rounded-xl p-8 text-center
+         transition-colors duration-200 cursor-pointer;
+}
+
+.file-upload-zone:hover {
+  @apply border-brand-500 bg-brand-50;
+}
+
+.file-upload-zone.has-file {
+  @apply border-green-400 bg-green-50;
+}
+
+.answer-card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-4;
+}
+
+.answer-card .answer-text {
+  @apply text-gray-800 leading-relaxed mb-4;
+}
+
+.answer-card .clause-citation {
+  @apply bg-gray-50 rounded-lg p-3 text-sm text-gray-600 border border-gray-100 mb-3;
+}
+
+.answer-card .caveat-box {
+  @apply bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-800;
+}
+
+.domain-badge {
+  @apply inline-block text-xs font-medium px-2.5 py-0.5 rounded-full;
+}
+
+.domain-badge.RENT { @apply bg-blue-100 text-blue-800; }
+.domain-badge.TERMINATION { @apply bg-red-100 text-red-800; }
+.domain-badge.ACCESS { @apply bg-purple-100 text-purple-800; }
+.domain-badge.MAINTENANCE { @apply bg-orange-100 text-orange-800; }
+.domain-badge.PETS { @apply bg-green-100 text-green-800; }
+.domain-badge.SUBLETTING { @apply bg-teal-100 text-teal-800; }
+.domain-badge.DEPOSIT { @apply bg-yellow-100 text-yellow-800; }
+.domain-badge.UTILITIES { @apply bg-cyan-100 text-cyan-800; }
+.domain-badge.GENERAL { @apply bg-gray-100 text-gray-800; }
+
+.message-input {
+  @apply w-full rounded-xl border border-gray-300 px-4 py-3 pr-12
+         focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent
+         placeholder-gray-400 resize-none;
+}
+
+.send-button {
+  @apply absolute right-2 bottom-2 p-2 rounded-lg bg-brand-600 text-white
+         hover:bg-brand-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.loading-dots::after {
+  content: '';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0% { content: ''; }
+  25% { content: '.'; }
+  50% { content: '..'; }
+  75% { content: '...'; }
+  100% { content: ''; }
+}

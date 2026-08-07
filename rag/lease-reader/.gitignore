@@ -1,0 +1,34 @@
+# Lease Reader — .gitignore
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+
+# Runtime data
+data/*.faiss
+data/*.json
+data/*.pdf
+!data/*.py  # keep the sample lease generator
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
