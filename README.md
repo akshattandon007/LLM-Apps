@@ -94,6 +94,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [👨‍👩‍👧‍👦 Family Lore](./rag/family-lore) — search your family's scattered messages, emails, and chats by meaning. WhatsApp exports, iMessage archives, and Gmail in one place. 'What did Dad say about the roof in 2019? It already knows.'
 - [💰 SpendLens](./rag/spend-lens) — ask your bank statements anything. Ingests CSVs, embeds transactions, and answers spending questions with grounded answers.
 - [⚖️ Lease Reader](./rag/lease-reader) — upload a rental agreement PDF, ask questions about your rights and obligations. Domain-classified retrieval with clause citations and a caveat engine for ambiguous terms.
+- [🎯 Recall](./rag/recall) — upload meeting transcripts and ask "What did we decide?" Get speaker-attributed answers with timestamps. Intent-classified retrieval for decisions, action items, and opinions.
 
 
 ---
