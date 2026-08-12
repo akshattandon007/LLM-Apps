@@ -58,6 +58,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎁 The Gift](./ai-agents/the-gift) — describe someone you love, get a personalized gift idea + poem that shows you actually know them
 - [📜 Myth](./ai-agents/myth) — fake Wikipedia articles about your friends. Pick an era, get an infobox, dubious citations, and a legacy they don't deserve.
 - [🎭 TextPersona](./ai-agents/text-persona) — type a message, pick a persona (Yoda, Pirate, Shakespeare…), and the AI rewrites it in character
+- [🎙️ VoiceVault](./ai-agents/voice-vault) — record loved ones' voices, ask them anything, get answers in their voice — an interactive audio keepsake
 
 ---
 ## 🤖 🤖 Advanced AI Agents
