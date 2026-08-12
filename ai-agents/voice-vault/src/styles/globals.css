@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: warmlight --default, warmdark;
+}
+
+/* ── Warm light theme ─────────────────────────────────────── */
+@plugin "daisyui/theme" {
+  name: "warmlight";
+  default: true;
+  color-scheme: light;
+  --color-base-100: #faf6f0;
+  --color-base-200: #f3ece2;
+  --color-base-300: #e8dfd0;
+  --color-base-content: #3a2e28;
+  --color-primary: #c2705a;
+  --color-primary-content: #faf6f0;
+  --color-secondary: #d9a441;
+  --color-secondary-content: #3a2e28;
+  --color-accent: #b06a7c;
+  --color-accent-content: #faf6f0;
+  --color-neutral: #8b7d72;
+  --color-neutral-content: #faf6f0;
+  --color-info: #5b8f9e;
+  --color-info-content: #faf6f0;
+  --color-success: #7a9e7a;
+  --color-success-content: #faf6f0;
+  --color-warning: #d9a441;
+  --color-warning-content: #3a2e28;
+  --color-error: #c25656;
+  --color-error-content: #faf6f0;
+  --radius-selector: 0.75rem;
+  --radius-field: 0.625rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* ── Warm dark theme ──────────────────────────────────────── */
+@plugin "daisyui/theme" {
+  name: "warmdark";
+  color-scheme: dark;
+  --color-base-100: #221a16;
+  --color-base-200: #2d241f;
+  --color-base-300: #3a2e28;
+  --color-base-content: #f5ece1;
+  --color-primary: #d48a75;
+  --color-primary-content: #221a16;
+  --color-secondary: #e0b454;
+  --color-secondary-content: #221a16;
+  --color-accent: #c28090;
+  --color-accent-content: #221a16;
+  --color-neutral: #8b7d72;
+  --color-neutral-content: #f5ece1;
+  --color-info: #6da0b0;
+  --color-info-content: #221a16;
+  --color-success: #8ab08a;
+  --color-success-content: #221a16;
+  --color-warning: #e0b454;
+  --color-warning-content: #221a16;
+  --color-error: #d46a6a;
+  --color-error-content: #221a16;
+  --radius-selector: 0.75rem;
+  --radius-field: 0.625rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@theme inline {
+  --font-serif: "Georgia", "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+  --font-story: "Georgia", "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ── Waveform canvas ──────────────────────────────────────── */
+.waveform-canvas {
+  width: 100%;
+  height: 64px;
+  border-radius: var(--radius-field);
+}
+
+/* ── Story text ───────────────────────────────────────────── */
+.story-text {
+  font-family: var(--font-story);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-base-content);
+}
+
+/* ── Audio player bar ─────────────────────────────────────── */
+.audio-progress {
+  accent-color: var(--color-primary);
+}
