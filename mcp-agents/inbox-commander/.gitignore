@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Environment & secrets — never commit
+.env
+credentials.json
+token.json
+
+# OS
+.DS_Store
+
+# Local data
+data/
