@@ -81,6 +81,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 
 - [📑 Notion Agent](./mcp-agents/notion-agent) — Claude Opus 4.7 agent that crawls a Notion workspace, maintains a local vector index, and answers cross-page questions with page citations. Also reads specific pages and appends sections. CLI-first. Fixes the "Notion Q&A doesn't know your workspace" complaint with proper retrieval.
 - [♾️ Browser MCP Agent](./mcp-agents/browser-mcp-agent) — agent that drives a real browser over MCP. Navigates pages, extracts content, and completes goal-directed browsing tasks via a well-defined tool surface.
+- [🎨 Figma MCP Agent](./mcp-agents/figma-agent) — design files ↔ code. Extract specs, export assets, style tokens.
 - [📥 Inbox Commander](./mcp-agents/inbox-commander) — Gmail MCP agent — triage your inbox to zero. Summarize threads, draft replies, gate sends.
 - [💬 Slack MCP Agent](./mcp-agents/slack_mcp_agent) — agent that connects to Slack over MCP to read channels, summarise threads, search messages, and post replies. Useful for standup digests, catch-up summaries after time off, and triaging busy channels without opening Slack.
 
