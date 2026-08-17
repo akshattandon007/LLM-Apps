@@ -69,6 +69,7 @@ Agent orchestration.
 - [🎵 Mood agent](./advanced-ai-agents/spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
 - [🔁 PR Auto-Pilot](./advanced-ai-agents/pr-auto-pilot) — end-to-end PR review agent. Review diffs, patch bugs, run tests, and post reports.
 - [🎧 Gesture DJ](./advanced-ai-agents/gesture-dj) - camera-powered music agent that reads the room and adapts the vibe in real-time 
+- [🛡️ Icarus](./advanced-ai-agents/icarus) — incident remediation agent. Your SRE on autopilot: alert → triage → RCA → fix → post-mortem.
 - [🔨 TraceForge](./advanced-ai-agents/traceforge) - self-improving agent loop: capture traces, curate good runs, extract reusable skills
 
 ---
