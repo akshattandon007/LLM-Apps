@@ -65,11 +65,12 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 
 Agent orchestration.
 
-- [🛍️ Shopping agent](./advanced-ai-agents/cheap-shopping-agent) - shopping agent that gets you the best deals
-- [🎵 Mood agent](./advanced-ai-agents/spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
-- [🔁 PR Auto-Pilot](./advanced-ai-agents/pr-auto-pilot) — end-to-end PR review agent. Review diffs, patch bugs, run tests, and post reports.
+- [👁️ ARGUS](./advanced-ai-agents/argus) — deep research agent. Generate sub-questions, crawl 4 sources, cross-reference, and deliver cited reports.
 - [🎧 Gesture DJ](./advanced-ai-agents/gesture-dj) - camera-powered music agent that reads the room and adapts the vibe in real-time 
 - [🛡️ Icarus](./advanced-ai-agents/icarus) — incident remediation agent. Your SRE on autopilot: alert → triage → RCA → fix → post-mortem.
+- [🎵 Mood agent](./advanced-ai-agents/spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
+- [🔁 PR Auto-Pilot](./advanced-ai-agents/pr-auto-pilot) — end-to-end PR review agent. Review diffs, patch bugs, run tests, and post reports.
+- [🛍️ Shopping agent](./advanced-ai-agents/cheap-shopping-agent) - shopping agent that gets you the best deals
 - [🔨 TraceForge](./advanced-ai-agents/traceforge) - self-improving agent loop: capture traces, curate good runs, extract reusable skills
 
 ---
