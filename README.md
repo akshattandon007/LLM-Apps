@@ -66,6 +66,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 Agent orchestration.
 
 - [👁️ ARGUS](./advanced-ai-agents/argus) — deep research agent. Generate sub-questions, crawl 4 sources, cross-reference, and deliver cited reports.
+- [📊 AlphaBrief](./advanced-ai-agents/alphabrief) — financial intelligence multi-agent system. Portfolio tracking, technical analysis, SEC filings, sentiment, risk metrics, daily briefing.
 - [🎧 Gesture DJ](./advanced-ai-agents/gesture-dj) - camera-powered music agent that reads the room and adapts the vibe in real-time 
 - [🛡️ Icarus](./advanced-ai-agents/icarus) — incident remediation agent. Your SRE on autopilot: alert → triage → RCA → fix → post-mortem.
 - [🎵 Mood agent](./advanced-ai-agents/spotify-mood-agent) - mood predicting agent using Spotify music listening habits 
