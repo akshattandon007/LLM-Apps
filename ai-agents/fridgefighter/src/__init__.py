@@ -1,0 +1,1 @@
+# FridgeFighter — gamified fridge food tracker
