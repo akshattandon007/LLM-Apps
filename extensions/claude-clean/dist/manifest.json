@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Clean",
+  "version": "0.1.0",
+  "description": "Clean up Claude-generated text by varying vocabulary and restructuring sentences to change statistical properties.",
+  "icons": {
+    "16": "public/icon16.svg",
+    "48": "public/icon48.svg",
+    "128": "public/icon128.svg"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_title": "Claude Clean",
+    "default_icon": {
+      "16": "public/icon16.svg",
+      "48": "public/icon48.svg",
+      "128": "public/icon128.svg"
+    }
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/claude-content.ts-loader-DQ7GMJkg.js"
+      ],
+      "matches": [
+        "https://claude.ai/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://claude.ai/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://claude.ai/*"
+      ],
+      "resources": [
+        "assets/local-transform-_g-oIdXz.js",
+        "assets/claude-content.ts-GqfM-5h7.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
