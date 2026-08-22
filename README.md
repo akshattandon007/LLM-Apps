@@ -34,6 +34,7 @@ underneath, because most of these swap models freely.
 - [🤖 🤖 Advanced AI Agents](#-advanced-ai-agent)
 - [🔌 MCP Agents](#-mcp-agents)
 - [📀 RAG (Retrieval Augmented Generation)](#-rag-retrieval-augmented-generation)
+- [🧩 Extensions](#-extensions)
 - [🚀 Getting Started](#-getting-started)
 
 ---
@@ -47,6 +48,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [😂 Meme Agent](./ai-agents/meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
 - [🎙️ Book to Podcast](./ai-agents/Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
 - [🥊 FridgeFighter](./ai-agents/fridgefighter) — gamify your fridge before the food goes bad. Scan items, get daily challenges, earn zero-waste badges.
+- [🪞 Echo](./ai-agents/echo) — conversation mindfulness tool. Paste a transcript, get a playful mirror report on who talked most, filler words, energy peaks.
 - [🎓 Tutorial Builder Agent](./ai-agents/tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
 - [🍸 BartenderAI Agent](./ai-agents/bartender-ai) — an AI bartender that finds trending cocktails for your location and season
 - [🏡 Proppy — AI Real Estate Agent](./ai-agents/proppy-repo) — a Chrome extension that floats an animated koala on every webpage 
@@ -107,6 +109,14 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🧭 Code Compass](./rag/code-compass) — search your own codebase by describing what the code does — not by remembering filenames.
 - [🎯 Recall](./rag/recall) — upload meeting transcripts and ask "What did we decide?" Get speaker-attributed answers with timestamps. Intent-classified retrieval for decisions, action items, and opinions.
 
+
+---
+
+## 🧩 Extensions
+
+Browser extensions that enhance your AI workflows.
+
+- [🧹 Claude Clean](./extensions/claude-clean) — Chrome extension to transform Claude-generated text and reduce detectable statistical patterns. Privacy-first, fully local processing.
 
 ---
 
