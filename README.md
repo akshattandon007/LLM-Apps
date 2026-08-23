@@ -49,6 +49,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎙️ Book to Podcast](./ai-agents/Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
 - [🥊 FridgeFighter](./ai-agents/fridgefighter) — gamify your fridge before the food goes bad. Scan items, get daily challenges, earn zero-waste badges.
 - [🪞 Echo](./ai-agents/echo) — conversation mindfulness tool. Paste a transcript, get a playful mirror report on who talked most, filler words, energy peaks.
+- [📸 Photo Time Machine](./ai-agents/photo-time-machine) — see yourself through the decades. Upload a photo, get era-styled versions from the 1950s to the 2050s.
 - [🎓 Tutorial Builder Agent](./ai-agents/tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
 - [🍸 BartenderAI Agent](./ai-agents/bartender-ai) — an AI bartender that finds trending cocktails for your location and season
 - [🏡 Proppy — AI Real Estate Agent](./ai-agents/proppy-repo) — a Chrome extension that floats an animated koala on every webpage 
