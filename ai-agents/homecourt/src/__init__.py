@@ -1,0 +1,1 @@
+"""HomeCourt — a playful AI judge for settling daily-life dilemmas."""
