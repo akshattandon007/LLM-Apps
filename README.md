@@ -34,7 +34,6 @@ underneath, because most of these swap models freely.
 - [🤖 🤖 Advanced AI Agents](#-advanced-ai-agent)
 - [🔌 MCP Agents](#-mcp-agents)
 - [📀 RAG (Retrieval Augmented Generation)](#-rag-retrieval-augmented-generation)
-- [🧩 Extensions](#-extensions)
 - [🚀 Getting Started](#-getting-started)
 
 ---
@@ -111,15 +110,6 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🏥 Chart](./rag/chart) — medical records, searchable by meaning — ask your lab results anything. PDFs + OCR, temporal-aware retrieval, and warnings when data is missing or conflicting.
 - [🧭 Code Compass](./rag/code-compass) — search your own codebase by describing what the code does — not by remembering filenames.
 - [🎯 Recall](./rag/recall) — upload meeting transcripts and ask "What did we decide?" Get speaker-attributed answers with timestamps. Intent-classified retrieval for decisions, action items, and opinions.
-
-
----
-
-## 🧩 Extensions
-
-Browser extensions that enhance your AI workflows.
-
-- [🧹 Claude Clean](./extensions/claude-clean) — Chrome extension to transform Claude-generated text and reduce detectable statistical patterns. Privacy-first, fully local processing.
 
 ---
 
