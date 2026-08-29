@@ -52,6 +52,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🏛️ HomeCourt](./ai-agents/homecourt) — playful AI judge for daily dilemmas. Two sides plead, pick a persona, get a formal verdict.
 - [📞 Parallel Lives](./ai-agents/parallel-lives) — voice calls with anyone from history or fiction. Pick Einstein, Cleopatra, or others and converse in-character.
 - [🔍 Artifact Explorer](./ai-agents/artifact-explorer) — point at anything and get its story. Origin, history, cultural significance, fun facts.
+- [🔥 Roster](./ai-agents/roster) — AI group photo roaster. Upload, pick a tone (siblings/coworkers/merciless), get shareable roast cards.
 - [🎓 Tutorial Builder Agent](./ai-agents/tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
 - [🍸 BartenderAI Agent](./ai-agents/bartender-ai) — an AI bartender that finds trending cocktails for your location and season
 - [🏡 Proppy — AI Real Estate Agent](./ai-agents/proppy-repo) — a Chrome extension that floats an animated koala on every webpage 
