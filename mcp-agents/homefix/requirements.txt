@@ -1,0 +1,7 @@
+mcp<2.0.0
+fastapi
+uvicorn[standard]
+pydantic>=2.0
+python-dotenv
+httpx
+pytest

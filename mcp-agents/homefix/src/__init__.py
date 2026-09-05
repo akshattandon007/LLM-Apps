@@ -1,0 +1,1 @@
+# HomeFix MCP Server — core package

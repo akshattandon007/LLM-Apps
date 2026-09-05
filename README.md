@@ -97,6 +97,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [💬 Slack MCP Agent](./mcp-agents/slack_mcp_agent) — agent that connects to Slack over MCP to read channels, summarise threads, search messages, and post replies. Useful for standup digests, catch-up summaries after time off, and triaging busy channels without opening Slack.
 - [🎧 Spotify DJ Agent](./mcp-agents/spotify-dj) — personal music curator. Search, discover, and build playlists.
 - [🗑️ Subscription Slayer](./mcp-agents/subscription-slayer) — MCP server that finds forgotten subscriptions in bank statements, categorizes them, estimates annual cost, and generates cancellation links.
+- [🔧 HomeFix](./mcp-agents/homefix) — MCP server that finds, vets, and books home service professionals. License verification, price estimates, reviews, appointment booking.
 
 ---
 
