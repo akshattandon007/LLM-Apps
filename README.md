@@ -98,6 +98,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🎧 Spotify DJ Agent](./mcp-agents/spotify-dj) — personal music curator. Search, discover, and build playlists.
 - [🗑️ Subscription Slayer](./mcp-agents/subscription-slayer) — MCP server that finds forgotten subscriptions in bank statements, categorizes them, estimates annual cost, and generates cancellation links.
 - [🔧 HomeFix](./mcp-agents/homefix) — MCP server that finds, vets, and books home service professionals. License verification, price estimates, reviews, appointment booking.
+- [🧭 Career Compass](./mcp-agents/career-compass) — MCP server for career intelligence. Salary data, skills gaps, career paths, industry growth, job offer comparison.
 
 ---
 
