@@ -101,6 +101,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🧭 Career Compass](./mcp-agents/career-compass) — MCP server for career intelligence. Salary data, skills gaps, career paths, industry growth, job offer comparison.
 - [⚖️ Complaint Copilot](./mcp-agents/complaint-copilot) — MCP server for consumer complaints. Draft formal complaints, find ombudsman, quote rights, escalate to regulators.
 - [📺 WhatToWatch](./mcp-agents/what-to-watch) — MCP server for TV & streaming. What's on right now, tonight, daily schedule, show search, similar recommendations.
+- [🎓 GradPath](./mcp-agents/gradpath) — MCP server for college affordability. Find schools by budget, compare costs vs earnings, graduation rates.
 
 ---
 
