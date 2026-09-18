@@ -33,6 +33,7 @@ underneath, because most of these swap models freely.
 - [🤖 AI Agents](#-ai-agents)
 - [🤖 🤖 Advanced AI Agents](#-advanced-ai-agent)
 - [🔌 MCP Agents](#-mcp-agents)
+- [🧩 Extensions](#-extensions)
 - [📀 RAG (Retrieval Augmented Generation)](#-rag-retrieval-augmented-generation)
 - [🚀 Getting Started](#-getting-started)
 
@@ -102,6 +103,14 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [⚖️ Complaint Copilot](./mcp-agents/complaint-copilot) — MCP server for consumer complaints. Draft formal complaints, find ombudsman, quote rights, escalate to regulators.
 - [📺 WhatToWatch](./mcp-agents/what-to-watch) — MCP server for TV & streaming. What's on right now, tonight, daily schedule, show search, similar recommendations.
 - [🎓 GradPath](./mcp-agents/gradpath) — MCP server for college affordability. Find schools by budget, compare costs vs earnings, graduation rates.
+
+---
+
+## 🧩 Extensions
+
+Extra projects stored under `extensions/`. Each is a self-contained module or server.
+
+- [☀️ SunGuard](./extensions/sunguard) — UV / sun / heat / AQI safety MCP server. 'Do I need sunscreen today?' Combined UV + heat index + AQI + burn time + outdoor planning. Zero-auth APIs, always demoable.
 
 ---
 
