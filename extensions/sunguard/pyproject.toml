@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sunguard"
+version = "1.0.0"
+description = "UV / sun / heat / air quality MCP server"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0,<2.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["sunguard*"]
