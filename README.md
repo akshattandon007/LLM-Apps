@@ -111,6 +111,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 Extra projects stored under `extensions/`. Each is a self-contained module or server.
 
 - [☀️ SunGuard](./extensions/sunguard) — UV / sun / heat / AQI safety MCP server. 'Do I need sunscreen today?' Combined UV + heat index + AQI + burn time + outdoor planning. Zero-auth APIs, always demoable.
+- [🥕 MarketFinder](./extensions/marketfinder) — find farmers markets, CSAs, and food hubs near you. Filter by SNAP/WIC. Powered by USDA Local Food Portal (zero-auth).
 
 ---
 
