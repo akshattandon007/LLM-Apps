@@ -46,6 +46,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [✍️ Prompt Engineering Agent / Prompt Library](./ai-agents/AI-prompt-library-promptstar-claude%20-opus-4.6) — a curated prompt library and prompt-authoring helper
 - [🅿️ Car-Park Agent](./ai-agents/Car-Park-agent%20Gemini%203.1%20Pro) — multimodal browser/vision agent on Gemini 3.1 Pro.
 - [😂 Meme Agent](./ai-agents/meme-agent%20-%20Google%20gemma) — meme-generation agent powered by Google Gemma.
+- [🎵 Mood Mixtape](./ai-agents/mood-mixtape) — tell the AI how you feel, get a personalized mixtape with real songs from MusicBrainz and mood-matching explanations
 - [🎙️ Book to Podcast](./ai-agents/Book-to-pocast) — turns a book or long-form text into a conversational podcast episode.
 - [🥊 FridgeFighter](./ai-agents/fridgefighter) — gamify your fridge before the food goes bad. Scan items, get daily challenges, earn zero-waste badges.
 - [🪞 Echo](./ai-agents/echo) — conversation mindfulness tool. Paste a transcript, get a playful mirror report on who talked most, filler words, energy peaks.
