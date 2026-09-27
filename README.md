@@ -82,6 +82,7 @@ Agent orchestration.
 - [🔁 PR Auto-Pilot](./advanced-ai-agents/pr-auto-pilot) — end-to-end PR review agent. Review diffs, patch bugs, run tests, and post reports.
 - [🛍️ Shopping agent](./advanced-ai-agents/cheap-shopping-agent) - shopping agent that gets you the best deals
 - [🔨 TraceForge](./advanced-ai-agents/traceforge) - self-improving agent loop: capture traces, curate good runs, extract reusable skills
+- [🍽️ PantryWarden](./advanced-ai-agents/pantry-warden) — multi-agent kitchen logistics. Five specialized agents (Inventory, Recipe, Nutrition, Budget, Schedule) collaborate to turn your pantry into a weekly meal plan with a grocery list.
 
 ---
 

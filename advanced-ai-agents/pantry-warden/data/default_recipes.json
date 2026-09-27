@@ -1,0 +1,136 @@
+{
+  "recipes": [
+    {
+      "id": "spaghetti_bolognese",
+      "name": "Spaghetti Bolognese",
+      "ingredients": ["pasta", "ground beef", "tomato sauce", "onion", "garlic", "olive oil"],
+      "cook_time_min": 35,
+      "difficulty": "easy",
+      "meal_type": "dinner",
+      "cost_per_serving": 3.50,
+      "nutrition": {"calories": 650, "protein_g": 32, "carbs_g": 72, "fat_g": 22},
+      "dietary_tags": []
+    },
+    {
+      "id": "chicken_stir_fry",
+      "name": "Chicken Stir Fry",
+      "ingredients": ["chicken breast", "broccoli", "soy sauce", "rice", "ginger", "garlic", "sesame oil"],
+      "cook_time_min": 20,
+      "difficulty": "easy",
+      "meal_type": "dinner",
+      "cost_per_serving": 4.00,
+      "nutrition": {"calories": 480, "protein_g": 38, "carbs_g": 40, "fat_g": 16},
+      "dietary_tags": ["dairy_free"]
+    },
+    {
+      "id": "vegetable_omelette",
+      "name": "Vegetable Omelette",
+      "ingredients": ["eggs", "bell pepper", "onion", "spinach", "cheese", "butter"],
+      "cook_time_min": 10,
+      "difficulty": "easy",
+      "meal_type": "breakfast",
+      "cost_per_serving": 2.00,
+      "nutrition": {"calories": 320, "protein_g": 22, "carbs_g": 8, "fat_g": 24},
+      "dietary_tags": ["gluten_free", "low_carb"]
+    },
+    {
+      "id": "caesar_salad",
+      "name": "Caesar Salad",
+      "ingredients": ["romaine lettuce", "chicken breast", "parmesan cheese", "croutons", "caesar dressing", "lemon"],
+      "cook_time_min": 15,
+      "difficulty": "easy",
+      "meal_type": "lunch",
+      "cost_per_serving": 4.50,
+      "nutrition": {"calories": 420, "protein_g": 35, "carbs_g": 15, "fat_g": 26},
+      "dietary_tags": ["low_carb"]
+    },
+    {
+      "id": "oatmeal_berry_bowl",
+      "name": "Oatmeal Berry Bowl",
+      "ingredients": ["rolled oats", "mixed berries", "honey", "milk", "cinnamon"],
+      "cook_time_min": 10,
+      "difficulty": "easy",
+      "meal_type": "breakfast",
+      "cost_per_serving": 1.50,
+      "nutrition": {"calories": 350, "protein_g": 12, "carbs_g": 62, "fat_g": 6},
+      "dietary_tags": ["vegetarian"]
+    },
+    {
+      "id": "black_bean_tacos",
+      "name": "Black Bean Tacos",
+      "ingredients": ["black beans", "corn tortillas", "avocado", "tomato", "lime", "cilantro", "sour cream"],
+      "cook_time_min": 15,
+      "difficulty": "easy",
+      "meal_type": "dinner",
+      "cost_per_serving": 2.50,
+      "nutrition": {"calories": 380, "protein_g": 14, "carbs_g": 52, "fat_g": 14},
+      "dietary_tags": ["vegetarian", "dairy_free"]
+    },
+    {
+      "id": "grilled_salmon",
+      "name": "Grilled Salmon with Asparagus",
+      "ingredients": ["salmon fillet", "asparagus", "lemon", "olive oil", "garlic", "dill"],
+      "cook_time_min": 20,
+      "difficulty": "medium",
+      "meal_type": "dinner",
+      "cost_per_serving": 7.00,
+      "nutrition": {"calories": 520, "protein_g": 42, "carbs_g": 8, "fat_g": 36},
+      "dietary_tags": ["gluten_free", "low_carb", "dairy_free", "keto"]
+    },
+    {
+      "id": "tuna_sandwich",
+      "name": "Tuna Sandwich",
+      "ingredients": ["canned tuna", "bread", "mayonnaise", "lettuce", "tomato", "pickles"],
+      "cook_time_min": 5,
+      "difficulty": "easy",
+      "meal_type": "lunch",
+      "cost_per_serving": 2.50,
+      "nutrition": {"calories": 430, "protein_g": 28, "carbs_g": 34, "fat_g": 20},
+      "dietary_tags": []
+    },
+    {
+      "id": "mushroom_risotto",
+      "name": "Mushroom Risotto",
+      "ingredients": ["arborio rice", "mushrooms", "onion", "vegetable broth", "parmesan cheese", "butter", "white wine"],
+      "cook_time_min": 40,
+      "difficulty": "medium",
+      "meal_type": "dinner",
+      "cost_per_serving": 3.00,
+      "nutrition": {"calories": 480, "protein_g": 12, "carbs_g": 65, "fat_g": 18},
+      "dietary_tags": ["vegetarian"]
+    },
+    {
+      "id": "greek_yogurt_parfait",
+      "name": "Greek Yogurt Parfait",
+      "ingredients": ["greek yogurt", "granola", "mixed berries", "honey", "almonds"],
+      "cook_time_min": 5,
+      "difficulty": "easy",
+      "meal_type": "breakfast",
+      "cost_per_serving": 2.50,
+      "nutrition": {"calories": 310, "protein_g": 18, "carbs_g": 38, "fat_g": 10},
+      "dietary_tags": ["vegetarian", "gluten_free"]
+    },
+    {
+      "id": "lentil_soup",
+      "name": "Lentil Soup",
+      "ingredients": ["lentils", "carrots", "celery", "onion", "garlic", "vegetable broth", "tomato", "cumin"],
+      "cook_time_min": 35,
+      "difficulty": "easy",
+      "meal_type": "lunch",
+      "cost_per_serving": 1.50,
+      "nutrition": {"calories": 320, "protein_g": 18, "carbs_g": 54, "fat_g": 4},
+      "dietary_tags": ["vegetarian", "vegan", "dairy_free", "gluten_free"]
+    },
+    {
+      "id": "chicken_curry",
+      "name": "Chicken Curry with Rice",
+      "ingredients": ["chicken thigh", "rice", "coconut milk", "curry powder", "onion", "garlic", "ginger", "tomato"],
+      "cook_time_min": 30,
+      "difficulty": "medium",
+      "meal_type": "dinner",
+      "cost_per_serving": 4.50,
+      "nutrition": {"calories": 620, "protein_g": 36, "carbs_g": 45, "fat_g": 32},
+      "dietary_tags": ["gluten_free", "dairy_free"]
+    }
+  ]
+}
