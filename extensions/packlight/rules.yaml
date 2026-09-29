@@ -1,0 +1,171 @@
+# Pack Light — Packing Rules
+# Edit this file to customise your packing recommendations.
+# Each rule has conditions (weather metrics + thresholds) that, when met,
+# add the item to your packing list.
+
+categories:
+  - Clothing
+  - Footwear
+  - Accessories
+  - Toiletries
+  - Gadgets
+  - Documents
+
+rules:
+  # --- Heat ---
+  - item: T-shirts / short sleeves
+    category: Clothing
+    conditions: { max_temp: 25 }
+    reason: "temps reach 25°C+"
+
+  - item: Light shorts
+    category: Clothing
+    conditions: { max_temp: 30 }
+    reason: "hot weather (30°C+)"
+
+  - item: Sun hat
+    category: Accessories
+    conditions: { max_uv: 5 }
+    reason: "UV index ≥ 5"
+
+  - item: Sunscreen (SPF 30+)
+    category: Toiletries
+    conditions: { max_uv: 5 }
+    reason: "UV index ≥ 5"
+
+  - item: Sunglasses
+    category: Accessories
+    conditions: { max_uv: 6 }
+    reason: "strong sun expected"
+
+  - item: Swimsuit / swim trunks
+    category: Clothing
+    conditions: { max_temp: 28 }
+    reason: "temps reach 28°C+"
+
+  # --- Cold ---
+  - item: Light jacket / hoodie
+    category: Clothing
+    conditions: { min_temp: 15, avg_min_temp: { op: "<=", value: 15 } }
+    reason: "nights/days below 15°C"
+
+  - item: Warm coat / parka
+    category: Clothing
+    conditions: { min_temp: { op: "<=", value: 5 } }
+    reason: "temps drop to 5°C or below"
+
+  - item: Thermal base layer
+    category: Clothing
+    conditions: { min_temp: { op: "<=", value: 0 } }
+    reason: "freezing temps expected"
+
+  - item: Gloves
+    category: Accessories
+    conditions: { min_temp: { op: "<=", value: 0 } }
+    reason: "freezing temps expected"
+
+  - item: Scarf / neck gaiter
+    category: Accessories
+    conditions: { min_temp: { op: "<=", value: -5 } }
+    reason: "very cold conditions"
+
+  - item: Beanie / warm hat
+    category: Accessories
+    conditions: { min_temp: { op: "<=", value: 0 } }
+    reason: "temps near or below freezing"
+
+  - item: Long trousers / jeans
+    category: Clothing
+    conditions: { avg_min_temp: { op: "<=", value: 18 } }
+    reason: "cool weather expected"
+
+  - item: Sweater / fleece
+    category: Clothing
+    conditions: { avg_min_temp: { op: "<=", value: 12 } }
+    reason: "chilly conditions expected"
+
+  # --- Rain ---
+  - item: Umbrella
+    category: Accessories
+    conditions: { total_precip: 1 }
+    reason: "rain in the forecast"
+
+  - item: Waterproof jacket / raincoat
+    category: Clothing
+    conditions: { max_precip_day: 3 }
+    reason: "significant rain expected"
+
+  - item: Waterproof shoes / boots
+    category: Footwear
+    conditions: { rain_days: 2 }
+    reason: "multiple rainy days expected"
+
+  # --- Wind ---
+  - item: Windbreaker
+    category: Clothing
+    conditions: { max_wind: 30 }
+    reason: "strong winds (30+ km/h)"
+
+  - item: Packable windproof jacket
+    category: Clothing
+    conditions: { avg_wind: 20 }
+    reason: "consistently windy conditions"
+
+  # --- Snow / Winter ---
+  - item: Snow boots
+    category: Footwear
+    conditions: { snow_any: true }
+    reason: "snow in the forecast"
+
+  - item: Heavy winter coat
+    category: Clothing
+    conditions: { snow_any: true }
+    reason: "snow expected"
+
+  # --- Thunderstorms ---
+  - item: Waterproof bag cover / dry bag
+    category: Accessories
+    conditions: { thunder_any: true }
+    reason: "thunderstorms likely"
+
+  # --- Extended trip ---
+  - item: Laundry bag
+    category: Accessories
+    conditions: { trip_days: 7 }
+    reason: "trip more than a week"
+
+  - item: Travel-size detergent
+    category: Toiletries
+    conditions: { trip_days: 7 }
+    reason: "trip longer than a week"
+
+  # --- Always-pack basics ---
+  - item: Phone charger & cable
+    category: Gadgets
+    conditions: { trip_days: 1 }
+    reason: "essential electronics"
+
+  - item: Power bank
+    category: Gadgets
+    conditions: { trip_days: 2 }
+    reason: "multi-day trip"
+
+  - item: Passport / ID
+    category: Documents
+    conditions: { trip_days: 1 }
+    reason: "required for travel"
+
+  - item: Travel adapter (if abroad)
+    category: Gadgets
+    conditions: { trip_days: 1 }
+    reason: "different plug types"
+
+  - item: Basic toiletries kit
+    category: Toiletries
+    conditions: { trip_days: 1 }
+    reason: "toothbrush, toothpaste, deodorant"
+
+  - item: First-aid kit
+    category: Toiletries
+    conditions: { trip_days: 3 }
+    reason: "multi-day trip"
