@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tallyup"
+version = "0.1.0"
+description = "Group expense splitter — split shared costs and settle debts"
+authors = [{name = "AI HUB DAILY"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+tallyup = "tallyup.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tallyup*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

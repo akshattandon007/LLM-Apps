@@ -116,6 +116,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [☀️ SunGuard](./extensions/sunguard) — UV / sun / heat / AQI safety MCP server. 'Do I need sunscreen today?' Combined UV + heat index + AQI + burn time + outdoor planning. Zero-auth APIs, always demoable.
 - [🥕 MarketFinder](./extensions/marketfinder) — find farmers markets, CSAs, and food hubs near you. Filter by SNAP/WIC. Powered by USDA Local Food Portal (zero-auth).
 - [🧳 PackLight](./extensions/packlight) — weather-based packing list generator for travelers. Enter a city + dates, get a grouped checklist (clothing, accessories, toiletries). Powered by Open-Meteo (zero-auth).
+- [💰 TallyUp](./extensions/tallyup) — group expense splitter for trips and shared living. Add expenses, get the minimum number of settlements. No signup, no accounts, pure Python CLI.
 
 ---
 
