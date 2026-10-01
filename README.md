@@ -133,6 +133,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🏥 Chart](./rag/chart) — medical records, searchable by meaning — ask your lab results anything. PDFs + OCR, temporal-aware retrieval, and warnings when data is missing or conflicting.
 - [🧭 Code Compass](./rag/code-compass) — search your own codebase by describing what the code does — not by remembering filenames.
 - [🎯 Recall](./rag/recall) — upload meeting transcripts and ask "What did we decide?" Get speaker-attributed answers with timestamps. Intent-classified retrieval for decisions, action items, and opinions.
+- [🪴 GardenGuide](./rag/gardenguide) — RAG-powered garden wisdom from your own documents. Ingest seed packets, planting guides, and garden journals — ask "when should I plant tomatoes?" and get answers grounded in your data.
 
 ---
 
