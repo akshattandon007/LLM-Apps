@@ -1,0 +1,2 @@
+# No external dependencies — uses only Python stdlib.
+# Hermes CLI (/opt/venv/bin/hermes) is expected as the LLM backend.
