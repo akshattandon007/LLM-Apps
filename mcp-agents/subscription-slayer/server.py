@@ -5,7 +5,6 @@ and detect forgotten subscriptions, categorize them, and generate
 cancellation information.
 """
 
-import asyncio
 import json
 import os
 import sys
@@ -17,7 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from mcp.server.fastmcp import FastMCP
 
-from src.canceller import batch_cancellation_info, get_cancellation_info
+from src.canceller import get_cancellation_info
 from src.categorizer import (
     categorize,
     detect_recurring,
