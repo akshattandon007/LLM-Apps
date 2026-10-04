@@ -85,8 +85,9 @@ Agent orchestration.
 - [🛍️ Shopping agent](./advanced-ai-agents/cheap-shopping-agent) - shopping agent that gets you the best deals
 - [🔨 TraceForge](./advanced-ai-agents/traceforge) - self-improving agent loop: capture traces, curate good runs, extract reusable skills
 - [🍽️ PantryWarden](./advanced-ai-agents/pantry-warden) — multi-agent kitchen logistics. Five specialized agents (Inventory, Recipe, Nutrition, Budget, Schedule) collaborate to turn your pantry into a weekly meal plan with a grocery list.
+- [📋 ClaimCounsel](./advanced-ai-agents/claimcounsel) — multi-agent insurance claims assistant. Policy Parser → Document Collector → Timeline Tracker → Letter Drafter. Helps everyday people navigate claims without a lawyer.
 
----
+|---
 
 ## 🔌 MCP Agents
 
