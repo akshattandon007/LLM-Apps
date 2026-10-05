@@ -109,6 +109,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [📺 WhatToWatch](./mcp-agents/what-to-watch) — MCP server for TV & streaming. What's on right now, tonight, daily schedule, show search, similar recommendations.
 - [🎓 GradPath](./mcp-agents/gradpath) — MCP server for college affordability. Find schools by budget, compare costs vs earnings, graduation rates.
 - [💊 MediMate](./mcp-agents/medimate) — MCP server for drug safety & pharmacy intelligence. Search drug labels, check adverse events, find generic alternatives, browse NDC codes — all via OpenFDA (free, zero-auth).
+- [🚗 RecallGuard](./mcp-agents/recallguard) — MCP server for checking vehicle safety recalls via NHTSA. Check any vehicle by year/make/model. Free, zero-auth.
 
 ---
 
