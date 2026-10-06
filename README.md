@@ -121,6 +121,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [🥕 MarketFinder](./extensions/marketfinder) — find farmers markets, CSAs, and food hubs near you. Filter by SNAP/WIC. Powered by USDA Local Food Portal (zero-auth).
 - [🧳 PackLight](./extensions/packlight) — weather-based packing list generator for travelers. Enter a city + dates, get a grouped checklist (clothing, accessories, toiletries). Powered by Open-Meteo (zero-auth).
 - [💰 TallyUp](./extensions/tallyup) — group expense splitter for trips and shared living. Add expenses, get the minimum number of settlements. No signup, no accounts, pure Python CLI.
+- [🗂️ FolderMate](./extensions/foldermate) — organize messy Downloads/Desktop folders by file type, date, or both. Dry-run preview, full undo, zero dependencies. Runs offline.
 
 ---
 
