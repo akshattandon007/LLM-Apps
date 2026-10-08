@@ -69,6 +69,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎭 TextPersona](./ai-agents/text-persona) — type a message, pick a persona (Yoda, Pirate, Shakespeare…), and the AI rewrites it in character
 |- [🎙️ VoiceVault](./ai-agents/voice-vault) — record loved ones' voices, ask them anything, get answers in their voice — an interactive audio keepsake
 |- [🌙 DreamDecoder](./ai-agents/dreamdecoder) — dream journal with AI-powered symbolic interpretation. Log dreams, get analysis, track recurring symbols and moods over time.
+|- [🎨 VibeCaster](./ai-agents/vibecaster) — tell it your mood, get a full vibe package: colour palette, original poem, 3-song playlist, and a concrete vibe-shift activity. Just one AI call.
 
 |---
 ## 🤖 🤖 Advanced AI Agents
