@@ -112,6 +112,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🎓 GradPath](./mcp-agents/gradpath) — MCP server for college affordability. Find schools by budget, compare costs vs earnings, graduation rates.
 - [💊 MediMate](./mcp-agents/medimate) — MCP server for drug safety & pharmacy intelligence. Search drug labels, check adverse events, find generic alternatives, browse NDC codes — all via OpenFDA (free, zero-auth).
 - [🚗 RecallGuard](./mcp-agents/recallguard) — MCP server for checking vehicle safety recalls via NHTSA. Check any vehicle by year/make/model. Free, zero-auth.
+- [🌬️ BreatheEasy](./mcp-agents/breatheasy) — MCP server + CLI for plain-language air quality & pollen answers. Ask "is it OK to go outside?" for any place on Earth — US/EU AQI bands, pollen peaks, wildfire-smoke alerts. Zero API keys, zero signup.
 
 ---
 
