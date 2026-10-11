@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "renamer"
+version = "1.0.0"
+description = "Batch file renamer with regex patterns, number sequences, and dry-run preview"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+keywords = ["rename", "batch", "cli", "utility"]
+
+[project.scripts]
+renamer = "renamer.cli:main"
