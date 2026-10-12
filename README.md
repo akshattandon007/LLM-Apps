@@ -144,6 +144,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🎯 Recall](./rag/recall) — upload meeting transcripts and ask "What did we decide?" Get speaker-attributed answers with timestamps. Intent-classified retrieval for decisions, action items, and opinions.
 - [🪴 GardenGuide](./rag/gardenguide) — RAG-powered garden wisdom from your own documents. Ingest seed packets, planting guides, and garden journals — ask "when should I plant tomatoes?" and get answers grounded in your data.
 - [🛠️ ManualMate](./rag/manualmate) — your home appliance manual assistant. Ingest PDFs of fridge, washer, or dryer manuals and ask "What does error code E24 mean?" or "How often do I clean the condenser coils?" — grounded answers from your own manuals.
+- [🏫 Schoolsift](./rag/schoolsift) — search your school-paperwork avalanche: newsletters, permission slips, syllabi. Ask "when is the science fair?" in plain language — get a cited answer plus every date and deadline, 100% local and offline. No API keys, no embeddings model, no torch.
 
 ---
 
