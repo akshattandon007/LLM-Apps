@@ -57,6 +57,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🔥 Roster](./ai-agents/roster) — AI group photo roaster. Upload, pick a tone (siblings/coworkers/merciless), get shareable roast cards.
 - [🎓 Tutorial Builder Agent](./ai-agents/tutorial-builder-agent-Claude-Opus-4.6) — generates structured, multi-section tutorials from a topic or source material
 - [🍸 BartenderAI Agent](./ai-agents/bartender-ai) — an AI bartender that finds trending cocktails for your location and season
+- [📚 Bookmatch](./ai-agents/bookmatch) — AI book matchmaker that interviews you about your reading tastes and recommends 5 books you'll love
 - [🏡 Proppy — AI Real Estate Agent](./ai-agents/proppy-repo) — a Chrome extension that floats an animated koala on every webpage 
 - [🧵 regex-please](./ai-agents/regex-please) — natural language → regex with live ANSI-highlighted matches in the terminal
 - [🧶 Stash](./ai-agents/stash) — tick the craft supplies you own, get project ideas that use them. Warm web UI, no signup.
@@ -114,7 +115,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🚗 RecallGuard](./mcp-agents/recallguard) — MCP server for checking vehicle safety recalls via NHTSA. Check any vehicle by year/make/model. Free, zero-auth.
 - [🌬️ BreatheEasy](./mcp-agents/breatheasy) — MCP server + CLI for plain-language air quality & pollen answers. Ask "is it OK to go outside?" for any place on Earth — US/EU AQI bands, pollen peaks, wildfire-smoke alerts. Zero API keys, zero signup.
 
----
+|---
 
 ## 🧩 Extensions
 
@@ -127,7 +128,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [🗂️ FolderMate](./extensions/foldermate) — organize messy Downloads/Desktop folders by file type, date, or both. Dry-run preview, full undo, zero dependencies. Runs offline.
 - [🏷️ Renamer](./extensions/renamer) — batch file renamer with regex patterns, number sequences, and dry-run preview. Rename hundreds of files in one command with safe undo.
 
----
+|---
 
 ## 📀 RAG (Retrieval Augmented Generation)
 
@@ -146,7 +147,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🛠️ ManualMate](./rag/manualmate) — your home appliance manual assistant. Ingest PDFs of fridge, washer, or dryer manuals and ask "What does error code E24 mean?" or "How often do I clean the condenser coils?" — grounded answers from your own manuals.
 - [🏫 Schoolsift](./rag/schoolsift) — search your school-paperwork avalanche: newsletters, permission slips, syllabi. Ask "when is the science fair?" in plain language — get a cited answer plus every date and deadline, 100% local and offline. No API keys, no embeddings model, no torch.
 
----
+|---
 
 ## 🚀 Getting Started
 
