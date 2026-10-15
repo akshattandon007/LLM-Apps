@@ -89,6 +89,7 @@ Agent orchestration.
 - [🧠 LearnerLane](./advanced-ai-agents/learnerlane) — multi-agent learning curriculum builder. Tell it what you want to learn, get a progressive curriculum with free resources from Wikipedia & Open Library, and weekly practice exercises. Demo-ready, zero API keys required.
 - [🍽️ PantryWarden](./advanced-ai-agents/pantry-warden) — multi-agent kitchen logistics. Five specialized agents (Inventory, Recipe, Nutrition, Budget, Schedule) collaborate to turn your pantry into a weekly meal plan with a grocery list.
 - [📋 ClaimCounsel](./advanced-ai-agents/claimcounsel) — multi-agent insurance claims assistant. Policy Parser → Document Collector → Timeline Tracker → Letter Drafter. Helps everyday people navigate claims without a lawyer.
+- [🚗 FairWheel](./advanced-ai-agents/fairwheel) — multi-agent car-purchase advisory team. NHTSA crash ratings, complaint themes, open recalls, and real fuel costs roll up into a WORTH IT / WAIT / AVOID verdict with dealer-negotiation talking points. Zero API keys.
 
 |---
 
