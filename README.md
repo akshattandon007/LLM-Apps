@@ -15,6 +15,10 @@
 
 </div>
 
+> ## ⭐ App of the Day — Oct 17
+> **🥗 PocketDiet** — instant nutrition from food names or barcodes. Powered by Open Food Facts.
+> 📁 [`extensions/pocketdiet/`](./extensions/pocketdiet) · 🔗 `50f384b`
+
 ---
 
 A personal collection of **LLM-powered apps, AI Agents, MCP Agents, RAG
