@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "pocketdiet"
+version = "0.1.0"
+description = "CLI nutrition lookup tool — Open Food Facts API, stdlib only"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["nutrition", "food", "cli", "open-food-facts"]
+
+[project.scripts]
+pocketdiet = "pocketdiet.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pocketdiet*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+pocketdiet = ["py.typed"]
