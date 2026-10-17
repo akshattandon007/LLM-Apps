@@ -129,6 +129,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [💰 TallyUp](./extensions/tallyup) — group expense splitter for trips and shared living. Add expenses, get the minimum number of settlements. No signup, no accounts, pure Python CLI.
 - [🗂️ FolderMate](./extensions/foldermate) — organize messy Downloads/Desktop folders by file type, date, or both. Dry-run preview, full undo, zero dependencies. Runs offline.
 - [🏷️ Renamer](./extensions/renamer) — batch file renamer with regex patterns, number sequences, and dry-run preview. Rename hundreds of files in one command with safe undo.
+- [🥗 PocketDiet](./extensions/pocketdiet) — instant nutrition from food names or barcodes. Search any food or scan a barcode for calories, protein, carbs, fat, and health verdicts. Powered by Open Food Facts (free, zero-auth).
 
 |---
 
