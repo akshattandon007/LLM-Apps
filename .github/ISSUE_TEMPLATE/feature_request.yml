@@ -1,0 +1,40 @@
+name: Feature Request
+description: Suggest a new project or improvement
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Tell us what you'd like to see built.
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Which section does this belong to?
+      placeholder: ai-agents / mcp-agents / rag / extensions / advanced-ai-agents
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      description: Describe the real-world problem for everyday people.
+      placeholder: Most people struggle with X because Y. An AI agent could help by Z.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should the project do?
+      placeholder: An MCP server that lets people...
+    validations:
+      required: true
+  - type: textarea
+    id: apis
+    attributes:
+      label: Known APIs or data sources
+      description: Any free/public APIs that could power this?
+      placeholder: Open-Meteo API (free, zero-auth), USDA Food Data...
+    validations:
+      required: false

@@ -1,0 +1,14 @@
+name: Custom Issue
+description: Other — config, documentation, question
+title: "[Other] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: For anything else — questions, config help, documentation suggestions.
+  - type: textarea
+    id: description
+    attributes:
+      label: What's on your mind?
+    validations:
+      required: true
