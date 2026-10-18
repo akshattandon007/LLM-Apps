@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 17
-> **🥗 PocketDiet** — instant nutrition from food names or barcodes. Powered by Open Food Facts.
-> 📁 [`extensions/pocketdiet/`](./extensions/pocketdiet) · 🔗 `50f384b`
+> ## ⭐ App of the Day — Oct 18
+> **🌍 TripTome** — your personal travel knowledge RAG. Ingest guides, PDFs, and blogs about any destination — then ask questions in plain language.
+> 📁 [`rag/triptome/`](./rag/triptome) · 🔗 `
 
 ---
 
@@ -72,9 +72,9 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎁 The Gift](./ai-agents/the-gift) — describe someone you love, get a personalized gift idea + poem that shows you actually know them
 - [📜 Myth](./ai-agents/myth) — fake Wikipedia articles about your friends. Pick an era, get an infobox, dubious citations, and a legacy they don't deserve.
 - [🎭 TextPersona](./ai-agents/text-persona) — type a message, pick a persona (Yoda, Pirate, Shakespeare…), and the AI rewrites it in character
-|- [🎙️ VoiceVault](./ai-agents/voice-vault) — record loved ones' voices, ask them anything, get answers in their voice — an interactive audio keepsake
-|- [🌙 DreamDecoder](./ai-agents/dreamdecoder) — dream journal with AI-powered symbolic interpretation. Log dreams, get analysis, track recurring symbols and moods over time.
-|- [🎨 VibeCaster](./ai-agents/vibecaster) — tell it your mood, get a full vibe package: colour palette, original poem, 3-song playlist, and a concrete vibe-shift activity. Just one AI call.
+- [🎙️ VoiceVault](./ai-agents/voice-vault) — record loved ones' voices, ask them anything, get answers in their voice — an interactive audio keepsake
+- [🌙 DreamDecoder](./ai-agents/dreamdecoder) — dream journal with AI-powered symbolic interpretation. Log dreams, get analysis, track recurring symbols and moods over time.
+- [🎨 VibeCaster](./ai-agents/vibecaster) — tell it your mood, get a full vibe package: colour palette, original poem, 3-song playlist, and a concrete vibe-shift activity. Just one AI call.
 
 |---
 ## 🤖 🤖 Advanced AI Agents
@@ -153,6 +153,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🪴 GardenGuide](./rag/gardenguide) — RAG-powered garden wisdom from your own documents. Ingest seed packets, planting guides, and garden journals — ask "when should I plant tomatoes?" and get answers grounded in your data.
 - [🛠️ ManualMate](./rag/manualmate) — your home appliance manual assistant. Ingest PDFs of fridge, washer, or dryer manuals and ask "What does error code E24 mean?" or "How often do I clean the condenser coils?" — grounded answers from your own manuals.
 - [🏫 Schoolsift](./rag/schoolsift) — search your school-paperwork avalanche: newsletters, permission slips, syllabi. Ask "when is the science fair?" in plain language — get a cited answer plus every date and deadline, 100% local and offline. No API keys, no embeddings model, no torch.
+- [🌍 TripTome](./rag/triptome) — your personal travel knowledge RAG. Ingest travel guides, PDFs, and blog posts about any destination, then ask questions in plain language. Get grounded answers with citations from your own curated travel library. CLI-first, local embeddings, no external API required for search.
 
 |---
 
