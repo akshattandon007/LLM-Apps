@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — Oct 18
 > **🌍 TripTome** — your personal travel knowledge RAG. Ingest guides, PDFs, and blogs about any destination — then ask questions in plain language.
-> 📁 [`rag/triptome/`](./rag/triptome) · 🔗 `
+> 📁 [`rag/triptome/`](./rag/triptome) · 🔗 `5d5e7e0`
 
 ---
 
