@@ -1,0 +1,3 @@
+# ThenPaper — zero runtime dependencies (stdlib only)
+
+pytest>=8.0
