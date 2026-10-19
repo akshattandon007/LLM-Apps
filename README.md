@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 18
-> **🌍 TripTome** — your personal travel knowledge RAG. Ingest guides, PDFs, and blogs about any destination — then ask questions in plain language.
-> 📁 [`rag/triptome/`](./rag/triptome) · 🔗 `5d5e7e0`
+> ## ⭐ App of the Day — Oct 19
+> **📰 ThenPaper** — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia's On This Day feed, printed as an ASCII newspaper broadsheet.
+> 📁 [`ai-agents/thenpaper/`](./ai-agents/thenpaper) · 🔗 `721e054`
 
 ---
 
@@ -75,6 +75,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎙️ VoiceVault](./ai-agents/voice-vault) — record loved ones' voices, ask them anything, get answers in their voice — an interactive audio keepsake
 - [🌙 DreamDecoder](./ai-agents/dreamdecoder) — dream journal with AI-powered symbolic interpretation. Log dreams, get analysis, track recurring symbols and moods over time.
 - [🎨 VibeCaster](./ai-agents/vibecaster) — tell it your mood, get a full vibe package: colour palette, original poem, 3-song playlist, and a concrete vibe-shift activity. Just one AI call.
+- [📰 ThenPaper](./ai-agents/thenpaper) — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia On This Day, printed as an ASCII newspaper broadsheet.
 
 |---
 ## 🤖 🤖 Advanced AI Agents
