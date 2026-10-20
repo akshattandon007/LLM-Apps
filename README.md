@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 19
-> **📰 ThenPaper** — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia's On This Day feed, printed as an ASCII newspaper broadsheet.
-> 📁 [`ai-agents/thenpaper/`](./ai-agents/thenpaper) · 🔗 `721e054`
+> ## ⭐ App of the Day — Oct 20
+> **💰 DebtSlayer** — multi-agent debt payoff optimizer. Enter your debts, get avalanche vs snowball comparison, payoff timeline, and creditor negotiation letters.
+> 📁 [`advanced-ai-agents/debtslayer/`](./advanced-ai-agents/debtslayer) · 🔗 `60acd60`
 
 ---
 
@@ -95,6 +95,7 @@ Agent orchestration.
 - [🍽️ PantryWarden](./advanced-ai-agents/pantry-warden) — multi-agent kitchen logistics. Five specialized agents (Inventory, Recipe, Nutrition, Budget, Schedule) collaborate to turn your pantry into a weekly meal plan with a grocery list.
 - [📋 ClaimCounsel](./advanced-ai-agents/claimcounsel) — multi-agent insurance claims assistant. Policy Parser → Document Collector → Timeline Tracker → Letter Drafter. Helps everyday people navigate claims without a lawyer.
 - [🚗 FairWheel](./advanced-ai-agents/fairwheel) — multi-agent car-purchase advisory team. NHTSA crash ratings, complaint themes, open recalls, and real fuel costs roll up into a WORTH IT / WAIT / AVOID verdict with dealer-negotiation talking points. Zero API keys.
+- [💰 DebtSlayer](./advanced-ai-agents/debtslayer) — multi-agent debt payoff optimizer. Five specialist agents (Creditor, Spending, Strategy, Letter, Progress) create a personalized payoff plan with avalanche vs snowball comparison, timeline estimates, and creditor negotiation letters. Purely algorithmic, zero external APIs required.
 
 |---
 
