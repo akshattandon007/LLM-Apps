@@ -1,0 +1,4 @@
+# Core — no external API dependencies beyond stdlib + basic packages
+# The Letter Agent uses a lightweight approach; no LLM SDK required.
+# For the letter-drafting feature, any LLM provider can be plugged in.
+# Default implementation provides template-based letters (no API key needed).

@@ -1,0 +1,9 @@
+[project]
+name = "debtslayer"
+version = "1.0.0"
+description = "Multi-Agent Debt Payoff Optimizer"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
