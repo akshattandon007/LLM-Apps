@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 20
-> **💰 DebtSlayer** — multi-agent debt payoff optimizer. Enter your debts, get avalanche vs snowball comparison, payoff timeline, and creditor negotiation letters.
-> 📁 [`advanced-ai-agents/debtslayer/`](./advanced-ai-agents/debtslayer) · 🔗 `60acd60`
+> ## ⭐ App of the Day — Oct 21
+> **🔍 DocFinder** — find any doctor, dentist, or specialist in the US. Search by specialty, name, or ZIP. Powered by the official CMS NPPES provider registry (free, zero-auth).
+> 📁 [`mcp-agents/docfinder/`](./mcp-agents/docfinder) · 🔗 `PLACEHOLDER_SHA`
 
 ---
 
@@ -122,6 +122,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🚗 RecallGuard](./mcp-agents/recallguard) — MCP server for checking vehicle safety recalls via NHTSA. Check any vehicle by year/make/model. Free, zero-auth.
 - [🌬️ BreatheEasy](./mcp-agents/breatheasy) — MCP server + CLI for plain-language air quality & pollen answers. Ask "is it OK to go outside?" for any place on Earth — US/EU AQI bands, pollen peaks, wildfire-smoke alerts. Zero API keys, zero signup.
 - [🏡 SafeHome](./mcp-agents/safehome) — MCP server for property safety assessment. Check disaster history, active weather alerts, and 7-day forecast for any US address. Combines FEMA, NWS, and Census data. Zero auth, free APIs.
+- [🔍 DocFinder](./mcp-agents/docfinder) — MCP server for healthcare provider search via the NPPES NPI Registry (zero-auth, free). Find doctors, dentists, specialists, and clinics by specialty, name, ZIP, or NPI number. Returns addresses, phone, taxonomies, license numbers. Covers 10M+ US providers.
 
 |---
 
