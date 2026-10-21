@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — Oct 21
 > **🔍 DocFinder** — find any doctor, dentist, or specialist in the US. Search by specialty, name, or ZIP. Powered by the official CMS NPPES provider registry (free, zero-auth).
-> 📁 [`mcp-agents/docfinder/`](./mcp-agents/docfinder) · 🔗 `PLACEHOLDER_SHA`
+> 📁 [`mcp-agents/docfinder/`](./mcp-agents/docfinder) · 🔗 `42203bc`
 
 ---
 
