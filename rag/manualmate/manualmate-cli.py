@@ -1,0 +1,1 @@
+# Deleted - use `python -m manualmate` instead
