@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 21
-> **🔍 DocFinder** — find any doctor, dentist, or specialist in the US. Search by specialty, name, or ZIP. Powered by the official CMS NPPES provider registry (free, zero-auth).
-> 📁 [`mcp-agents/docfinder/`](./mcp-agents/docfinder) · 🔗 `42203bc`
+> ## ⭐ App of the Day — Oct 22
+> **🌊 SwellCast** — surf condition forecaster: wave height, swell period, wind data, and a surf-ability score for any beach. Powered by Open-Meteo Marine & Weather (free, zero-auth).
+> 📁 [`extensions/swellcast/`](./extensions/swellcast) · 🔗 `<PENDING>`
 
 ---
 
@@ -137,6 +137,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [🗂️ FolderMate](./extensions/foldermate) — organize messy Downloads/Desktop folders by file type, date, or both. Dry-run preview, full undo, zero dependencies. Runs offline.
 - [🏷️ Renamer](./extensions/renamer) — batch file renamer with regex patterns, number sequences, and dry-run preview. Rename hundreds of files in one command with safe undo.
 - [🥗 PocketDiet](./extensions/pocketdiet) — instant nutrition from food names or barcodes. Search any food or scan a barcode for calories, protein, carbs, fat, and health verdicts. Powered by Open Food Facts (free, zero-auth).
+- [🌊 SwellCast](./extensions/swellcast) — surf condition forecaster for any beach. Wave height, swell period, wind data, weather, and a 0-10 surf-ability score. Powered by Open-Meteo Marine & Weather APIs (free, zero-auth).
 
 |---
 

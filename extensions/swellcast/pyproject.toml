@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swellcast"
+version = "0.1.0"
+description = "CLI surf condition forecaster — wave height, swell period, wind data from Open-Meteo"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["surf", "waves", "weather", "cli", "forecast"]
+
+[project.scripts]
+swellcast = "swellcast.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["swellcast*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
