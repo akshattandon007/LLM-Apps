@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — Oct 22
 > **🌊 SwellCast** — surf condition forecaster: wave height, swell period, wind data, and a surf-ability score for any beach. Powered by Open-Meteo Marine & Weather (free, zero-auth).
-> 📁 [`extensions/swellcast/`](./extensions/swellcast) · 🔗 `<PENDING>`
+> 📁 [`extensions/swellcast/`](./extensions/swellcast) · 🔗 `6db112d`
 
 ---
 
