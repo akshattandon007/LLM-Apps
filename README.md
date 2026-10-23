@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 22
-> **🌊 SwellCast** — surf condition forecaster: wave height, swell period, wind data, and a surf-ability score for any beach. Powered by Open-Meteo Marine & Weather (free, zero-auth).
-> 📁 [`extensions/swellcast/`](./extensions/swellcast) · 🔗 `6db112d`
+> ## ⭐ App of the Day — Oct 23
+> **🔬 triallight** — plain-language clinical trial assistant. Search active trials by condition (and optionally city), get plain-English eligibility, study summary, and logistics for each study. Powered by ClinicalTrials.gov v2 + PubMed E-utilities + Open-Meteo Geo (all free, zero-auth).
+> 📁 [`rag/triallight/`](./rag/triallight) · 🔗 `TBD`
 
 ---
 
@@ -158,6 +158,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🛠️ ManualMate](./rag/manualmate) — your home appliance manual assistant. Ingest PDFs of fridge, washer, or dryer manuals and ask "What does error code E24 mean?" or "How often do I clean the condenser coils?" — grounded answers from your own manuals.
 - [🏫 Schoolsift](./rag/schoolsift) — search your school-paperwork avalanche: newsletters, permission slips, syllabi. Ask "when is the science fair?" in plain language — get a cited answer plus every date and deadline, 100% local and offline. No API keys, no embeddings model, no torch.
 - [🌍 TripTome](./rag/triptome) — your personal travel knowledge RAG. Ingest travel guides, PDFs, and blog posts about any destination, then ask questions in plain language. Get grounded answers with citations from your own curated travel library. CLI-first, local embeddings, no external API required for search.
+- [🔬 triallight](./rag/triallight) — plain-language clinical trial assistant. Search active clinical trials by condition (and optionally city), get AI-digested plain-English eligibility criteria, participation requirements, and logistics for each study. Powered by ClinicalTrials.gov API v2, PubMed E-utilities, and Open-Meteo Geo (all free, zero-auth).
 
 |---
 
