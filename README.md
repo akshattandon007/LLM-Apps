@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — Oct 23
 > **🔬 triallight** — plain-language clinical trial assistant. Search active trials by condition (and optionally city), get plain-English eligibility, study summary, and logistics for each study. Powered by ClinicalTrials.gov v2 + PubMed E-utilities + Open-Meteo Geo (all free, zero-auth).
-> 📁 [`rag/triallight/`](./rag/triallight) · 🔗 `TBD`
+> 📁 [`rag/triallight/`](./rag/triallight) · 🔗 `2185109`
 
 ---
 
