@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 23
-> **🔬 triallight** — plain-language clinical trial assistant. Search active trials by condition (and optionally city), get plain-English eligibility, study summary, and logistics for each study. Powered by ClinicalTrials.gov v2 + PubMed E-utilities + Open-Meteo Geo (all free, zero-auth).
-> 📁 [`rag/triallight/`](./rag/triallight) · 🔗 `2185109`
+> ## ⭐ App of the Day — Oct 24
+> **🍬 sugarcoat** — AI message diplomat. Rephrase difficult messages — breaking bad news, declining invitations, giving feedback — in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter.
+> 📁 [`ai-agents/sugarcoat/`](./ai-agents/sugarcoat) · 🔗 `
 
 ---
 
@@ -76,6 +76,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🌙 DreamDecoder](./ai-agents/dreamdecoder) — dream journal with AI-powered symbolic interpretation. Log dreams, get analysis, track recurring symbols and moods over time.
 - [🎨 VibeCaster](./ai-agents/vibecaster) — tell it your mood, get a full vibe package: colour palette, original poem, 3-song playlist, and a concrete vibe-shift activity. Just one AI call.
 - [📰 ThenPaper](./ai-agents/thenpaper) — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia On This Day, printed as an ASCII newspaper broadsheet.
+- [🍬 sugarcoat](./ai-agents/sugarcoat) — AI message diplomat for difficult conversations. Rephrase breaking bad news, declining invitations, giving feedback, and setting boundaries in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter. CLI-first, zero setup.
 
 |---
 ## 🤖 🤖 Advanced AI Agents
