@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — Oct 24
 > **🍬 sugarcoat** — AI message diplomat. Rephrase difficult messages — breaking bad news, declining invitations, giving feedback — in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter.
-> 📁 [`ai-agents/sugarcoat/`](./ai-agents/sugarcoat) · 🔗 `
+> 📁 [`ai-agents/sugarcoat/`](./ai-agents/sugarcoat) · 🔗 `13c6456`
 
 ---
 
