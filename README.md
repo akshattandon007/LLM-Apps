@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 24
-> **🍬 sugarcoat** — AI message diplomat. Rephrase difficult messages — breaking bad news, declining invitations, giving feedback — in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter.
-> 📁 [`ai-agents/sugarcoat/`](./ai-agents/sugarcoat) · 🔗 `13c6456`
+> ## ⭐ App of the Day — Oct 25
+> **🚗 SafeRide** — Multi-agent pre-trip safety check. Vehicle recalls + route weather + hazards in one command. No API keys, no signup.
+> 📁 [`advanced-ai-agents/saferide/`](./advanced-ai-agents/saferide) · 🔗 `d7f7b08`
 
 ---
 
@@ -97,6 +97,7 @@ Agent orchestration.
 - [📋 ClaimCounsel](./advanced-ai-agents/claimcounsel) — multi-agent insurance claims assistant. Policy Parser → Document Collector → Timeline Tracker → Letter Drafter. Helps everyday people navigate claims without a lawyer.
 - [🚗 FairWheel](./advanced-ai-agents/fairwheel) — multi-agent car-purchase advisory team. NHTSA crash ratings, complaint themes, open recalls, and real fuel costs roll up into a WORTH IT / WAIT / AVOID verdict with dealer-negotiation talking points. Zero API keys.
 - [💰 DebtSlayer](./advanced-ai-agents/debtslayer) — multi-agent debt payoff optimizer. Five specialist agents (Creditor, Spending, Strategy, Letter, Progress) create a personalized payoff plan with avalanche vs snowball comparison, timeline estimates, and creditor negotiation letters. Purely algorithmic, zero external APIs required.
+- [🚗 SafeRide](./advanced-ai-agents/saferide) — multi-agent pre-trip safety check. Vehicle Safety Scout checks NHTSA for open recalls, Route Weather Scanner forecasts conditions at every waypoint, Trip Advisor compiles a verdict with hazard warnings. Free, zero-auth APIs, no LLM required.
 
 |---
 
