@@ -1,0 +1,1 @@
+"""Test suite for SafeRide multi-agent trip safety checker."""
