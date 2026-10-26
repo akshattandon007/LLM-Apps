@@ -1,0 +1,1 @@
+"""fuel-tracker: MCP server for fuel/gas price data."""
