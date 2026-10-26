@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 25
-> **🚗 SafeRide** — Multi-agent pre-trip safety check. Vehicle recalls + route weather + hazards in one command. No API keys, no signup.
-> 📁 [`advanced-ai-agents/saferide/`](./advanced-ai-agents/saferide) · 🔗 `d7f7b08`
+> ## ⭐ App of the Day — Oct 26
+> **⛽ fuel-tracker** — MCP server for live fuel/gas prices. National averages by country, station-level prices near any location. Zero auth, free FuelWide API.
+> 📁 [`mcp-agents/fuel-tracker/`](./mcp-agents/fuel-tracker) · 🔗 `c49602b`
 
 ---
 
@@ -125,6 +125,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🌬️ BreatheEasy](./mcp-agents/breatheasy) — MCP server + CLI for plain-language air quality & pollen answers. Ask "is it OK to go outside?" for any place on Earth — US/EU AQI bands, pollen peaks, wildfire-smoke alerts. Zero API keys, zero signup.
 - [🏡 SafeHome](./mcp-agents/safehome) — MCP server for property safety assessment. Check disaster history, active weather alerts, and 7-day forecast for any US address. Combines FEMA, NWS, and Census data. Zero auth, free APIs.
 - [🔍 DocFinder](./mcp-agents/docfinder) — MCP server for healthcare provider search via the NPPES NPI Registry (zero-auth, free). Find doctors, dentists, specialists, and clinics by specialty, name, ZIP, or NPI number. Returns addresses, phone, taxonomies, license numbers. Covers 10M+ US providers.
+- [⛽ fuel-tracker](./mcp-agents/fuel-tracker) — MCP server for live fuel/gas prices. National average petrol/diesel/LPG prices for 28+ countries, plus station-level pricing near any location. Powered by FuelWide (free, zero-auth, no API key).
 
 |---
 
