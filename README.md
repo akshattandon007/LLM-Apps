@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — Oct 27
 > **📅 offdays** — Max your time off. Find optimal leave dates to maximize consecutive holidays. Nager.Date API, free, zero auth.
-> 📁 [`extensions/offdays/`](./extensions/offdays) · 🔗 `<commit_after_push>`
+> 📁 [`extensions/offdays/`](./extensions/offdays) · 🔗 `9f67e7b`
 
 ---
 
