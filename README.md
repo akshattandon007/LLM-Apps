@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 26
-> **⛽ fuel-tracker** — MCP server for live fuel/gas prices. National averages by country, station-level prices near any location. Zero auth, free FuelWide API.
-> 📁 [`mcp-agents/fuel-tracker/`](./mcp-agents/fuel-tracker) · 🔗 `c49602b`
+> ## ⭐ App of the Day — Oct 27
+> **📅 offdays** — Max your time off. Find optimal leave dates to maximize consecutive holidays. Nager.Date API, free, zero auth.
+> 📁 [`extensions/offdays/`](./extensions/offdays) · 🔗 `<commit_after_push>`
 
 ---
 
@@ -133,6 +133,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 
 Extra projects stored under `extensions/`. Each is a self-contained module or server.
 
+- [📅 offdays](./extensions/offdays) — max your time off. Enter your country + leave days, get the optimal dates to book off for the longest consecutive break. Powered by Nager.Date (free, zero-auth).
 - [☀️ SunGuard](./extensions/sunguard) — UV / sun / heat / AQI safety MCP server. 'Do I need sunscreen today?' Combined UV + heat index + AQI + burn time + outdoor planning. Zero-auth APIs, always demoable.
 - [🥕 MarketFinder](./extensions/marketfinder) — find farmers markets, CSAs, and food hubs near you. Filter by SNAP/WIC. Powered by USDA Local Food Portal (zero-auth).
 - [🧳 PackLight](./extensions/packlight) — weather-based packing list generator for travelers. Enter a city + dates, get a grouped checklist (clothing, accessories, toiletries). Powered by Open-Meteo (zero-auth).

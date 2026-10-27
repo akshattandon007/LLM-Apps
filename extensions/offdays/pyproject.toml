@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "offdays"
+version = "1.0.0"
+description = "Max your time off — find optimal leave dates to maximize consecutive holidays"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["offdays*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
