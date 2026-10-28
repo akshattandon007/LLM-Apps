@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 27
-> **📅 offdays** — Max your time off. Find optimal leave dates to maximize consecutive holidays. Nager.Date API, free, zero auth.
-> 📁 [`extensions/offdays/`](./extensions/offdays) · 🔗 `9f67e7b`
+> ## ⭐ App of the Day — Oct 28
+> **📧 MailMerge** — Offline RAG over your email archives. Import Google Takeout MBOX, search by meaning — not just keywords. 100% local, no API keys, no cloud.
+> 📁 [`rag/mailmerge/`](./rag/mailmerge) · 🔗 `4c1f482`
 
 ---
 
@@ -163,6 +163,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🏫 Schoolsift](./rag/schoolsift) — search your school-paperwork avalanche: newsletters, permission slips, syllabi. Ask "when is the science fair?" in plain language — get a cited answer plus every date and deadline, 100% local and offline. No API keys, no embeddings model, no torch.
 - [🌍 TripTome](./rag/triptome) — your personal travel knowledge RAG. Ingest travel guides, PDFs, and blog posts about any destination, then ask questions in plain language. Get grounded answers with citations from your own curated travel library. CLI-first, local embeddings, no external API required for search.
 - [🔬 triallight](./rag/triallight) — plain-language clinical trial assistant. Search active clinical trials by condition (and optionally city), get AI-digested plain-English eligibility criteria, participation requirements, and logistics for each study. Powered by ClinicalTrials.gov API v2, PubMed E-utilities, and Open-Meteo Geo (all free, zero-auth).
+- [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
 
 |---
 
