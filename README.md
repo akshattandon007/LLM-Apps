@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 28
-> **📧 MailMerge** — Offline RAG over your email archives. Import Google Takeout MBOX, search by meaning — not just keywords. 100% local, no API keys, no cloud.
-> 📁 [`rag/mailmerge/`](./rag/mailmerge) · 🔗 `4c1f482`
+> ## ⭐ App of the Day — Oct 29
+> **🧪 Ingenius** — Missing an ingredient mid-recipe? Get 3 precise substitutes with exact ratios, chemistry explanations, and pro tips.
+> 📁 [`ai-agents/ingenius/`](./ai-agents/ingenius) · 🔗 `
 
 ---
 
@@ -77,6 +77,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🎨 VibeCaster](./ai-agents/vibecaster) — tell it your mood, get a full vibe package: colour palette, original poem, 3-song playlist, and a concrete vibe-shift activity. Just one AI call.
 - [📰 ThenPaper](./ai-agents/thenpaper) — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia On This Day, printed as an ASCII newspaper broadsheet.
 - [🍬 sugarcoat](./ai-agents/sugarcoat) — AI message diplomat for difficult conversations. Rephrase breaking bad news, declining invitations, giving feedback, and setting boundaries in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter. CLI-first, zero setup.
+- [🧪 Ingenius](./ai-agents/ingenius) — ingredient substitution expert. Tell it what you're out of mid-recipe, get 3 precise substitutes with exact ratios, chemistry explanations, and pro cooking tips. CLI, OpenRouter free tier.
 
 |---
 ## 🤖 🤖 Advanced AI Agents
