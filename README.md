@@ -99,6 +99,7 @@ Agent orchestration.
 - [🚗 FairWheel](./advanced-ai-agents/fairwheel) — multi-agent car-purchase advisory team. NHTSA crash ratings, complaint themes, open recalls, and real fuel costs roll up into a WORTH IT / WAIT / AVOID verdict with dealer-negotiation talking points. Zero API keys.
 - [💰 DebtSlayer](./advanced-ai-agents/debtslayer) — multi-agent debt payoff optimizer. Five specialist agents (Creditor, Spending, Strategy, Letter, Progress) create a personalized payoff plan with avalanche vs snowball comparison, timeline estimates, and creditor negotiation letters. Purely algorithmic, zero external APIs required.
 - [🚗 SafeRide](./advanced-ai-agents/saferide) — multi-agent pre-trip safety check. Vehicle Safety Scout checks NHTSA for open recalls, Route Weather Scanner forecasts conditions at every waypoint, Trip Advisor compiles a verdict with hazard warnings. Free, zero-auth APIs, no LLM required.
+- [📄 Clarity](./advanced-ai-agents/clarity) — multi-agent legal document analyzer. Extracts clauses, translates to plain language, flags risks, and generates questions to ask before signing. Works offline with rule-based fallback.
 
 |---
 
