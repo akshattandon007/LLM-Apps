@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — Oct 29
-> **🧪 Ingenius** — Missing an ingredient mid-recipe? Get 3 precise substitutes with exact ratios, chemistry explanations, and pro tips.
-> 📁 [`ai-agents/ingenius/`](./ai-agents/ingenius) · 🔗 `5f94c1f`
+> ## ⭐ App of the Day — October 30, 2026
+> **📄 Clarity** — Multi-agent legal document analyzer: extracts clauses, translates to plain language, and flags risks before you sign
+> 📁 [`advanced-ai-agents/clarity/`](./advanced-ai-agents/clarity/) · 🔗 `88de3d520666`
 
 ---
 
