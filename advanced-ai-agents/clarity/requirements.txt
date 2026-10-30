@@ -1,0 +1,3 @@
+# Core — no hard dependencies for rule-based mode
+# Optional: pip install openai for LLM-powered analysis
+openai>=1.0.0
