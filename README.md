@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — October 30, 2026
-> **📄 Clarity** — Multi-agent legal document analyzer: extracts clauses, translates to plain language, and flags risks before you sign
-> 📁 [`advanced-ai-agents/clarity/`](./advanced-ai-agents/clarity/) · 🔗 `88de3d520666`
+> ## ⭐ App of the Day — October 31, 2026
+> **📚 BookWorm MCP** — Book search and discovery MCP server: search 6M+ books, look up by ISBN, browse subjects, get author info and covers via Open Library's free API
+> 📁 [`mcp-agents/bookworm/`](./mcp-agents/bookworm/) · 🔗 `7a996ae`
 
 ---
 
@@ -128,6 +128,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🏡 SafeHome](./mcp-agents/safehome) — MCP server for property safety assessment. Check disaster history, active weather alerts, and 7-day forecast for any US address. Combines FEMA, NWS, and Census data. Zero auth, free APIs.
 - [🔍 DocFinder](./mcp-agents/docfinder) — MCP server for healthcare provider search via the NPPES NPI Registry (zero-auth, free). Find doctors, dentists, specialists, and clinics by specialty, name, ZIP, or NPI number. Returns addresses, phone, taxonomies, license numbers. Covers 10M+ US providers.
 - [⛽ fuel-tracker](./mcp-agents/fuel-tracker) — MCP server for live fuel/gas prices. National average petrol/diesel/LPG prices for 28+ countries, plus station-level pricing near any location. Powered by FuelWide (free, zero-auth, no API key).
+- [📚 BookWorm MCP](./mcp-agents/bookworm) — MCP server for book search and discovery via Open Library. Search 6M+ books by title/author, look up by ISBN, browse subjects, get author bios and cover images. Free, zero-auth.
 
 |---
 
