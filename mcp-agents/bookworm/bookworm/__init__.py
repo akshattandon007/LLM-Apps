@@ -1,0 +1,1 @@
+"""BookWorm MCP — Book search and discovery via Open Library."""
