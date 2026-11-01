@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — October 31, 2026
-> **📚 BookWorm MCP** — Book search and discovery MCP server: search 6M+ books, look up by ISBN, browse subjects, get author info and covers via Open Library's free API
-> 📁 [`mcp-agents/bookworm/`](./mcp-agents/bookworm/) · 🔗 `7a996ae`
+> ## ⭐ App of the Day — November 01, 2026
+> **🔐 passvault** — Local encrypted CLI password manager. AES-256-GCM vault, password/passphrase generator, search, clipboard — all offline, no cloud.
+> 📁 [`extensions/passvault/`](./extensions/passvault/) · 🔗 `6ee900f`
 
 ---
 
@@ -145,6 +145,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [🏷️ Renamer](./extensions/renamer) — batch file renamer with regex patterns, number sequences, and dry-run preview. Rename hundreds of files in one command with safe undo.
 - [🥗 PocketDiet](./extensions/pocketdiet) — instant nutrition from food names or barcodes. Search any food or scan a barcode for calories, protein, carbs, fat, and health verdicts. Powered by Open Food Facts (free, zero-auth).
 - [🌊 SwellCast](./extensions/swellcast) — surf condition forecaster for any beach. Wave height, swell period, wind data, weather, and a 0-10 surf-ability score. Powered by Open-Meteo Marine & Weather APIs (free, zero-auth).
+- [🔐 passvault](./extensions/passvault) — local encrypted CLI password manager. AES-256-GCM vault, password/passphrase generator, search, clipboard auto-copy. No cloud, no signup, just your master password.
 
 |---
 
