@@ -1,0 +1,17 @@
+[project]
+name = "passvault"
+version = "1.0.0"
+description = "Local encrypted CLI password manager - no cloud, no signup, just your master password"
+requires-python = ">=3.10"
+dependencies = [
+    "cryptography>=41.0.0",
+]
+
+[project.optional-dependencies]
+clipboard = ["pyperclip>=1.8.0"]
+
+[project.scripts]
+passvault = "passvault.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
