@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 01, 2026
-> **🔐 passvault** — Local encrypted CLI password manager. AES-256-GCM vault, password/passphrase generator, search, clipboard — all offline, no cloud.
-> 📁 [`extensions/passvault/`](./extensions/passvault/) · 🔗 `6ee900f`
+> ## ⭐ App of the Day — November 02, 2026
+> **📄 PaperPilot** — arXiv research paper RAG. Search, ingest, and query academic papers with grounded, citation-backed answers. All local, zero API keys for search.
+> 📁 [`rag/paperpilot/`](./rag/paperpilot/) · 🔗 `43c0857`
 
 ---
 
@@ -154,6 +154,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 Projects that pair an LLM with a retrieval layer — vector search, keyword
 search, or hybrid — to answer questions grounded in a document corpus.
 
+- [📄 PaperPilot](./rag/paperpilot) — RAG over arXiv research papers. Search by keyword/author/category, ingest abstracts into a local embedding index, and ask natural-language questions with citation-grounded answers. Free arXiv API (no auth), local sentence-transformers, OpenRouter LLM for answer generation.
 - [📘 RAG Agent](./rag/rag-agent) — RAG over API documentation. Ingests docs, chunks, embeds, and answers developer questions with source citations.
 - [🎙️ Earworm](./rag/earworm) — semantic search across your podcast library. Ingests transcripts, chunks at topic boundaries, and answers questions with show/episode citations.
 - [👨‍👩‍👧‍👦 Family Lore](./rag/family-lore) — search your family's scattered messages, emails, and chats by meaning. WhatsApp exports, iMessage archives, and Gmail in one place. 'What did Dad say about the roof in 2019? It already knows.'
