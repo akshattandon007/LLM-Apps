@@ -1,0 +1,5 @@
+httpx>=0.28.0
+sentence-transformers>=6.0.0
+numpy>=2.0.0
+openai>=1.0.0
+rich>=13.0.0
