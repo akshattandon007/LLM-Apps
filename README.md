@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 02, 2026
-> **📄 PaperPilot** — arXiv research paper RAG. Search, ingest, and query academic papers with grounded, citation-backed answers. All local, zero API keys for search.
-> 📁 [`rag/paperpilot/`](./rag/paperpilot/) · 🔗 `43c0857`
+> ## ⭐ App of the Day — November 03, 2026
+> **🚇 CommuteCrafter** — tell it how long you're moving and get exactly that much good content: three-act paced plans fitted to ±90s from Wikipedia, arXiv, Ask HN and Project Gutenberg, with weather-aware read/listen mode and zero API keys.
+> 📁 [`ai-agents/commutecrafter/`](./ai-agents/commutecrafter/) · 🔗 `fe32968`
 
 ---
 
@@ -78,8 +78,9 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [📰 ThenPaper](./ai-agents/thenpaper) — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia On This Day, printed as an ASCII newspaper broadsheet.
 - [🍬 sugarcoat](./ai-agents/sugarcoat) — AI message diplomat for difficult conversations. Rephrase breaking bad news, declining invitations, giving feedback, and setting boundaries in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter. CLI-first, zero setup.
 - [🧪 Ingenius](./ai-agents/ingenius) — ingredient substitution expert. Tell it what you're out of mid-recipe, get 3 precise substitutes with exact ratios, chemistry explanations, and pro cooking tips. CLI, OpenRouter free tier.
+- [🚇 CommuteCrafter](./ai-agents/commutecrafter) — your commute is 22 minutes; here is exactly 22 minutes of content. Three-act paced plans fitted to ±90s from Wikipedia full text, arXiv abstracts, Ask HN threads and Project Gutenberg, with weather-aware read/listen mode. No API keys.
 
-|---
+---
 ## 🤖 🤖 Advanced AI Agents
 
 Agent orchestration.
