@@ -1,0 +1,22 @@
+[
+  {"id": 2680, "title": "Meditations", "author": "Marcus Aurelius", "tags": ["philosophy", "stoicism", "history", "reflective", "classics"]},
+  {"id": 1497, "title": "The Republic", "author": "Plato", "tags": ["philosophy", "politics", "classics", "history"]},
+  {"id": 1232, "title": "The Prince", "author": "Niccolo Machiavelli", "tags": ["politics", "history", "power", "classics"]},
+  {"id": 3207, "title": "Leviathan", "author": "Thomas Hobbes", "tags": ["politics", "philosophy", "classics", "society"]},
+  {"id": 1342, "title": "Pride and Prejudice", "author": "Jane Austen", "tags": ["fiction", "classics", "romance", "society"]},
+  {"id": 2600, "title": "War and Peace", "author": "Leo Tolstoy", "tags": ["fiction", "history", "classics", "war"]},
+  {"id": 98, "title": "A Tale of Two Cities", "author": "Charles Dickens", "tags": ["fiction", "history", "classics", "revolution"]},
+  {"id": 1661, "title": "The Adventures of Sherlock Holmes", "author": "Arthur Conan Doyle", "tags": ["fiction", "mystery", "classics", "detective"]},
+  {"id": 2701, "title": "Moby-Dick", "author": "Herman Melville", "tags": ["fiction", "classics", "sea", "obsession"]},
+  {"id": 84, "title": "Frankenstein", "author": "Mary Shelley", "tags": ["fiction", "science", "classics", "technology"]},
+  {"id": 11, "title": "Alice's Adventures in Wonderland", "author": "Lewis Carroll", "tags": ["fiction", "classics", "logic", "absurd"]},
+  {"id": 5827, "title": "The Problems of Philosophy", "author": "Bertrand Russell", "tags": ["philosophy", "logic", "classics", "mind"]},
+  {"id": 1400, "title": "Great Expectations", "author": "Charles Dickens", "tags": ["fiction", "classics", "society", "money"]},
+  {"id": 2542, "title": "The Picture of Dorian Gray", "author": "Oscar Wilde", "tags": ["fiction", "classics", "art", "aesthetics"]},
+  {"id": 1952, "title": "The Yellow Wallpaper", "author": "Charlotte Perkins Gilman", "tags": ["fiction", "psychology", "classics", "short"]},
+  {"id": 219, "title": "Heart of Darkness", "author": "Joseph Conrad", "tags": ["fiction", "classics", "colonialism", "psychology"]},
+  {"id": 36, "title": "The War of the Worlds", "author": "H. G. Wells", "tags": ["fiction", "science", "classics", "technology"]},
+  {"id": 35, "title": "The Time Machine", "author": "H. G. Wells", "tags": ["fiction", "science", "classics", "time"]},
+  {"id": 174, "title": "The Picture of Dorian Gray (Illustrated)", "author": "Oscar Wilde", "tags": ["fiction", "art", "classics"]},
+  {"id": 57333, "title": "The Prophet", "author": "Kahlil Gibran", "tags": ["poetry", "philosophy", "reflective", "classics"]}
+]
