@@ -58,6 +58,9 @@ MIN_PARTIAL_FRACTION = 0.35
 #: Do not bother padding with something shorter than this.
 MIN_PADDING_SECONDS = 45
 
+#: Below this, an item is dropped rather than trimmed to a sliver.
+MIN_TRIM_SECONDS = 30
+
 
 def _duration(item: ContentItem, wpm: int) -> int:
     return estimate_seconds(item.words, wpm, ITEM_OVERHEAD_SECONDS)
@@ -196,49 +199,25 @@ def build_plan(
         )
         segments.append(Segment(name=name, budget_seconds=budgets[name], items=picked))
 
-    # --- Balance: too short -------------------------------------------------
-    # Padding goes into the core (middle) act, never after the wind-down.
+    # --- Balance ------------------------------------------------------------
+    # Pad when short, trim when long, and re-check: a trim can undershoot, and
+    # an undershoot can be padded again. Five passes is plenty in practice.
     core_seg = next((s for s in segments if s.name == SEGMENT_CORE), None)
-    guard = 0
-    while core_seg is not None and guard < 3:
+    for _ in range(5):
         total = sum(s.seconds for s in segments)
-        gap = target - total
-        if gap <= tolerance:
-            break
-        padding = _best_padding(unique, used_titles, source_counts, wpm, gap, tolerance)
-        if padding is None:
-            # Source diversity is a preference, not a reason to leave the
-            # commuter with 10 minutes of silence.
-            padding = _best_padding(
-                unique, used_titles, source_counts, wpm, gap, tolerance, respect_caps=False
-            )
-        if padding is None:
-            warnings.append(
-                f"Only {total}s of fitting content available for a {target}s window."
-            )
-            break
-        core_seg.items.append(padding)
-        used_titles.add(padding.item.title)
-        source_counts[padding.item.source] = source_counts.get(padding.item.source, 0) + 1
-        guard += 1
-
-    # --- Balance: too long --------------------------------------------------
-    total = sum(s.seconds for s in [i for seg in segments for i in seg.items])
-    if total > target + tolerance:
-        over = total - (target + tolerance)
-        for seg in reversed(segments):
-            if over <= 0:
+        if total > target + tolerance:
+            _trim_once(segments, total - (target + tolerance), wpm)
+        elif total < target - tolerance:
+            if not _pad_once(
+                segments, core_seg, unique, used_titles, source_counts, wpm,
+                target - total, tolerance,
+            ):
+                warnings.append(
+                    f"Only {total}s of fitting content available for a {target}s window."
+                )
                 break
-            while seg.items and over > 0:
-                sched = seg.items[-1]
-                keep = sched.seconds - over
-                if keep >= MIN_PADDING_SECONDS and keep / max(1, sched.seconds) >= MIN_PARTIAL_FRACTION:
-                    shrunk = _rescale(sched, keep, wpm)
-                    over -= sched.seconds - shrunk.seconds
-                    seg.items[-1] = shrunk
-                else:
-                    over -= sched.seconds
-                    seg.items.pop()
+        else:
+            break
 
     segments = [s for s in segments if s.items]
 
@@ -251,6 +230,61 @@ def build_plan(
         transport=transport,
         warnings=warnings,
     )
+
+
+def _pad_once(
+    segments: list[Segment],
+    core_seg: Segment | None,
+    items: Sequence[ContentItem],
+    used_titles: set[str],
+    source_counts: dict[str, int],
+    wpm: int,
+    gap: int,
+    tolerance: int,
+) -> bool:
+    """Add one item to absorb ``gap`` seconds. Returns False if impossible."""
+    if gap < MIN_PADDING_SECONDS or not segments:
+        return False
+    padding = _best_padding(items, used_titles, source_counts, wpm, gap, tolerance)
+    if padding is None:
+        # Source diversity is a preference, not a reason to leave the commuter
+        # with ten minutes of silence.
+        padding = _best_padding(
+            items, used_titles, source_counts, wpm, gap, tolerance, respect_caps=False
+        )
+    if padding is None:
+        return False
+    target_seg = core_seg if core_seg is not None else segments[-1]
+    target_seg.items.append(padding)
+    used_titles.add(padding.item.title)
+    source_counts[padding.item.source] = source_counts.get(padding.item.source, 0) + 1
+    return True
+
+
+def _trim_once(segments: list[Segment], over: int, wpm: int) -> None:
+    """Remove ``over`` seconds, trimming the core first and the landing last."""
+    order = [SEGMENT_CORE, SEGMENT_WARMUP, SEGMENT_WINDDOWN]
+    ordered = sorted(
+        segments, key=lambda seg: order.index(seg.name) if seg.name in order else 99
+    )
+    for seg in ordered:
+        if over <= 0:
+            break
+        while seg.items and over > 0:
+            sched = seg.items[-1]
+            keep = sched.seconds - over
+            if keep < MIN_TRIM_SECONDS:
+                over -= sched.seconds
+                seg.items.pop()
+                continue
+            shrunk = _rescale(sched, keep, wpm)
+            consumed = sched.seconds - shrunk.seconds
+            if consumed <= 0:  # pragma: no cover - guard against rounding stalls
+                over -= sched.seconds
+                seg.items.pop()
+                continue
+            over -= consumed
+            seg.items[-1] = shrunk
 
 
 def _best_padding(
