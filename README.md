@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 03, 2026
 > **🚇 CommuteCrafter** — tell it how long you're moving and get exactly that much good content: three-act paced plans fitted to ±90s from Wikipedia, arXiv, Ask HN and Project Gutenberg, with weather-aware read/listen mode and zero API keys.
-> 📁 [`ai-agents/commutecrafter/`](./ai-agents/commutecrafter/) · 🔗 `fe32968`
+> 📁 [`ai-agents/commutecrafter/`](./ai-agents/commutecrafter/) · 🔗 `a1de74f`
 
 ---
 
