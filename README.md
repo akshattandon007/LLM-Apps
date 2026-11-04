@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 03, 2026
-> **🚇 CommuteCrafter** — tell it how long you're moving and get exactly that much good content: three-act paced plans fitted to ±90s from Wikipedia, arXiv, Ask HN and Project Gutenberg, with weather-aware read/listen mode and zero API keys.
-> 📁 [`ai-agents/commutecrafter/`](./ai-agents/commutecrafter/) · 🔗 `a1de74f`
+> ## ⭐ App of the Day — November 04, 2026
+> **💊 HealthGuard** — multi-agent medication interaction checker & health query system. Checks drug-drug interactions via OpenFDA, triages 10+ symptom types with urgency levels, researches conditions from MedlinePlus, and compiles a plain-language health report. 4 specialized agents, zero API keys.
+> 📁 [`advanced-ai-agents/healthguard/`](./advanced-ai-agents/healthguard/) · 🔗 `0443a4d`
 
 ---
 
@@ -101,6 +101,7 @@ Agent orchestration.
 - [💰 DebtSlayer](./advanced-ai-agents/debtslayer) — multi-agent debt payoff optimizer. Five specialist agents (Creditor, Spending, Strategy, Letter, Progress) create a personalized payoff plan with avalanche vs snowball comparison, timeline estimates, and creditor negotiation letters. Purely algorithmic, zero external APIs required.
 - [🚗 SafeRide](./advanced-ai-agents/saferide) — multi-agent pre-trip safety check. Vehicle Safety Scout checks NHTSA for open recalls, Route Weather Scanner forecasts conditions at every waypoint, Trip Advisor compiles a verdict with hazard warnings. Free, zero-auth APIs, no LLM required.
 - [📄 Clarity](./advanced-ai-agents/clarity) — multi-agent legal document analyzer. Extracts clauses, translates to plain language, flags risks, and generates questions to ask before signing. Works offline with rule-based fallback.
+- [💊 HealthGuard](./advanced-ai-agents/healthguard) — multi-agent medication interaction checker & health query system. 4 specialized agents (Drug Checker, Symptom Triage, Condition Researcher, Report Compiler) collaborate to check drug-drug interactions via OpenFDA, triage symptom urgency, research conditions from MedlinePlus, and deliver a plain-language health report. Zero API keys required.
 
 |---
 
