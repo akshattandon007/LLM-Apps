@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 04, 2026
-> **💊 HealthGuard** — multi-agent medication interaction checker & health query system. Checks drug-drug interactions via OpenFDA, triages 10+ symptom types with urgency levels, researches conditions from MedlinePlus, and compiles a plain-language health report. 4 specialized agents, zero API keys.
-> 📁 [`advanced-ai-agents/healthguard/`](./advanced-ai-agents/healthguard/) · 🔗 `2a311a7`
+> ## ⭐ App of the Day — November 05, 2026
+> **💱 RateMate** — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies via Frankfurter (zero-auth), check cryptocurrency prices via CoinGecko (free tier), view top coins by market cap, and get detailed coin info — all without a single API key. 7 MCP tools.
+> 📁 [`mcp-agents/ratemate/`](./mcp-agents/ratemate/) · 🔗 `
 
 ---
 
@@ -130,7 +130,8 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🏡 SafeHome](./mcp-agents/safehome) — MCP server for property safety assessment. Check disaster history, active weather alerts, and 7-day forecast for any US address. Combines FEMA, NWS, and Census data. Zero auth, free APIs.
 - [🔍 DocFinder](./mcp-agents/docfinder) — MCP server for healthcare provider search via the NPPES NPI Registry (zero-auth, free). Find doctors, dentists, specialists, and clinics by specialty, name, ZIP, or NPI number. Returns addresses, phone, taxonomies, license numbers. Covers 10M+ US providers.
 - [⛽ fuel-tracker](./mcp-agents/fuel-tracker) — MCP server for live fuel/gas prices. National average petrol/diesel/LPG prices for 28+ countries, plus station-level pricing near any location. Powered by FuelWide (free, zero-auth, no API key).
-- [📚 BookWorm MCP](./mcp-agents/bookworm) — MCP server for book search and discovery via Open Library. Search 6M+ books by title/author, look up by ISBN, browse subjects, get author bios and cover images. Free, zero-auth.
+|- [📚 BookWorm MCP](./mcp-agents/bookworm) — MCP server for book search and discovery via Open Library. Search 6M+ books by title/author, look up by ISBN, browse subjects, get author bios and cover images. Free, zero-auth.
+|- [💱 RateMate](./mcp-agents/ratemate) — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies, check crypto prices, view top coins by market cap, and get detailed coin info. Powered by Frankfurter (zero-auth) and CoinGecko (free tier). No API keys required.
 
 |---
 
