@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 05, 2026
 > **💱 RateMate** — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies via Frankfurter (zero-auth), check cryptocurrency prices via CoinGecko (free tier), view top coins by market cap, and get detailed coin info — all without a single API key. 7 MCP tools.
-> 📁 [`mcp-agents/ratemate/`](./mcp-agents/ratemate/) · 🔗 `
+> 📁 [`mcp-agents/ratemate/`](./mcp-agents/ratemate/) · 🔗 `bfad967`
 
 ---
 
