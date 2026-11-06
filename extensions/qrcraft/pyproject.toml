@@ -1,0 +1,13 @@
+[project]
+name = "qrcraft"
+version = "1.0.0"
+description = "QR code toolkit — generate and decode QR codes from the terminal"
+requires-python = ">=3.10"
+dependencies = [
+    "qrcode[pil]>=7.0",
+    "Pillow>=10.0",
+    "requests>=2.28",
+]
+
+[project.scripts]
+qrcraft = "qrcraft.cli:main"

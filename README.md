@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 05, 2026
-> **💱 RateMate** — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies via Frankfurter (zero-auth), check cryptocurrency prices via CoinGecko (free tier), view top coins by market cap, and get detailed coin info — all without a single API key. 7 MCP tools.
-> 📁 [`mcp-agents/ratemate/`](./mcp-agents/ratemate/) · 🔗 `bfad967`
+> ## ⭐ App of the Day — November 06, 2026
+> **📷 QRCraft** — two-way QR code toolkit for the terminal. Generate QR codes from any text/URL as PNG or ASCII art, decode QR codes from images (zbarimg / pyzbar / online API), batch mode, custom colours, and all four error-correction levels. Zero API keys needed.
+> 📁 [`extensions/qrcraft/`](./extensions/qrcraft/) · 🔗 `991c06d`
 
 ---
 
@@ -149,6 +149,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [🥗 PocketDiet](./extensions/pocketdiet) — instant nutrition from food names or barcodes. Search any food or scan a barcode for calories, protein, carbs, fat, and health verdicts. Powered by Open Food Facts (free, zero-auth).
 - [🌊 SwellCast](./extensions/swellcast) — surf condition forecaster for any beach. Wave height, swell period, wind data, weather, and a 0-10 surf-ability score. Powered by Open-Meteo Marine & Weather APIs (free, zero-auth).
 - [🔐 passvault](./extensions/passvault) — local encrypted CLI password manager. AES-256-GCM vault, password/passphrase generator, search, clipboard auto-copy. No cloud, no signup, just your master password.
+- [📷 QRCraft](./extensions/qrcraft) — two-way QR code toolkit. Generate QR codes from text/URLs as PNG or ASCII art, decode QR codes from images with automatic fallback (zbarimg → pyzbar → online API). Custom colours, error correction levels, batch mode, and JSON output for scripting. 18 tests all passing.
 
 |---
 
