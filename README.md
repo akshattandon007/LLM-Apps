@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 06, 2026
 > **📷 QRCraft** — two-way QR code toolkit for the terminal. Generate QR codes from any text/URL as PNG or ASCII art, decode QR codes from images (zbarimg / pyzbar / online API), batch mode, custom colours, and all four error-correction levels. Zero API keys needed.
-> 📁 [`extensions/qrcraft/`](./extensions/qrcraft/) · 🔗 `991c06d`
+> 📁 [`extensions/qrcraft/`](./extensions/qrcraft/) · 🔗 `3c905f0`
 
 ---
 
