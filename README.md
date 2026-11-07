@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 06, 2026
-> **📷 QRCraft** — two-way QR code toolkit for the terminal. Generate QR codes from any text/URL as PNG or ASCII art, decode QR codes from images (zbarimg / pyzbar / online API), batch mode, custom colours, and all four error-correction levels. Zero API keys needed.
-> 📁 [`extensions/qrcraft/`](./extensions/qrcraft/) · 🔗 `3c905f0`
+> ## ⭐ App of the Day — November 07, 2026
+> **🔖 ClipRef** — RAG-powered bookmark & clipping search engine. Index your saved articles, highlights, and notes — ask natural-language questions and get grounded, cited answers. Local embeddings via sentence-transformers, persistent ChromaDB index, optional LLM via OpenRouter. Zero API keys required for search.
+> 📁 [`rag/clipref/`](./rag/clipref/) · 🔗 `1448434`
 
 ---
 
@@ -172,6 +172,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🏫 Schoolsift](./rag/schoolsift) — search your school-paperwork avalanche: newsletters, permission slips, syllabi. Ask "when is the science fair?" in plain language — get a cited answer plus every date and deadline, 100% local and offline. No API keys, no embeddings model, no torch.
 - [🌍 TripTome](./rag/triptome) — your personal travel knowledge RAG. Ingest travel guides, PDFs, and blog posts about any destination, then ask questions in plain language. Get grounded answers with citations from your own curated travel library. CLI-first, local embeddings, no external API required for search.
 - [🔬 triallight](./rag/triallight) — plain-language clinical trial assistant. Search active clinical trials by condition (and optionally city), get AI-digested plain-English eligibility criteria, participation requirements, and logistics for each study. Powered by ClinicalTrials.gov API v2, PubMed E-utilities, and Open-Meteo Geo (all free, zero-auth).
+- [🔖 ClipRef](./rag/clipref) — your personal bookmark & clipping search engine. Index saved articles, highlights, and reading notes — then ask natural-language questions and get grounded answers with citations. Local sentence-transformers embeddings + ChromaDB, optional LLM via OpenRouter. No API key needed for search. `clipref index ~/clippings/ && clipref search "serverless patterns"`
 - [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
 
 |---
