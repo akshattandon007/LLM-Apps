@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipref"
+version = "1.0.0"
+description = "Your personal bookmark & clipping search engine — RAG-powered semantic search for saved articles, clippings, and notes."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Akshat Tandon"}]
+requires-python = ">=3.10"
+dependencies = [
+    "sentence-transformers>=3.0.0",
+    "chromadb>=1.5.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+llm = ["openai>=1.0.0"]
+
+[project.scripts]
+clipref = "clipref.cli:main"
