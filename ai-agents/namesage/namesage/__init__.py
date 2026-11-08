@@ -1,0 +1,1 @@
+"""NameSage — AI-powered name analytics tool."""

@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 07, 2026
-> **🔖 ClipRef** — RAG-powered bookmark & clipping search engine. Index your saved articles, highlights, and notes — ask natural-language questions and get grounded, cited answers. Local embeddings via sentence-transformers, persistent ChromaDB index, optional LLM via OpenRouter. Zero API keys required for search.
-> 📁 [`rag/clipref/`](./rag/clipref/) · 🔗 `1448434`
+> ## ⭐ App of the Day — November 08, 2026
+> **🔤 NameSage** — AI-powered name analytics from your terminal. Enter any first name and get a rich profile: predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes, famous namesakes, and sibling-name suggestions.
+> 📁 [`ai-agents/namesage/`](./ai-agents/namesage/) · 🔗 `__COMMIT_SHA__`
 
 ---
 
@@ -78,9 +78,10 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [📰 ThenPaper](./ai-agents/thenpaper) — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia On This Day, printed as an ASCII newspaper broadsheet.
 - [🍬 sugarcoat](./ai-agents/sugarcoat) — AI message diplomat for difficult conversations. Rephrase breaking bad news, declining invitations, giving feedback, and setting boundaries in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter. CLI-first, zero setup.
 - [🧪 Ingenius](./ai-agents/ingenius) — ingredient substitution expert. Tell it what you're out of mid-recipe, get 3 precise substitutes with exact ratios, chemistry explanations, and pro cooking tips. CLI, OpenRouter free tier.
-- [🚇 CommuteCrafter](./ai-agents/commutecrafter) — your commute is 22 minutes; here is exactly 22 minutes of content. Three-act paced plans fitted to ±90s from Wikipedia full text, arXiv abstracts, Ask HN threads and Project Gutenberg, with weather-aware read/listen mode. No API keys.
+|- [🚇 CommuteCrafter](./ai-agents/commutecrafter) — your commute is 22 minutes; here is exactly 22 minutes of content. Three-act paced plans fitted to ±90s from Wikipedia full text, arXiv abstracts, Ask HN threads and Project Gutenberg, with weather-aware read/listen mode. No API keys.
+|- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
 
----
+|---
 ## 🤖 🤖 Advanced AI Agents
 
 Agent orchestration.
