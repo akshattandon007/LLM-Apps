@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 08, 2026
 > **🔤 NameSage** — AI-powered name analytics from your terminal. Enter any first name and get a rich profile: predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes, famous namesakes, and sibling-name suggestions.
-> 📁 [`ai-agents/namesage/`](./ai-agents/namesage/) · 🔗 `__COMMIT_SHA__`
+> 📁 [`ai-agents/namesage/`](./ai-agents/namesage/) · 🔗 `625cf53`
 
 ---
 
