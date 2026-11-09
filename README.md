@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 08, 2026
-> **🔤 NameSage** — AI-powered name analytics from your terminal. Enter any first name and get a rich profile: predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes, famous namesakes, and sibling-name suggestions.
-> 📁 [`ai-agents/namesage/`](./ai-agents/namesage/) · 🔗 `625cf53`
+> ## ⭐ App of the Day — November 09, 2026
+> **🗒️ TeamScribe** — Multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails using 4 specialized AI agents (Transcriber, MinuteTaker, Scribe, Archivist) that collaborate through a shared pipeline.
+> 📁 [`advanced-ai-agents/teamscribe/`](./advanced-ai-agents/teamscribe/) · 🔗 ``
 
 ---
 
@@ -103,6 +103,7 @@ Agent orchestration.
 - [🚗 SafeRide](./advanced-ai-agents/saferide) — multi-agent pre-trip safety check. Vehicle Safety Scout checks NHTSA for open recalls, Route Weather Scanner forecasts conditions at every waypoint, Trip Advisor compiles a verdict with hazard warnings. Free, zero-auth APIs, no LLM required.
 - [📄 Clarity](./advanced-ai-agents/clarity) — multi-agent legal document analyzer. Extracts clauses, translates to plain language, flags risks, and generates questions to ask before signing. Works offline with rule-based fallback.
 - [💊 HealthGuard](./advanced-ai-agents/healthguard) — multi-agent medication interaction checker & health query system. 4 specialized agents (Drug Checker, Symptom Triage, Condition Researcher, Report Compiler) collaborate to check drug-drug interactions via OpenFDA, triage symptom urgency, research conditions from MedlinePlus, and deliver a plain-language health report. Zero API keys required.
+|- [🗒️ TeamScribe](./advanced-ai-agents/teamscribe) — multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails. 4 specialized agents (Transcriber, MinuteTaker, Scribe, Archivist) collaborate through a sequential pipeline with cross-meeting archive. Works with any OpenAI-compatible API. No external services.
 
 |---
 
