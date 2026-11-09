@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 09, 2026
 > **🗒️ TeamScribe** — Multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails using 4 specialized AI agents (Transcriber, MinuteTaker, Scribe, Archivist) that collaborate through a shared pipeline.
-> 📁 [`advanced-ai-agents/teamscribe/`](./advanced-ai-agents/teamscribe/) · 🔗 ``
+> 📁 [`advanced-ai-agents/teamscribe/`](./advanced-ai-agents/teamscribe/) · 🔗 `1ae7c5a`
 
 ---
 
