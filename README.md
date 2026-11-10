@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 09, 2026
-> **🗒️ TeamScribe** — Multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails using 4 specialized AI agents (Transcriber, MinuteTaker, Scribe, Archivist) that collaborate through a shared pipeline.
-> 📁 [`advanced-ai-agents/teamscribe/`](./advanced-ai-agents/teamscribe/) · 🔗 `1ae7c5a`
+> ## ⭐ App of the Day — November 10, 2026
+> **🌬️ BreatheSmart** — Air quality & pollen MCP agent. Check US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, grass/birch/alder/olive/ragweed/mugwort pollen levels, and UV index for any location on Earth. Get an all-in-one outdoor activity verdict. Zero-auth, free Open-Meteo API.
+> 📁 [`mcp-agents/breathesmart/`](./mcp-agents/breathesmart/) · 🔗 `a1a54b7`
 
 ---
 
@@ -133,7 +133,8 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🔍 DocFinder](./mcp-agents/docfinder) — MCP server for healthcare provider search via the NPPES NPI Registry (zero-auth, free). Find doctors, dentists, specialists, and clinics by specialty, name, ZIP, or NPI number. Returns addresses, phone, taxonomies, license numbers. Covers 10M+ US providers.
 - [⛽ fuel-tracker](./mcp-agents/fuel-tracker) — MCP server for live fuel/gas prices. National average petrol/diesel/LPG prices for 28+ countries, plus station-level pricing near any location. Powered by FuelWide (free, zero-auth, no API key).
 |- [📚 BookWorm MCP](./mcp-agents/bookworm) — MCP server for book search and discovery via Open Library. Search 6M+ books by title/author, look up by ISBN, browse subjects, get author bios and cover images. Free, zero-auth.
-|- [💱 RateMate](./mcp-agents/ratemate) — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies, check crypto prices, view top coins by market cap, and get detailed coin info. Powered by Frankfurter (zero-auth) and CoinGecko (free tier). No API keys required.
+||- [💱 RateMate](./mcp-agents/ratemate) — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies, check crypto prices, view top coins by market cap, and get detailed coin info. Powered by Frankfurter (zero-auth) and CoinGecko (free tier). No API keys required.
+|- [🌬️ BreatheSmart](./mcp-agents/breathesmart) — MCP server for air quality & pollen intelligence. Real-time US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, UV index, and grass/birch/alder/olive/ragweed/mugwort pollen levels for any location on Earth. All-in-one health summary with outdoor activity verdict. Powered by Open-Meteo Air Quality API (zero-auth, free, no API key).
 
 |---
 
