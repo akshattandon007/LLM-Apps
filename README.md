@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 12, 2026
 > **📚 ISBNScan** — Batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, page count, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file input. Zero auth, no API keys.
-> 📁 [`extensions/isbnscan/`](./extensions/isbnscan/) · 🔗 `<placeholder>`
+> 📁 [`extensions/isbnscan/`](./extensions/isbnscan/) · 🔗 `8f6980e`
 
 ---
 
