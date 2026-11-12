@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isbnscan"
+version = "1.0.0"
+description = "Batch ISBN lookup tool — resolve ISBNs to book metadata via the Open Library API"
+authors = [{name = "AI HUB DAILY"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.25.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+]
+
+[project.scripts]
+isbnscan = "isbnscan.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["isbnscan*"]

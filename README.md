@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 10, 2026
-> **🌬️ BreatheSmart** — Air quality & pollen MCP agent. Check US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, grass/birch/alder/olive/ragweed/mugwort pollen levels, and UV index for any location on Earth. Get an all-in-one outdoor activity verdict. Zero-auth, free Open-Meteo API.
-> 📁 [`mcp-agents/breathesmart/`](./mcp-agents/breathesmart/) · 🔗 `a1a54b7`
+> ## ⭐ App of the Day — November 12, 2026
+> **📚 ISBNScan** — Batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, page count, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file input. Zero auth, no API keys.
+> 📁 [`extensions/isbnscan/`](./extensions/isbnscan/) · 🔗 `<placeholder>`
 
 ---
 
@@ -152,7 +152,8 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [🥗 PocketDiet](./extensions/pocketdiet) — instant nutrition from food names or barcodes. Search any food or scan a barcode for calories, protein, carbs, fat, and health verdicts. Powered by Open Food Facts (free, zero-auth).
 - [🌊 SwellCast](./extensions/swellcast) — surf condition forecaster for any beach. Wave height, swell period, wind data, weather, and a 0-10 surf-ability score. Powered by Open-Meteo Marine & Weather APIs (free, zero-auth).
 - [🔐 passvault](./extensions/passvault) — local encrypted CLI password manager. AES-256-GCM vault, password/passphrase generator, search, clipboard auto-copy. No cloud, no signup, just your master password.
-- [📷 QRCraft](./extensions/qrcraft) — two-way QR code toolkit. Generate QR codes from text/URLs as PNG or ASCII art, decode QR codes from images with automatic fallback (zbarimg → pyzbar → online API). Custom colours, error correction levels, batch mode, and JSON output for scripting. 18 tests all passing.
+|- [📷 QRCraft](./extensions/qrcraft) — two-way QR code toolkit. Generate QR codes from text/URLs as PNG or ASCII art, decode QR codes from images with automatic fallback (zbarimg → pyzbar → online API). Custom colours, error correction levels, batch mode, and JSON output for scripting. 18 tests all passing.
+|- [📚 ISBNScan](./extensions/isbnscan) — batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, pages, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file/args input. 16 tests, zero auth, no API keys.
 
 |---
 
