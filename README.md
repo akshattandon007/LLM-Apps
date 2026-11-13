@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 12, 2026
-> **📚 ISBNScan** — Batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, page count, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file input. Zero auth, no API keys.
-> 📁 [`extensions/isbnscan/`](./extensions/isbnscan/) · 🔗 `8f6980e`
+> ## ⭐ App of the Day — November 13, 2026
+> **🧠 HackerMentor** — Semantic Q&A over Hacker News. Ingest HN stories and comments into a FAISS vector index, then ask natural-language questions about tech topics — microservices, Rust vs Go, salary negotiation, Python async patterns. Get ranked results with excerpts and direct links. Fully offline after ingestion, zero API keys.
+> 📁 [`rag/hacker-mentor/`](./rag/hacker-mentor/) · 🔗 `d9c3713`
 
 ---
 
@@ -177,7 +177,8 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🌍 TripTome](./rag/triptome) — your personal travel knowledge RAG. Ingest travel guides, PDFs, and blog posts about any destination, then ask questions in plain language. Get grounded answers with citations from your own curated travel library. CLI-first, local embeddings, no external API required for search.
 - [🔬 triallight](./rag/triallight) — plain-language clinical trial assistant. Search active clinical trials by condition (and optionally city), get AI-digested plain-English eligibility criteria, participation requirements, and logistics for each study. Powered by ClinicalTrials.gov API v2, PubMed E-utilities, and Open-Meteo Geo (all free, zero-auth).
 - [🔖 ClipRef](./rag/clipref) — your personal bookmark & clipping search engine. Index saved articles, highlights, and reading notes — then ask natural-language questions and get grounded answers with citations. Local sentence-transformers embeddings + ChromaDB, optional LLM via OpenRouter. No API key needed for search. `clipref index ~/clippings/ && clipref search "serverless patterns"`
-- [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
+|- [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
+|- [🧠 HackerMentor](./rag/hacker-mentor) — semantic Q&A over Hacker News. Ingest stories and comments into a FAISS vector index, ask questions in natural language, get ranked excerpts with direct HN links. Powered by HN Algolia API (free, zero-auth) and local sentence-transformers embeddings.
 
 |---
 
