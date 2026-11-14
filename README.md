@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 14, 2026
 > **📖 etymolog** — Word etymology journey explorer. Type any English word and get its full history — origin language, first recorded use, how meaning drifted over centuries, cousin words, rhymes, and an LLM-powered narrative. Powered by Wiktionary and Datamuse, zero API keys required.
-> 📁 [`ai-agents/etymolog/`](./ai-agents/etymolog/) · 🔗 `
+> 📁 [`ai-agents/etymolog/`](./ai-agents/etymolog/) · 🔗 `d6094cf`
 
 ---
 
