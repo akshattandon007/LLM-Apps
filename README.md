@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 13, 2026
-> **🧠 HackerMentor** — Semantic Q&A over Hacker News. Ingest HN stories and comments into a FAISS vector index, then ask natural-language questions about tech topics — microservices, Rust vs Go, salary negotiation, Python async patterns. Get ranked results with excerpts and direct links. Fully offline after ingestion, zero API keys.
-> 📁 [`rag/hacker-mentor/`](./rag/hacker-mentor/) · 🔗 `d9c3713`
+> ## ⭐ App of the Day — November 14, 2026
+> **📖 etymolog** — Word etymology journey explorer. Type any English word and get its full history — origin language, first recorded use, how meaning drifted over centuries, cousin words, rhymes, and an LLM-powered narrative. Powered by Wiktionary and Datamuse, zero API keys required.
+> 📁 [`ai-agents/etymolog/`](./ai-agents/etymolog/) · 🔗 `
 
 ---
 
@@ -79,7 +79,8 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🍬 sugarcoat](./ai-agents/sugarcoat) — AI message diplomat for difficult conversations. Rephrase breaking bad news, declining invitations, giving feedback, and setting boundaries in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter. CLI-first, zero setup.
 - [🧪 Ingenius](./ai-agents/ingenius) — ingredient substitution expert. Tell it what you're out of mid-recipe, get 3 precise substitutes with exact ratios, chemistry explanations, and pro cooking tips. CLI, OpenRouter free tier.
 |- [🚇 CommuteCrafter](./ai-agents/commutecrafter) — your commute is 22 minutes; here is exactly 22 minutes of content. Three-act paced plans fitted to ±90s from Wikipedia full text, arXiv abstracts, Ask HN threads and Project Gutenberg, with weather-aware read/listen mode. No API keys.
-|- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
+||- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
+|- [📖 etymolog](./ai-agents/etymolog) — word etymology journey explorer. Type any English word, get its full history: origin language, meaning drift over centuries, cousin words, rhymes, and an LLM-narrated story. Zero API keys required.
 
 |---
 ## 🤖 🤖 Advanced AI Agents
