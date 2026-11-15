@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 14, 2026
-> **📖 etymolog** — Word etymology journey explorer. Type any English word and get its full history — origin language, first recorded use, how meaning drifted over centuries, cousin words, rhymes, and an LLM-powered narrative. Powered by Wiktionary and Datamuse, zero API keys required.
-> 📁 [`ai-agents/etymolog/`](./ai-agents/etymolog/) · 🔗 `d6094cf`
+> ## ⭐ App of the Day — November 15, 2026
+> **📦 MoveMate** — Multi-agent relocation assistant. 5 specialized agents (Utility Scheduler, Address Changer, Cost Estimator, Neighborhood Scout, Timeline Architect) collaborate to turn moving chaos into a complete relocation playbook. Zero API keys required.
+> 📁 [`advanced-ai-agents/move-mate/`](./advanced-ai-agents/move-mate/) · 🔗 `
 
 ---
 
@@ -105,6 +105,7 @@ Agent orchestration.
 - [📄 Clarity](./advanced-ai-agents/clarity) — multi-agent legal document analyzer. Extracts clauses, translates to plain language, flags risks, and generates questions to ask before signing. Works offline with rule-based fallback.
 - [💊 HealthGuard](./advanced-ai-agents/healthguard) — multi-agent medication interaction checker & health query system. 4 specialized agents (Drug Checker, Symptom Triage, Condition Researcher, Report Compiler) collaborate to check drug-drug interactions via OpenFDA, triage symptom urgency, research conditions from MedlinePlus, and deliver a plain-language health report. Zero API keys required.
 |- [🗒️ TeamScribe](./advanced-ai-agents/teamscribe) — multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails. 4 specialized agents (Transcriber, MinuteTaker, Scribe, Archivist) collaborate through a sequential pipeline with cross-meeting archive. Works with any OpenAI-compatible API. No external services.
+|- [📦 MoveMate](./advanced-ai-agents/move-mate) — multi-agent relocation assistant. 5 agents (Utility Scheduler, Address Changer, Cost Estimator, Neighborhood Scout, Timeline Architect) collaborate to produce a complete moving playbook with cost estimates, utility setup, address change checklist, neighborhood research, and a week-by-week timeline. Zero API keys, Python stdlib only.
 
 |---
 

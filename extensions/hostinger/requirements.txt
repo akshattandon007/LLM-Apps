@@ -1,0 +1,5 @@
+# Core dependency
+rich>=13.0.0
+
+# Test dependency (install separately):
+# pip install pytest

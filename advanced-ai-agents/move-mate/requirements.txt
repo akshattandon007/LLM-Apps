@@ -1,0 +1,4 @@
+# MoveMate — no external API keys required
+# Uses only free public APIs (OpenStreetMap/Nominatim, Open-Meteo, Wikipedia)
+# All dependencies are Python standard library — no pip install needed
+# (Only urllib.request, json, datetime, dataclasses, argparse)
