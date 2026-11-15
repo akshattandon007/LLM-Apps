@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 15, 2026
 > **📦 MoveMate** — Multi-agent relocation assistant. 5 specialized agents (Utility Scheduler, Address Changer, Cost Estimator, Neighborhood Scout, Timeline Architect) collaborate to turn moving chaos into a complete relocation playbook. Zero API keys required.
-> 📁 [`advanced-ai-agents/move-mate/`](./advanced-ai-agents/move-mate/) · 🔗 `
+> 📁 [`advanced-ai-agents/move-mate/`](./advanced-ai-agents/move-mate/) · 🔗 `77dadd9`
 
 ---
 
