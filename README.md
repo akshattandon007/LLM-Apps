@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 16, 2026
 > **📺 TVMaze** — MCP server for TV show search, episode listings, cast info, and TV schedules. Search 300K+ shows, browse episodes, check who played who, see what's airing tonight in any country. Powered by the free TVMaze API — zero config, no API key required.
-> 📁 [`mcp-agents/tvmaze/`](./mcp-agents/tvmaze/) · 🔗 `a1d0b8f`
+> 📁 [`mcp-agents/tvmaze/`](./mcp-agents/tvmaze/) · 🔗 `d4daf47`
 
 ---
 
