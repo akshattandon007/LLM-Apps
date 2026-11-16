@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 15, 2026
-> **📦 MoveMate** — Multi-agent relocation assistant. 5 specialized agents (Utility Scheduler, Address Changer, Cost Estimator, Neighborhood Scout, Timeline Architect) collaborate to turn moving chaos into a complete relocation playbook. Zero API keys required.
-> 📁 [`advanced-ai-agents/move-mate/`](./advanced-ai-agents/move-mate/) · 🔗 `77dadd9`
+> ## ⭐ App of the Day — November 16, 2026
+> **📺 TVMaze** — MCP server for TV show search, episode listings, cast info, and TV schedules. Search 300K+ shows, browse episodes, check who played who, see what's airing tonight in any country. Powered by the free TVMaze API — zero config, no API key required.
+> 📁 [`mcp-agents/tvmaze/`](./mcp-agents/tvmaze/) · 🔗 `a1d0b8f`
 
 ---
 
@@ -137,6 +137,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 |- [📚 BookWorm MCP](./mcp-agents/bookworm) — MCP server for book search and discovery via Open Library. Search 6M+ books by title/author, look up by ISBN, browse subjects, get author bios and cover images. Free, zero-auth.
 ||- [💱 RateMate](./mcp-agents/ratemate) — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies, check crypto prices, view top coins by market cap, and get detailed coin info. Powered by Frankfurter (zero-auth) and CoinGecko (free tier). No API keys required.
 |- [🌬️ BreatheSmart](./mcp-agents/breathesmart) — MCP server for air quality & pollen intelligence. Real-time US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, UV index, and grass/birch/alder/olive/ragweed/mugwort pollen levels for any location on Earth. All-in-one health summary with outdoor activity verdict. Powered by Open-Meteo Air Quality API (zero-auth, free, no API key).
+|- [📺 TVMaze](./mcp-agents/tvmaze) — MCP server for TV show & episode lookup. Search shows, get episode lists with season filters, browse cast, check TV schedules by country and date, and search actors/celebrities. Powered by TVMaze API (free, zero-auth, no API key).
 
 |---
 
