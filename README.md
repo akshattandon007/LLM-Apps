@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 17, 2026
 > **🧴 SpillBuddy** — Stain removal guide CLI. Tell it what you spilled and on what fabric — get step-by-step cleaning instructions with safety warnings. 12+ stain types, 7 fabric categories, works offline. No API key required.
-> 📁 [`extensions/spillbuddy/`](./extensions/spillbuddy/) · 🔗 `acece6c`
+> 📁 [`extensions/spillbuddy/`](./extensions/spillbuddy/) · 🔗 `43026a3`
 
 ---
 
