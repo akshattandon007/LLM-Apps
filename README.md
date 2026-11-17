@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 16, 2026
-> **📺 TVMaze** — MCP server for TV show search, episode listings, cast info, and TV schedules. Search 300K+ shows, browse episodes, check who played who, see what's airing tonight in any country. Powered by the free TVMaze API — zero config, no API key required.
-> 📁 [`mcp-agents/tvmaze/`](./mcp-agents/tvmaze/) · 🔗 `d4daf47`
+> ## ⭐ App of the Day — November 17, 2026
+> **🧴 SpillBuddy** — Stain removal guide CLI. Tell it what you spilled and on what fabric — get step-by-step cleaning instructions with safety warnings. 12+ stain types, 7 fabric categories, works offline. No API key required.
+> 📁 [`extensions/spillbuddy/`](./extensions/spillbuddy/) · 🔗 `acece6c`
 
 ---
 
@@ -78,11 +78,11 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [📰 ThenPaper](./ai-agents/thenpaper) — the day you were born, as a front page. Real events, births, deaths and holidays from Wikipedia On This Day, printed as an ASCII newspaper broadsheet.
 - [🍬 sugarcoat](./ai-agents/sugarcoat) — AI message diplomat for difficult conversations. Rephrase breaking bad news, declining invitations, giving feedback, and setting boundaries in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter. CLI-first, zero setup.
 - [🧪 Ingenius](./ai-agents/ingenius) — ingredient substitution expert. Tell it what you're out of mid-recipe, get 3 precise substitutes with exact ratios, chemistry explanations, and pro cooking tips. CLI, OpenRouter free tier.
-|- [🚇 CommuteCrafter](./ai-agents/commutecrafter) — your commute is 22 minutes; here is exactly 22 minutes of content. Three-act paced plans fitted to ±90s from Wikipedia full text, arXiv abstracts, Ask HN threads and Project Gutenberg, with weather-aware read/listen mode. No API keys.
-||- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
-|- [📖 etymolog](./ai-agents/etymolog) — word etymology journey explorer. Type any English word, get its full history: origin language, meaning drift over centuries, cousin words, rhymes, and an LLM-narrated story. Zero API keys required.
+- [🚇 CommuteCrafter](./ai-agents/commutecrafter) — your commute is 22 minutes; here is exactly 22 minutes of content. Three-act paced plans fitted to ±90s from Wikipedia full text, arXiv abstracts, Ask HN threads and Project Gutenberg, with weather-aware read/listen mode. No API keys.
+- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
+- [📖 etymolog](./ai-agents/etymolog) — word etymology journey explorer. Type any English word, get its full history: origin language, meaning drift over centuries, cousin words, rhymes, and an LLM-narrated story. Zero API keys required.
 
-|---
+---
 ## 🤖 🤖 Advanced AI Agents
 
 Agent orchestration.
@@ -104,10 +104,10 @@ Agent orchestration.
 - [🚗 SafeRide](./advanced-ai-agents/saferide) — multi-agent pre-trip safety check. Vehicle Safety Scout checks NHTSA for open recalls, Route Weather Scanner forecasts conditions at every waypoint, Trip Advisor compiles a verdict with hazard warnings. Free, zero-auth APIs, no LLM required.
 - [📄 Clarity](./advanced-ai-agents/clarity) — multi-agent legal document analyzer. Extracts clauses, translates to plain language, flags risks, and generates questions to ask before signing. Works offline with rule-based fallback.
 - [💊 HealthGuard](./advanced-ai-agents/healthguard) — multi-agent medication interaction checker & health query system. 4 specialized agents (Drug Checker, Symptom Triage, Condition Researcher, Report Compiler) collaborate to check drug-drug interactions via OpenFDA, triage symptom urgency, research conditions from MedlinePlus, and deliver a plain-language health report. Zero API keys required.
-|- [🗒️ TeamScribe](./advanced-ai-agents/teamscribe) — multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails. 4 specialized agents (Transcriber, MinuteTaker, Scribe, Archivist) collaborate through a sequential pipeline with cross-meeting archive. Works with any OpenAI-compatible API. No external services.
-|- [📦 MoveMate](./advanced-ai-agents/move-mate) — multi-agent relocation assistant. 5 agents (Utility Scheduler, Address Changer, Cost Estimator, Neighborhood Scout, Timeline Architect) collaborate to produce a complete moving playbook with cost estimates, utility setup, address change checklist, neighborhood research, and a week-by-week timeline. Zero API keys, Python stdlib only.
+- [🗒️ TeamScribe](./advanced-ai-agents/teamscribe) — multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails. 4 specialized agents (Transcriber, MinuteTaker, Scribe, Archivist) collaborate through a sequential pipeline with cross-meeting archive. Works with any OpenAI-compatible API. No external services.
+- [📦 MoveMate](./advanced-ai-agents/move-mate) — multi-agent relocation assistant. 5 agents (Utility Scheduler, Address Changer, Cost Estimator, Neighborhood Scout, Timeline Architect) collaborate to produce a complete moving playbook with cost estimates, utility setup, address change checklist, neighborhood research, and a week-by-week timeline. Zero API keys, Python stdlib only.
 
-|---
+---
 
 ## 🔌 MCP Agents
 
@@ -134,12 +134,12 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🏡 SafeHome](./mcp-agents/safehome) — MCP server for property safety assessment. Check disaster history, active weather alerts, and 7-day forecast for any US address. Combines FEMA, NWS, and Census data. Zero auth, free APIs.
 - [🔍 DocFinder](./mcp-agents/docfinder) — MCP server for healthcare provider search via the NPPES NPI Registry (zero-auth, free). Find doctors, dentists, specialists, and clinics by specialty, name, ZIP, or NPI number. Returns addresses, phone, taxonomies, license numbers. Covers 10M+ US providers.
 - [⛽ fuel-tracker](./mcp-agents/fuel-tracker) — MCP server for live fuel/gas prices. National average petrol/diesel/LPG prices for 28+ countries, plus station-level pricing near any location. Powered by FuelWide (free, zero-auth, no API key).
-|- [📚 BookWorm MCP](./mcp-agents/bookworm) — MCP server for book search and discovery via Open Library. Search 6M+ books by title/author, look up by ISBN, browse subjects, get author bios and cover images. Free, zero-auth.
-||- [💱 RateMate](./mcp-agents/ratemate) — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies, check crypto prices, view top coins by market cap, and get detailed coin info. Powered by Frankfurter (zero-auth) and CoinGecko (free tier). No API keys required.
-|- [🌬️ BreatheSmart](./mcp-agents/breathesmart) — MCP server for air quality & pollen intelligence. Real-time US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, UV index, and grass/birch/alder/olive/ragweed/mugwort pollen levels for any location on Earth. All-in-one health summary with outdoor activity verdict. Powered by Open-Meteo Air Quality API (zero-auth, free, no API key).
-|- [📺 TVMaze](./mcp-agents/tvmaze) — MCP server for TV show & episode lookup. Search shows, get episode lists with season filters, browse cast, check TV schedules by country and date, and search actors/celebrities. Powered by TVMaze API (free, zero-auth, no API key).
+- [📚 BookWorm MCP](./mcp-agents/bookworm) — MCP server for book search and discovery via Open Library. Search 6M+ books by title/author, look up by ISBN, browse subjects, get author bios and cover images. Free, zero-auth.
+- [💱 RateMate](./mcp-agents/ratemate) — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies, check crypto prices, view top coins by market cap, and get detailed coin info. Powered by Frankfurter (zero-auth) and CoinGecko (free tier). No API keys required.
+- [🌬️ BreatheSmart](./mcp-agents/breathesmart) — MCP server for air quality & pollen intelligence. Real-time US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, UV index, and grass/birch/alder/olive/ragweed/mugwort pollen levels for any location on Earth. All-in-one health summary with outdoor activity verdict. Powered by Open-Meteo Air Quality API (zero-auth, free, no API key).
+- [📺 TVMaze](./mcp-agents/tvmaze) — MCP server for TV show & episode lookup. Search shows, get episode lists with season filters, browse cast, check TV schedules by country and date, and search actors/celebrities. Powered by TVMaze API (free, zero-auth, no API key).
 
-|---
+---
 
 ## 🧩 Extensions
 
@@ -155,10 +155,11 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [🥗 PocketDiet](./extensions/pocketdiet) — instant nutrition from food names or barcodes. Search any food or scan a barcode for calories, protein, carbs, fat, and health verdicts. Powered by Open Food Facts (free, zero-auth).
 - [🌊 SwellCast](./extensions/swellcast) — surf condition forecaster for any beach. Wave height, swell period, wind data, weather, and a 0-10 surf-ability score. Powered by Open-Meteo Marine & Weather APIs (free, zero-auth).
 - [🔐 passvault](./extensions/passvault) — local encrypted CLI password manager. AES-256-GCM vault, password/passphrase generator, search, clipboard auto-copy. No cloud, no signup, just your master password.
-|- [📷 QRCraft](./extensions/qrcraft) — two-way QR code toolkit. Generate QR codes from text/URLs as PNG or ASCII art, decode QR codes from images with automatic fallback (zbarimg → pyzbar → online API). Custom colours, error correction levels, batch mode, and JSON output for scripting. 18 tests all passing.
-|- [📚 ISBNScan](./extensions/isbnscan) — batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, pages, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file/args input. 16 tests, zero auth, no API keys.
+- [📷 QRCraft](./extensions/qrcraft) — two-way QR code toolkit. Generate QR codes from text/URLs as PNG or ASCII art, decode QR codes from images with automatic fallback (zbarimg → pyzbar → online API). Custom colours, error correction levels, batch mode, and JSON output for scripting. 18 tests all passing.
+- [📚 ISBNScan](./extensions/isbnscan) — batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, pages, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file/args input. 16 tests, zero auth, no API keys.
+- [🧴 SpillBuddy](./extensions/spillbuddy) — stain removal guide CLI. Tell it what you spilled and on what fabric — get step-by-step cleaning instructions with safety warnings. 12+ stain types, 7 fabric categories, works offline. No API key required. 21 tests all passing.
 
-|---
+---
 
 ## 📀 RAG (Retrieval Augmented Generation)
 
@@ -180,10 +181,10 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🌍 TripTome](./rag/triptome) — your personal travel knowledge RAG. Ingest travel guides, PDFs, and blog posts about any destination, then ask questions in plain language. Get grounded answers with citations from your own curated travel library. CLI-first, local embeddings, no external API required for search.
 - [🔬 triallight](./rag/triallight) — plain-language clinical trial assistant. Search active clinical trials by condition (and optionally city), get AI-digested plain-English eligibility criteria, participation requirements, and logistics for each study. Powered by ClinicalTrials.gov API v2, PubMed E-utilities, and Open-Meteo Geo (all free, zero-auth).
 - [🔖 ClipRef](./rag/clipref) — your personal bookmark & clipping search engine. Index saved articles, highlights, and reading notes — then ask natural-language questions and get grounded answers with citations. Local sentence-transformers embeddings + ChromaDB, optional LLM via OpenRouter. No API key needed for search. `clipref index ~/clippings/ && clipref search "serverless patterns"`
-|- [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
-|- [🧠 HackerMentor](./rag/hacker-mentor) — semantic Q&A over Hacker News. Ingest stories and comments into a FAISS vector index, ask questions in natural language, get ranked excerpts with direct HN links. Powered by HN Algolia API (free, zero-auth) and local sentence-transformers embeddings.
+- [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
+- [🧠 HackerMentor](./rag/hacker-mentor) — semantic Q&A over Hacker News. Ingest stories and comments into a FAISS vector index, ask questions in natural language, get ranked excerpts with direct HN links. Powered by HN Algolia API (free, zero-auth) and local sentence-transformers embeddings.
 
-|---
+---
 
 ## 🚀 Getting Started
 

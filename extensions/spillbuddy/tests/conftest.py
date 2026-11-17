@@ -1,0 +1,1 @@
+# SpillBuddy test configuration
