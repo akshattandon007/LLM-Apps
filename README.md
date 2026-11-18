@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 17, 2026
-> **🧴 SpillBuddy** — Stain removal guide CLI. Tell it what you spilled and on what fabric — get step-by-step cleaning instructions with safety warnings. 12+ stain types, 7 fabric categories, works offline. No API key required.
-> 📁 [`extensions/spillbuddy/`](./extensions/spillbuddy/) · 🔗 `43026a3`
+> ## ⭐ App of the Day — November 18, 2026
+> **♻️ JunkJudge** — Upload your municipality's recycling and waste-disposal guidelines, then ask plain-English questions about what goes where. RAG-powered retrieval with cited answers from your own documents.
+> 📁 [`rag/junkjudge/`](./rag/junkjudge/) · 🔗 `da28c48`
 
 ---
 
@@ -183,6 +183,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🔖 ClipRef](./rag/clipref) — your personal bookmark & clipping search engine. Index saved articles, highlights, and reading notes — then ask natural-language questions and get grounded answers with citations. Local sentence-transformers embeddings + ChromaDB, optional LLM via OpenRouter. No API key needed for search. `clipref index ~/clippings/ && clipref search "serverless patterns"`
 - [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
 - [🧠 HackerMentor](./rag/hacker-mentor) — semantic Q&A over Hacker News. Ingest stories and comments into a FAISS vector index, ask questions in natural language, get ranked excerpts with direct HN links. Powered by HN Algolia API (free, zero-auth) and local sentence-transformers embeddings.
+- [♻️ JunkJudge](./rag/junkjudge) — upload your municipality's recycling & waste-disposal guidelines (PDF or pasted text), then ask plain-English questions with RAG-powered, citation-grounded answers. Zero API keys required for search; free HuggingFace Inference API for answers.
 
 ---
 
