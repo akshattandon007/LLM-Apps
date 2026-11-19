@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 18, 2026
-> **♻️ JunkJudge** — Upload your municipality's recycling and waste-disposal guidelines, then ask plain-English questions about what goes where. RAG-powered retrieval with cited answers from your own documents.
-> 📁 [`rag/junkjudge/`](./rag/junkjudge/) · 🔗 `da28c48`
+> ## ⭐ App of the Day — November 19, 2026
+> **🎭 VibeCheck** — Analyze any text for tone, subtext, clarity, and communication style before you hit send. CLI tool with interactive REPL, pipe support, and A/B comparison mode.
+> 📁 [`ai-agents/vibecheck/`](./ai-agents/vibecheck/) · 🔗 `PLACEHOLDER_SHA`
 
 ---
 
@@ -79,8 +79,9 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 - [🍬 sugarcoat](./ai-agents/sugarcoat) — AI message diplomat for difficult conversations. Rephrase breaking bad news, declining invitations, giving feedback, and setting boundaries in a tone that's kind, clear, and effective. 6 tones × 6 styles, powered by OpenRouter. CLI-first, zero setup.
 - [🧪 Ingenius](./ai-agents/ingenius) — ingredient substitution expert. Tell it what you're out of mid-recipe, get 3 precise substitutes with exact ratios, chemistry explanations, and pro cooking tips. CLI, OpenRouter free tier.
 - [🚇 CommuteCrafter](./ai-agents/commutecrafter) — your commute is 22 minutes; here is exactly 22 minutes of content. Three-act paced plans fitted to ±90s from Wikipedia full text, arXiv abstracts, Ask HN threads and Project Gutenberg, with weather-aware read/listen mode. No API keys.
-- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
-- [📖 etymolog](./ai-agents/etymolog) — word etymology journey explorer. Type any English word, get its full history: origin language, meaning drift over centuries, cousin words, rhymes, and an LLM-narrated story. Zero API keys required.
+|- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
+|- [📖 etymolog](./ai-agents/etymolog) — word etymology journey explorer. Type any English word, get its full history: origin language, meaning drift over centuries, cousin words, rhymes, and an LLM-narrated story. Zero API keys required.
+|- [🎭 VibeCheck](./ai-agents/vibecheck) — communication tone analyzer. Paste any text (email, Slack, social post) and get emotional tone, subtext, clarity score, and rewrite suggestions before you send. CLI + interactive REPL with A/B comparison mode. Powered by OpenRouter free tier, zero config.
 
 ---
 ## 🤖 🤖 Advanced AI Agents
