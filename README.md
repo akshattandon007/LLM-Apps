@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 19, 2026
 > **🎭 VibeCheck** — Analyze any text for tone, subtext, clarity, and communication style before you hit send. CLI tool with interactive REPL, pipe support, and A/B comparison mode.
-> 📁 [`ai-agents/vibecheck/`](./ai-agents/vibecheck/) · 🔗 `PLACEHOLDER_SHA`
+> 📁 [`ai-agents/vibecheck/`](./ai-agents/vibecheck/) · 🔗 `82bf830`
 
 ---
 
