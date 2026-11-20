@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "routine-smith"
+version = "1.0.0"
+description = "Daily Routine Optimizer & Habit Architect — 5-agent orchestration for your ideal day"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["routine_smith*"]
+
+[tool.pytest.ini_options]
+testpaths = ["routine_smith/tests"]
+python_files = ["test_*.py"]
