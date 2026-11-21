@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 20, 2026
-> **⏰ RoutineSmith** — 5-agent daily routine architect. Tells Time Auditor, Goal Aligner, Habit Architect, Energy Matcher, and Wind-Down Planner to negotiate, veto, and optimize your perfect day. Zero API keys.
-> 📁 [`advanced-ai-agents/routine-smith/`](./advanced-ai-agents/routine-smith/) · 🔗 `a45bd42`
+> ## ⭐ App of the Day — November 21, 2026
+> **📖 WikiPilot** — Wikipedia knowledge MCP server. Search articles, get summaries and full content, discover random pages, explore on-this-day history, and find related articles — all via the free Wikipedia API. Zero auth, no API keys.
+> 📁 [`mcp-agents/wikipilot/`](./mcp-agents/wikipilot/) · 🔗 `4cde4ee`
 
 ---
 
@@ -140,6 +140,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [💱 RateMate](./mcp-agents/ratemate) — MCP server for currency exchange & crypto prices. Convert between 32 fiat currencies, check crypto prices, view top coins by market cap, and get detailed coin info. Powered by Frankfurter (zero-auth) and CoinGecko (free tier). No API keys required.
 - [🌬️ BreatheSmart](./mcp-agents/breathesmart) — MCP server for air quality & pollen intelligence. Real-time US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, UV index, and grass/birch/alder/olive/ragweed/mugwort pollen levels for any location on Earth. All-in-one health summary with outdoor activity verdict. Powered by Open-Meteo Air Quality API (zero-auth, free, no API key).
 - [📺 TVMaze](./mcp-agents/tvmaze) — MCP server for TV show & episode lookup. Search shows, get episode lists with season filters, browse cast, check TV schedules by country and date, and search actors/celebrities. Powered by TVMaze API (free, zero-auth, no API key).
+- [📖 WikiPilot](./mcp-agents/wikipilot) — Wikipedia knowledge MCP server. Search articles, get summaries and full content, discover random pages, explore on-this-day history events, find related articles, and list categories — all via the free Wikipedia REST API (zero-auth, no API key).
 
 ---
 
