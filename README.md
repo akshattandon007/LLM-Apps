@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 21, 2026
-> **📖 WikiPilot** — Wikipedia knowledge MCP server. Search articles, get summaries and full content, discover random pages, explore on-this-day history, and find related articles — all via the free Wikipedia API. Zero auth, no API keys.
-> 📁 [`mcp-agents/wikipilot/`](./mcp-agents/wikipilot/) · 🔗 `4cde4ee`
+> ## ⭐ App of the Day — November 22, 2026
+> **⚖️ TabCalc** — Group expense splitter with minimum-transfers settlement. Enter who paid what, get the fewest number of transfers needed to settle up. Zero external dependencies, pure Python CLI, JSON output mode.
+> 📁 [`extensions/tabcalc/`](./extensions/tabcalc/) · 🔗 `6b8b539`
 
 ---
 
@@ -161,6 +161,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [📷 QRCraft](./extensions/qrcraft) — two-way QR code toolkit. Generate QR codes from text/URLs as PNG or ASCII art, decode QR codes from images with automatic fallback (zbarimg → pyzbar → online API). Custom colours, error correction levels, batch mode, and JSON output for scripting. 18 tests all passing.
 - [📚 ISBNScan](./extensions/isbnscan) — batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, pages, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file/args input. 16 tests, zero auth, no API keys.
 - [🧴 SpillBuddy](./extensions/spillbuddy) — stain removal guide CLI. Tell it what you spilled and on what fabric — get step-by-step cleaning instructions with safety warnings. 12+ stain types, 7 fabric categories, works offline. No API key required. 21 tests all passing.
+- [⚖️ TabCalc](./extensions/tabcalc) — split group expenses and settle debts with minimum transfers. Input via file, inline flags, or interactive stdin. Pure Python stdlib, zero external deps, JSON output mode. 15 tests all passing.
 
 ---
 
