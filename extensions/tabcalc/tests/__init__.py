@@ -1,0 +1,1 @@
+"""TabCalc tests (package-level init)."""
