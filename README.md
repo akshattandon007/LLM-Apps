@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 22, 2026
-> **⚖️ TabCalc** — Group expense splitter with minimum-transfers settlement. Enter who paid what, get the fewest number of transfers needed to settle up. Zero external dependencies, pure Python CLI, JSON output mode.
-> 📁 [`extensions/tabcalc/`](./extensions/tabcalc/) · 🔗 `6b8b539`
+> ## ⭐ App of the Day — November 23, 2026
+> **💊 PillWise** — RAG over FDA drug labels for plain-language medication answers. Ask about side effects, dosage, interactions, and warnings — grounded in official drug labels. Free OpenFDA API, local semantic search, optional LLM summarization.
+> 📁 [`rag/pillwise/`](./rag/pillwise/) · 🔗 `<commit>`
 
 ---
 
@@ -187,7 +187,8 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🔖 ClipRef](./rag/clipref) — your personal bookmark & clipping search engine. Index saved articles, highlights, and reading notes — then ask natural-language questions and get grounded answers with citations. Local sentence-transformers embeddings + ChromaDB, optional LLM via OpenRouter. No API key needed for search. `clipref index ~/clippings/ && clipref search "serverless patterns"`
 - [📧 MailMerge](./rag/mailmerge) — offline RAG over your email archives. Import a Google Takeout `.mbox` file, then search by meaning — not keywords. Uses sentence-transformers + ChromaDB, 100% local, no API keys.
 - [🧠 HackerMentor](./rag/hacker-mentor) — semantic Q&A over Hacker News. Ingest stories and comments into a FAISS vector index, ask questions in natural language, get ranked excerpts with direct HN links. Powered by HN Algolia API (free, zero-auth) and local sentence-transformers embeddings.
-- [♻️ JunkJudge](./rag/junkjudge) — upload your municipality's recycling & waste-disposal guidelines (PDF or pasted text), then ask plain-English questions with RAG-powered, citation-grounded answers. Zero API keys required for search; free HuggingFace Inference API for answers.
+|- [♻️ JunkJudge](./rag/junkjudge) — upload your municipality's recycling & waste-disposal guidelines (PDF or pasted text), then ask plain-English questions with RAG-powered, citation-grounded answers. Zero API keys required for search; free HuggingFace Inference API for answers.
+|- [💊 PillWise](./rag/pillwise) — RAG over FDA drug labels for plain-language medication answers. Ask about side effects, dosage, warnings, and drug interactions — grounded in official FDA label data. CLI-first, local sentence-transformers + FAISS, optional HuggingFace Inference API for plain-language summaries. Free OpenFDA API (zero-auth, no key needed).
 
 ---
 
