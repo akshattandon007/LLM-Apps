@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 23, 2026
 > **💊 PillWise** — RAG over FDA drug labels for plain-language medication answers. Ask about side effects, dosage, interactions, and warnings — grounded in official drug labels. Free OpenFDA API, local semantic search, optional LLM summarization.
-> 📁 [`rag/pillwise/`](./rag/pillwise/) · 🔗 `<commit>`
+> 📁 [`rag/pillwise/`](./rag/pillwise/) · 🔗 `d2b4cb1`
 
 ---
 
