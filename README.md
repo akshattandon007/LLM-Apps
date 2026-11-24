@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 23, 2026
-> **💊 PillWise** — RAG over FDA drug labels for plain-language medication answers. Ask about side effects, dosage, interactions, and warnings — grounded in official drug labels. Free OpenFDA API, local semantic search, optional LLM summarization.
-> 📁 [`rag/pillwise/`](./rag/pillwise/) · 🔗 `d2b4cb1`
+> ## ⭐ App of the Day — November 24, 2026
+> **🎭 StoryWeaver** — AI-powered interactive fiction generator. Describe a genre, setting, characters, and premise — the LLM writes the opening chapter with 3 branching choices. Your story unfolds dynamically, saved to JSON for later resumption. Any OpenAI-compatible API, CLI-first, no web server needed.
+> 📁 [`ai-agents/storyweaver/`](./ai-agents/storyweaver/) · 🔗 `de307c5`
 
 ---
 
@@ -82,6 +82,7 @@ Single-purpose agents that use an LLM plus tools to complete a focused task.
 |- [🔤 NameSage](./ai-agents/namesage) — AI-powered name analytics. Enter any first name and get predicted age, gender probability, country-of-origin distribution, rhyming words, and an LLM-synthesized name profile with era vibes and cultural associations. Free, zero-auth APIs. No API key needed for data.
 |- [📖 etymolog](./ai-agents/etymolog) — word etymology journey explorer. Type any English word, get its full history: origin language, meaning drift over centuries, cousin words, rhymes, and an LLM-narrated story. Zero API keys required.
 |- [🎭 VibeCheck](./ai-agents/vibecheck) — communication tone analyzer. Paste any text (email, Slack, social post) and get emotional tone, subtext, clarity score, and rewrite suggestions before you send. CLI + interactive REPL with A/B comparison mode. Powered by OpenRouter free tier, zero config.
+|- [🎭 StoryWeaver](./ai-agents/storyweaver) — interactive branching fiction generator. Describe a genre, setting, characters, and premise — the LLM writes the opening chapter with 3 branching choices. Your story unfolds dynamically with save/resume. CLI-first, any OpenAI-compatible API.
 
 ---
 ## 🤖 🤖 Advanced AI Agents
