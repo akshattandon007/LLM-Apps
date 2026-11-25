@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 24, 2026
-> **🎭 StoryWeaver** — AI-powered interactive fiction generator. Describe a genre, setting, characters, and premise — the LLM writes the opening chapter with 3 branching choices. Your story unfolds dynamically, saved to JSON for later resumption. Any OpenAI-compatible API, CLI-first, no web server needed.
-> 📁 [`ai-agents/storyweaver/`](./ai-agents/storyweaver/) · 🔗 `de307c5`
+> ## ⭐ App of the Day — November 25, 2026
+> **🧮 abacus** — Multi-agent financial scenario planner. 5 agents (Income, Expense, Scenario Engine, Goal Tracker, Supervisor) collaborate to model your finances and run what-if scenarios — buy vs rent, salary bump, debt snowball — producing a 5-year roadmap with personalized recommendations. No API key required.
+> 📁 [`advanced-ai-agents/abacus/`](./advanced-ai-agents/abacus/) · 🔗 ``
 
 ---
 
@@ -109,6 +109,7 @@ Agent orchestration.
 - [🗒️ TeamScribe](./advanced-ai-agents/teamscribe) — multi-agent meeting companion. Turn raw meeting notes into structured summaries, decisions, action items, and follow-up emails. 4 specialized agents (Transcriber, MinuteTaker, Scribe, Archivist) collaborate through a sequential pipeline with cross-meeting archive. Works with any OpenAI-compatible API. No external services.
 - [📦 MoveMate](./advanced-ai-agents/move-mate) — multi-agent relocation assistant. 5 agents (Utility Scheduler, Address Changer, Cost Estimator, Neighborhood Scout, Timeline Architect) collaborate to produce a complete moving playbook with cost estimates, utility setup, address change checklist, neighborhood research, and a week-by-week timeline. Zero API keys, Python stdlib only.
 - [⏰ RoutineSmith](./advanced-ai-agents/routine-smith) — multi-agent daily routine optimizer. 5 specialist agents (Time Auditor, Goal Aligner, Habit Architect, Energy Matcher, Wind-Down Planner) negotiate and veto each other's placements to build a personalized minute-by-minute daily routine with habit stacks, energy-optimized scheduling, and implementation intentions. Zero API keys, pure Python stdlib.
+- [🧮 abacus](./advanced-ai-agents/abacus) — multi-agent financial scenario planner. 5 agents (Income, Expense, Scenario Engine, Goal Tracker, Supervisor) collaborate to model personal finances and run what-if scenarios — salary bumps, expense cuts, debt paydown — producing a 5-year roadmap with personalized recommendations. CLI-first, zero API keys required.
 
 ---
 
