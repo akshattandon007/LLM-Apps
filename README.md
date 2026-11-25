@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 25, 2026
 > **🧮 abacus** — Multi-agent financial scenario planner. 5 agents (Income, Expense, Scenario Engine, Goal Tracker, Supervisor) collaborate to model your finances and run what-if scenarios — buy vs rent, salary bump, debt snowball — producing a 5-year roadmap with personalized recommendations. No API key required.
-> 📁 [`advanced-ai-agents/abacus/`](./advanced-ai-agents/abacus/) · 🔗 ``
+> 📁 [`advanced-ai-agents/abacus/`](./advanced-ai-agents/abacus/) · 🔗 `65355ea`
 
 ---
 
