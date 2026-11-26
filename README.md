@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 25, 2026
-> **🧮 abacus** — Multi-agent financial scenario planner. 5 agents (Income, Expense, Scenario Engine, Goal Tracker, Supervisor) collaborate to model your finances and run what-if scenarios — buy vs rent, salary bump, debt snowball — producing a 5-year roadmap with personalized recommendations. No API key required.
-> 📁 [`advanced-ai-agents/abacus/`](./advanced-ai-agents/abacus/) · 🔗 `65355ea`
+> ## ⭐ App of the Day — November 26, 2026
+> **🚨 recall-alert** — MCP server to check food, drug, medical device, and vehicle safety recalls. Search by product name against openFDA or by VIN against NHTSA. Both APIs are free and require zero API keys.
+> 📁 [`mcp-agents/recall-alert/`](./mcp-agents/recall-alert/) · 🔗 `d6800fa`
 
 ---
 
@@ -143,6 +143,7 @@ toolset to Claude and runs an agent loop with citations and auditable writes.
 - [🌬️ BreatheSmart](./mcp-agents/breathesmart) — MCP server for air quality & pollen intelligence. Real-time US AQI, European AQI, PM2.5, PM10, Ozone, NO₂, SO₂, CO, UV index, and grass/birch/alder/olive/ragweed/mugwort pollen levels for any location on Earth. All-in-one health summary with outdoor activity verdict. Powered by Open-Meteo Air Quality API (zero-auth, free, no API key).
 - [📺 TVMaze](./mcp-agents/tvmaze) — MCP server for TV show & episode lookup. Search shows, get episode lists with season filters, browse cast, check TV schedules by country and date, and search actors/celebrities. Powered by TVMaze API (free, zero-auth, no API key).
 - [📖 WikiPilot](./mcp-agents/wikipilot) — Wikipedia knowledge MCP server. Search articles, get summaries and full content, discover random pages, explore on-this-day history events, find related articles, and list categories — all via the free Wikipedia REST API (zero-auth, no API key).
+- [🚨 recall-alert](./mcp-agents/recall-alert) — MCP server for product safety recalls. Search food, drugs, medical devices, and cosmetics recalls via openFDA, or check vehicle safety recalls by VIN via NHTSA. Both APIs free, zero API keys required.
 
 ---
 
