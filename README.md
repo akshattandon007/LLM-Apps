@@ -17,7 +17,7 @@
 
 > ## ⭐ App of the Day — November 27, 2026
 > **🧾 BillSplice** — Split restaurant/group bills effortlessly from your terminal. Enter items, assign to people, set tax and tip, get per-person totals. Zero dependencies, pure Python.
-> 📁 [`extensions/billsplice/`](./extensions/billsplice/) · 🔗 `1c248a7`
+> 📁 [`extensions/billsplice/`](./extensions/billsplice/) · 🔗 `cbde413`
 
 ---
 
