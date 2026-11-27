@@ -1,0 +1,1 @@
+"""BillSplice — Split restaurant/group bills effortlessly."""

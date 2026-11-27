@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 26, 2026
-> **🚨 recall-alert** — MCP server to check food, drug, medical device, and vehicle safety recalls. Search by product name against openFDA or by VIN against NHTSA. Both APIs are free and require zero API keys.
-> 📁 [`mcp-agents/recall-alert/`](./mcp-agents/recall-alert/) · 🔗 `d6800fa`
+> ## ⭐ App of the Day — November 27, 2026
+> **🧾 BillSplice** — Split restaurant/group bills effortlessly from your terminal. Enter items, assign to people, set tax and tip, get per-person totals. Zero dependencies, pure Python.
+> 📁 [`extensions/billsplice/`](./extensions/billsplice/) · 🔗 `1c248a7`
 
 ---
 
@@ -165,6 +165,7 @@ Extra projects stored under `extensions/`. Each is a self-contained module or se
 - [📚 ISBNScan](./extensions/isbnscan) — batch ISBN lookup tool. Resolve ISBN-10 and ISBN-13 to full book metadata (title, authors, publisher, year, pages, subjects, cover) via the free Open Library API. Color-coded terminal output, CSV export, stdin/file/args input. 16 tests, zero auth, no API keys.
 - [🧴 SpillBuddy](./extensions/spillbuddy) — stain removal guide CLI. Tell it what you spilled and on what fabric — get step-by-step cleaning instructions with safety warnings. 12+ stain types, 7 fabric categories, works offline. No API key required. 21 tests all passing.
 - [⚖️ TabCalc](./extensions/tabcalc) — split group expenses and settle debts with minimum transfers. Input via file, inline flags, or interactive stdin. Pure Python stdlib, zero external deps, JSON output mode. 15 tests all passing.
+- [🧾 BillSplice](./extensions/billsplice) — split restaurant/group bills from your terminal. Enter items, assign to people, set tax & tip, get per-person totals. Zero external dependencies, pure Python CLI with interactive and quick modes.
 
 ---
 

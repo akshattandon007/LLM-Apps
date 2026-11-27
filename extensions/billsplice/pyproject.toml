@@ -1,0 +1,16 @@
+[project]
+name = "billsplice"
+version = "1.0.0"
+description = "Split restaurant/group bills effortlessly — CLI tool for dividing items, tax, and tip among people."
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["billsplice*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
