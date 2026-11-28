@@ -1,0 +1,12 @@
+# Core
+httpx>=0.27.0
+
+# Full mode (RAG with real embeddings)
+# Install with: pip install mintdocs[full]  OR  pip install -r requirements-full.txt
+# sentence-transformers>=2.2.0
+# faiss-cpu>=1.7.0
+# numpy>=1.24.0
+
+# Dev / Testing
+pytest>=7.0.0
+pytest-httpx>=0.30.0

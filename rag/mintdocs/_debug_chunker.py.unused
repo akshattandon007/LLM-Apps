@@ -1,0 +1,48 @@
+"""Debug the chunker with the test's sample text."""
+from datetime import date
+from mintdocs.chunker import chunk_filing
+from mintdocs.models import FilingMetadata
+
+meta = FilingMetadata(
+    company_name="Apple Inc.",
+    ticker="AAPL",
+    cik="0000320193",
+    filing_type="10-K",
+    filing_date=date.fromisoformat("2024-10-31"),
+    accession_number="000032019324000001",
+    primary_doc="https://www.sec.gov/...",
+)
+
+SAMPLE_10K = """
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+FORM 10-K
+
+Item 1. Business
+Apple Inc. designs, manufactures and markets smartphones,
+personal computers, tablets, wearables and accessories worldwide.
+
+Item 1A. Risk Factors
+The Company's operations are subject to global economic conditions.
+Supply chain disruptions concentrated in Asia could impact manufacturing.
+The Company faces intense competition in all markets.
+
+Item 1B. Unresolved Staff Comments
+None.
+
+Item 2. Properties
+The Company leases and owns facilities worldwide.
+
+Item 7. Management's Discussion and Analysis
+Revenue for fiscal year 2024 was $391.0 billion.
+Net income was $97.0 billion.
+
+Item 8. Financial Statements
+See consolidated financial statements.
+"""
+
+chunks = chunk_filing(SAMPLE_10K, meta)
+print(f"Number of chunks: {len(chunks)}")
+for c in chunks:
+    print(f"  [{len(c.section_text):4d} chars] {c.section_header}")
+    print(f"    text starts: {c.section_text[:60]!r}...")
+    print()
