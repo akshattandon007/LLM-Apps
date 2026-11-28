@@ -15,9 +15,9 @@
 
 </div>
 
-> ## ⭐ App of the Day — November 27, 2026
-> **🧾 BillSplice** — Split restaurant/group bills effortlessly from your terminal. Enter items, assign to people, set tax and tip, get per-person totals. Zero dependencies, pure Python.
-> 📁 [`extensions/billsplice/`](./extensions/billsplice/) · 🔗 `cbde413`
+> ## ⭐ App of the Day — November 28, 2026
+> **🧾 MintDocs** — SEC Filing & Annual Report Q&A with RAG. Fetch 10-K/10-Q filings, chunk by section, embed, and ask natural-language questions with cited sources from SEC EDGAR. Zero-auth API, no ML deps for demo.
+> 📁 [`rag/mintdocs/`](./rag/mintdocs/) · 🔗 `3b97ab0`
 
 ---
 
@@ -193,6 +193,7 @@ search, or hybrid — to answer questions grounded in a document corpus.
 - [🧠 HackerMentor](./rag/hacker-mentor) — semantic Q&A over Hacker News. Ingest stories and comments into a FAISS vector index, ask questions in natural language, get ranked excerpts with direct HN links. Powered by HN Algolia API (free, zero-auth) and local sentence-transformers embeddings.
 |- [♻️ JunkJudge](./rag/junkjudge) — upload your municipality's recycling & waste-disposal guidelines (PDF or pasted text), then ask plain-English questions with RAG-powered, citation-grounded answers. Zero API keys required for search; free HuggingFace Inference API for answers.
 |- [💊 PillWise](./rag/pillwise) — RAG over FDA drug labels for plain-language medication answers. Ask about side effects, dosage, warnings, and drug interactions — grounded in official FDA label data. CLI-first, local sentence-transformers + FAISS, optional HuggingFace Inference API for plain-language summaries. Free OpenFDA API (zero-auth, no key needed).
+|- [🧾 MintDocs](./rag/mintdocs) — SEC Filing & Annual Report Q&A with RAG. Fetch 10-K/10-Q filings from SEC EDGAR, chunk by Item sections, embed with sentence-transformers, and ask natural-language questions with cited source sections. Zero-auth API, demo mode with no ML deps. `mintdocs index AAPL && mintdocs ask "What are the risk factors?" --ticker AAPL`
 
 ---
 
